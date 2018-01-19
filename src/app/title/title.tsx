@@ -17,8 +17,9 @@ export default class Title extends React.Component<TitleProps> {
             <Section className={`jlw-title ${this.props.className}`}
                 title={'Joseph Weidinger'}
             >
-                <div>
-                    Full-Stack Developer - Engineer/Creator - Interviewer - Composer - Musician
+                <div className="jlw-title-labels">
+                    Full-Stack Developer - Engineer/Creator<br/>
+                    Interviewer - Composer - Musician
                 </div>
             </Section>
         )

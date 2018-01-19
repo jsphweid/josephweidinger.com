@@ -15,6 +15,7 @@ export default class Contact extends React.Component<ContactProps> {
         return (
             <div className={`jlw-contact ${this.props.className}`}>
                 <Element name={'Contact'} />
+                <a href="">Résumé</a>
                 contact
             </div>
         )

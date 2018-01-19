@@ -25,3 +25,9 @@
         font-size: 3em;
     }
 }
+
+@media screen and (max-width: 650px) {
+    .jlw-section {
+        padding: 88px 16px;
+    }
+}

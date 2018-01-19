@@ -6,16 +6,19 @@ $off-white-light: #EFEFEF;
 .jlw-colorProfile1 {
     background-color: $red;
     color: $off-white-dark;
+    a { color: $off-white-light }
 }
 
 .jlw-colorProfile2 {
     background-color: $grey;
     color: $off-white-dark;
+    a { color: $red }
 }
 
 .jlw-colorProfile3 {
     background-color: $off-white-light;
     color: $red;
+    a { color: $grey }
 }
 
 $something: #229e85;

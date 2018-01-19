@@ -7,3 +7,6 @@ css
 
 bundle
  - extract css?? (so it can be cached...)
+
+content
+ - add resume

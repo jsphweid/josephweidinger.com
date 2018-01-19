@@ -21,9 +21,9 @@ export default class Main extends React.Component {
             <div className="jlw">
                 <Navbar className="jlw-colorProfile1" />
                 <Title className="jlw-colorProfile2" />
+                <Projects className="jlw-colorProfile3" />
+                <Other className="jlw-colorProfile2" />
                 <About className="jlw-colorProfile3" />
-                <Projects className="jlw-colorProfile2" />
-                <Other className="jlw-colorProfile3" />
                 <Contact className="jlw-colorProfile1" />
             </div>
         )

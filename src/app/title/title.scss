@@ -1,9 +1,12 @@
-.jlw-title {
+.jlw-title .jlw-title-labels {
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: 300;
+}
 
-    div {
-        text-align: center;
-        font-size: 1.75em;
-        font-weight: 300;
+
+@media screen and (max-width: 650px) {
+    .jlw-title .jlw-title-labels {
+        font-size: 1em;
     }
-
 }
