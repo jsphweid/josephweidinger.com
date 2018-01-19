@@ -10,11 +10,17 @@
 .jlw-navbar-content {
     position: relative;
     display: inline-flex;
-    padding: 0 24px;
+    padding-left: 12px;
 
     div:first-child {
         font-size: 1.5em;
-        margin: 26px 0;
+        margin-top: 9px;
+        padding: 16px 12px;
+    }
+
+    div:first-child:hover {
+        @extend .jlw-colorProfile3;
+        cursor: pointer;
     }
 
     div:last-child {
@@ -48,5 +54,8 @@
     .jlw-navbar-content {
         display: block;
         text-align: center;
+        margin: 0 auto;
+        width: 300px;
+        padding: 0;
     }
 }

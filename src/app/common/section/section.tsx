@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { Element } from 'react-scroll'
 
 export interface SectionProps {
     className?: string
@@ -16,6 +17,7 @@ export default class Section extends React.Component<SectionProps> {
         const { title, children } = this.props
         return (
             <div className={`jlw-section ${this.props.className}`}>
+                <Element name={title} />
                 <h1>{title.toUpperCase()}</h1>
                 <hr/>
                 {children}
