@@ -11,5 +11,4 @@ bundle
 content
  - add resume at bottom
  - github link at bottom
-
- 
+ - add something about smart creative, technical insight, dreamer but also doer
