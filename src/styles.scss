@@ -1,1 +1,15 @@
 @import 'app/main';
+@import 'app/colors';
+
+/* common */
+@import 'app/common/section/section';
+
+/* components */
+@import 'app/navbar/navbar';
+@import 'app/about/about';
+@import 'app/projects/projects';
+@import 'app/interviews/interviews';
+@import 'app/music/music';
+@import 'app/footer/footer';
+@import 'app/title/title';
+

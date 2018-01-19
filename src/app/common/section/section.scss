@@ -1,0 +1,27 @@
+.jlw-section {
+    padding: 88px 24px;
+
+    h1 {
+        padding: 0;
+        font-size: 4.75em;
+        text-align: center;
+        margin: 0;
+        font-weight: 700;
+    }
+
+    hr {
+        margin: 40px auto;
+        padding: 0;
+        max-width: 250px;
+        border: 0;
+        border-top: solid 5px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 820px) {
+    .jlw-section h1 {
+        font-size: 3em;
+    }
+}
