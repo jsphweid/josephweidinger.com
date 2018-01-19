@@ -9,4 +9,7 @@ bundle
  - extract css?? (so it can be cached...)
 
 content
- - add resume
+ - add resume at bottom
+ - github link at bottom
+
+ 
