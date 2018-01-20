@@ -13,7 +13,7 @@ export default class Contact extends React.Component<ContactProps> {
 
     render() {
         return (
-            <div className={`jlw-contact ${this.props.className}`}>
+            <div className={`jlw-contact ${this.props.className || ''}`}>
                 <Element name={'Contact'} />
                 <a href="">Résumé</a>
                 contact

@@ -7,12 +7,17 @@ const zoomIn = require('./zoom-in.svg')
 export interface ProjectProps {
     className?: string
     template: ProjectTempateType
+    handleProjectOpen: (project: ProjectTempateType) => void
 }
 
 export default class Project extends React.Component<ProjectProps> {
 
     constructor(props: ProjectProps) {
         super(props)
+    }
+
+    handleProjectOpen = (): void => {
+        this.props.handleProjectOpen(this.props.template)
     }
 
     render() {
@@ -24,7 +29,7 @@ export default class Project extends React.Component<ProjectProps> {
         const heightWidthStyle = { width: `${width}px`, height: `${height}px` }
 
         return (
-            <div className={`jlw-project ${className}`} style={heightWidthStyle}>
+            <div className={`jlw-project ${className || ''}`} style={heightWidthStyle} onClick={this.handleProjectOpen}>
                 <img src={imgSrc} alt={template.projectName} />
                 <div className="jlw-project-overlay" style={heightWidthStyle}>
                     <div>{template.projectName}</div>

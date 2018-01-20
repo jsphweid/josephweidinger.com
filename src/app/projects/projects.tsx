@@ -1,11 +1,13 @@
 import * as React from 'react'
 import Section from '../common/section/section'
 import Project from './project/project'
+import Modal from '../modal/modal'
 import { projects } from '../common/constants'
 import { ProjectTempateType } from '../common/types'
 
 export interface ProjectsProps {
     className?: string
+    handleProjectOpen: (project: ProjectTempateType) => void
 }
 
 export default class Projects extends React.Component<ProjectsProps> {
@@ -20,6 +22,7 @@ export default class Projects extends React.Component<ProjectsProps> {
                 <Project
                     key={index}
                     template={project}
+                    handleProjectOpen={this.props.handleProjectOpen}
                 />
             )
         })
@@ -27,7 +30,7 @@ export default class Projects extends React.Component<ProjectsProps> {
 
     render() {
         return (
-            <Section className={`jlw-projects ${this.props.className}`}
+            <Section className={`jlw-projects ${this.props.className || ''}`}
                 title={'Projects'}
             >
                 <div className="jlw-projects-content">

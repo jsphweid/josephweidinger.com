@@ -16,7 +16,7 @@ export default class Section extends React.Component<SectionProps> {
     render() {
         const { title, children } = this.props
         return (
-            <div className={`jlw-section ${this.props.className}`}>
+            <div className={`jlw-section ${this.props.className || ''}`}>
                 <Element name={title} />
                 <h1>{title.toUpperCase()}</h1>
                 <hr/>

@@ -31,7 +31,7 @@ export default class Navbar extends React.Component<NavbarProps> {
             })
 
         return (
-            <div className={`jlw-navbar ${this.props.className}`}>
+            <div className={`jlw-navbar ${this.props.className || ''}`}>
                 <div className="jlw-navbar-content">
                     <div onClick={() => animateScroll.scrollToTop(scrollOptions)}>
                         Joseph Weidinger

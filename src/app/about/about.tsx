@@ -62,7 +62,7 @@ export default class About extends React.Component<AboutProps> {
 
     render() {
         return (
-            <Section className={`jlw-about ${this.props.className}`}
+            <Section className={`jlw-about ${this.props.className || ''}`}
                 title="About"
             >
                 {this.renderBriefBio()}
