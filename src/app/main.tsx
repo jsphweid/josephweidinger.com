@@ -35,9 +35,7 @@ export default class Main extends React.Component<MainProps, MainState> {
 
     handleCloseActiveProject = (): void => {
         const offset: number = this.state.savedScrollOffset
-        setTimeout(() => {
-            animateScroll.scrollTo(offset, instantScroll)
-        }, 100)
+        animateScroll.scrollTo(offset, instantScroll)
         this.setState({ activeProject: null, savedScrollOffset: -1 })
     }
 

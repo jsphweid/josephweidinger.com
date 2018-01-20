@@ -45,13 +45,13 @@ export default class Contact extends React.Component<ContactProps> {
                                 {this.renderIcon(icons.github, 'https://www.github.com/jsphweid')}
                             </li>
                             <li>
-                                {this.renderIcon(icons.soundcloud, 'soundcloud.com/joseph_weidinger')}
+                                {this.renderIcon(icons.soundcloud, 'https://www.soundcloud.com/joseph_weidinger')}
                             </li>
                             <li>
                                 {this.renderIcon(icons.facebook, 'https://www.facebook.com/jsphweid')}
                             </li>
                             <li>
-                                {this.renderIcon(icons.youtube, 'www.youtube.com/user/JojoeMusic')}
+                                {this.renderIcon(icons.youtube, 'https://www.youtube.com/user/JojoeMusic')}
                             </li>
                         </ul>
                     </div>
@@ -64,7 +64,7 @@ export default class Contact extends React.Component<ContactProps> {
                     </div>
                 </div>
                 <div className="jlw-contact-copyright">
-                    Copyright © 2018
+                    <div>Copyright © 2018</div>
                 </div>
             </div>
         )

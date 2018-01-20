@@ -54,3 +54,14 @@
 .jlw-contact-icon:hover {
     @extend .jlw-colorProfile3;
 }
+
+.jlw-contact-copyright {
+    @extend .jlw-colorProfile3;
+    padding: 24px;
+
+    & > div {
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
