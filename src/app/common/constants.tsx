@@ -1,6 +1,17 @@
 import * as React from 'react'
+import { ProjectTempateType, ImageSizeType } from './types'
 
 export const scrollOptions: any = { duration: 200, smooth: true, offset: -168 }
+
+export const projectSmallPicSize: ImageSizeType = {
+    width: 296,
+    height: 216
+}
+
+export const projectLargePicSize: ImageSizeType = {
+    width: 900,
+    height: 650
+}
 
 export const skills: any = {
     'Languages': ['Javascript / ES6 / Typescript', 'C / C++ / Python', 'HTML / CSS', 'Java / Groovy', 'Lua / AutoHotkey'],
@@ -11,21 +22,12 @@ export const skills: any = {
     'Audio/Visual Tools': ['Web Audio API', 'Web Speech API', 'Processing / P5js', 'SuperCollider', 'Flockingjs', 'WaveSurfer', 'Cubase Pro']
 }
 
-export interface ProjectTempateType {
-    projectName: string
-    expandedName: string
-    liveLink: string
-    imgUrl: string
-    modalContent: JSX.Element
-    date: string
-}
-
 export const projects: ProjectTempateType[] =  [
     {
         projectName: `bookletMacro`,
         expandedName: `Booklet Macro`,
         liveLink: `http://github.com/jsphweid/bookletMacro`,
-        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/v1484871103/bookletMacro_wjaqo2.jpg`,
+        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871103/bookletMacro_wjaqo2.jpg`,
         date: `October 2015`,
         modalContent: (
             <div>
@@ -44,7 +46,7 @@ export const projects: ProjectTempateType[] =  [
         projectName: `finaleHotkeyGrid`,
         expandedName: `Finale Hotkey Grid`,
         liveLink: `http://github.com/jsphweid/Finale-Hotkey-Grid`,
-        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/v1484871107/finale-hotkey-grid_sznsni.png`,
+        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871107/finale-hotkey-grid_sznsni.png`,
         date: `December 2013 - April 2014`,
         modalContent: (
             <div>
@@ -59,7 +61,7 @@ export const projects: ProjectTempateType[] =  [
         projectName: `hotkeyGrid`,
         expandedName: `Hotkey Grid`,
         liveLink: `http://github.com/jsphweid/hotkey-grid`,
-        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/v1484871108/hotkey-grid_eru7ne.png`,
+        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871108/hotkey-grid_eru7ne.png`,
         date: `June - August 2015`,
         modalContent: (
             <div>
@@ -78,7 +80,7 @@ export const projects: ProjectTempateType[] =  [
         projectName: `processingSketches`,
         expandedName: `Processing Sketches`,
         liveLink: `http://www.youtube.com/watch?v=f7jjcGldl_o`,
-        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/v1484871107/processing_bqeqo8.jpg`,
+        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871107/processing_bqeqo8.jpg`,
         date: `August - October 2015`,
         modalContent: (
             <div>
@@ -98,7 +100,7 @@ export const projects: ProjectTempateType[] =  [
         projectName: `feedCalc`,
         expandedName: `Feed Calculator`,
         liveLink: `https://www.josephweidinger.com/feedCalc/`,
-        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/v1484871105/feedCalc_effijp.png`,
+        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871105/feedCalc_effijp.png`,
         date: `October 2014`,
         modalContent: (
             <div>
@@ -117,7 +119,7 @@ export const projects: ProjectTempateType[] =  [
         projectName: `justInTune`,
         expandedName: `Just In Tune`,
         liveLink: `http://www.josephweidinger.com/justInTune`,
-        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/v1484871108/justIntonation_nlcdwk.png`,
+        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871108/justIntonation_nlcdwk.png`,
         date: `Spring 2015, then Fall 2016`,
         modalContent: (
             <div>
@@ -133,7 +135,7 @@ export const projects: ProjectTempateType[] =  [
         projectName: `playEquation`,
         expandedName: `Play Equation`,
         liveLink: `http://www.josephweidinger.com/playEquation`,
-        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/c_fill,g_custom:face,h_650,w_900,y_0/v1485141822/Screen_Shot_2017-01-22_at_9.20.04_PM_uppjjg.png`,
+        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485141822/Screen_Shot_2017-01-22_at_9.20.04_PM_uppjjg.png`,
         date: `Fall 2016`,
         modalContent: (
             <div>
@@ -152,7 +154,7 @@ export const projects: ProjectTempateType[] =  [
         projectName: `VAIL`,
         expandedName: `Visual and Intuitive Learning`,
         liveLink: `https://www.josephweidinger.com/VAIL`,
-        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/c_fill,h_650,w_900/v1485141863/Screen_Shot_2017-01-22_at_9.19.11_PM_zpaggn.png`,
+        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485141863/Screen_Shot_2017-01-22_at_9.19.11_PM_zpaggn.png`,
         date: `November 2016`,
         modalContent: (
             <div>
@@ -168,7 +170,7 @@ export const projects: ProjectTempateType[] =  [
         projectName: `AintIFunny`,
         expandedName: `Ain't I Funny`,
         liveLink: `https://www.josephweidinger.com/AintIFunny`,
-        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/c_fill,h_650,w_900/v1485187194/Screen_Shot_2017-01-23_at_9.59.07_AM_p2xz4r.png`,
+        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485187194/Screen_Shot_2017-01-23_at_9.59.07_AM_p2xz4r.png`,
         date: `January 2017`,
         modalContent: (
             <div>
@@ -183,7 +185,7 @@ export const projects: ProjectTempateType[] =  [
         projectName: `browserTranscribe`,
         expandedName: `Browser Transcribe`,
         liveLink: `http://www.josephweidinger.com/browserTranscribe`,
-        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/c_fill,g_custom:face,h_650,w_900,y_0/v1484871388/browserTranscribe_yrcler.png`,
+        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871388/browserTranscribe_yrcler.png`,
         date: `December 2016`,
         modalContent: (
             <div>
@@ -203,7 +205,7 @@ export const projects: ProjectTempateType[] =  [
         projectName: `aMuseMe`,
         expandedName: `A-'Muse' Me`,
         liveLink: `https://josephweidinger.com/aMuseMe`,
-        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/c_fill,h_650,w_900/v1484884631/Screen_Shot_2017-01-19_at_9.55.37_PM_y0szwe.png`,
+        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484884631/Screen_Shot_2017-01-19_at_9.55.37_PM_y0szwe.png`,
         date: `January 2017`,
         modalContent: (
             <div>
@@ -223,7 +225,7 @@ export const projects: ProjectTempateType[] =  [
         projectName: `scheduleMaker`,
         expandedName: `Schedule Maker`,
         liveLink: `https://josephweidinger.com/scheduleMaker`,
-        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/c_fill,h_650,w_900/v1486747894/Screen_Shot_2017-02-10_at_11.30.21_AM_d8gyep.png`,
+        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1486747894/Screen_Shot_2017-02-10_at_11.30.21_AM_d8gyep.png`,
         date: `January-February 2017`,
         modalContent: (
             <div>
