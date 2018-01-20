@@ -1,3 +1,56 @@
-.jlw-contact {
-    
+.jlw-contact-content {
+    padding: 56px 24px;
+    flex-wrap: wrap;
+    display: inline-flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+
+    & > div {
+        margin: 24px 48px;
+    }
+
+    p {
+        font-size: 20px;
+        text-align: center;
+        margin: 0;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        font-size: 26px;
+        font-weight: 700;
+        text-align: center;
+        min-width: 200px;
+        margin: 16px 0;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: inline-flex;
+        justify-content: center;
+        
+        li {
+            margin: 0 6px;
+        }
+    }
+} 
+
+.jlw-contact-icon {
+    position: relative;
+    border: 2px solid $off-white-light;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    i {
+        position: absolute;
+        top: 11px;
+        left: 7px;
+    }
+}
+
+.jlw-contact-icon:hover {
+    @extend .jlw-colorProfile3;
 }

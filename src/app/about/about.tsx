@@ -52,7 +52,7 @@ export default class About extends React.Component<AboutProps> {
 
         return (
             <div className="jlw-skills">
-                <h2 className="jlw-skills-header">Skills</h2>
+                <h2 className="jlw-skills-header">Skills / <a href="">Résumé</a></h2>
                 <div className="jlw-skills-content">
                     {skillsDivs}
                 </div>

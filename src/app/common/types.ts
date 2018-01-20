@@ -13,3 +13,15 @@ export interface ImageSizeType {
     width: number
     height: number
 }
+
+export interface IconType {
+    class: string
+    unicode: any
+}
+
+export interface IconObjType {
+    facebook: IconType
+    github: IconType
+    youtube: IconType
+    soundcloud: IconType
+}

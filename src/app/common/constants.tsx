@@ -1,8 +1,15 @@
 import * as React from 'react'
-import { ProjectTempateType, ImageSizeType } from './types'
+import { ProjectTempateType, ImageSizeType, IconObjType } from './types'
 
 export const smoothScroll: any = { duration: 200, smooth: true, offset: -168 }
 export const instantScroll: any = { duration: 0, smooth: false }
+
+export const icons: IconObjType = {
+    facebook: { class: 'facebook', unicode: '&#xf09a;' },
+    github: { class: 'github-circled', unicode: '&#xf09b;' },
+    youtube: { class: 'youtube', unicode: '&#xf167;' },
+    soundcloud: { class: 'soundcloud', unicode: '&#xf348;' }
+}
 
 export const projectSmallPicSize: ImageSizeType = {
     width: 296,
