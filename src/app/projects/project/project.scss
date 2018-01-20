@@ -9,9 +9,9 @@
 
     .jlw-project-overlay {
         position: absolute;
-        @extend .jlw-colorProfile2;
+        @extend .jlw-colorProfile3;
         z-index: -1;
-        opacity: 0.9;
+        opacity: 0.8;
         top: 0;
         left: 0;
 
@@ -37,5 +37,11 @@
 
     .jlw-project-overlay {
         z-index: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .jlw-project {
+        margin: 16px 0;
     }
 }

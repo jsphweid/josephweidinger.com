@@ -16,7 +16,7 @@ export default class Navbar extends React.Component<NavbarProps> {
 
     render() {
 
-        const sectionTitles: SectionType[] = ['Projects', 'Other', 'About', 'Contact']
+        const sectionTitles: SectionType[] = ['Projects', 'About', 'Contact']
 
         const sections: JSX.Element[] = sectionTitles
             .map((section: string, index: number) => {

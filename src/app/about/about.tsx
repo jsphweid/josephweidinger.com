@@ -1,7 +1,13 @@
 import * as React from 'react'
 import Section from '../common/section/section'
 import { skills } from '../common/constants'
-const shakesArticleLink: string = `//www.columbiatribune.com/business/saturday_business/cheesy-memories-shakespeare-s-growth-from-a-small-operation-to/article_e1a3815e-e081-52f2-b03e-12575ebed8f1.html`
+
+const shakes: string = `http://www.columbiatribune.com/business/saturday_business/cheesy-memories-shakespeare-s-growth-from-a-small-operation-to/article_e1a3815e-e081-52f2-b03e-12575ebed8f1.html`
+const organ: string = `https://soundcloud.com/joseph_weidinger/sets/one-paged-preludes-and`
+const interviews: string = `https://soundcloud.com/joseph_weidinger/sets/interviews`
+const songs: string = `https://soundcloud.com/joseph_weidinger/sets/songs`
+const instrumental: string = `https://soundcloud.com/joseph_weidinger/sets/instrumental`
+const woodshed: string = `http://josephweidinger.com/studioWoodshed`
 
 export interface AboutProps {
     className?: string
@@ -20,17 +26,16 @@ export default class About extends React.Component<AboutProps> {
                         Coder monkey at Carfax and independent software developer creatively
                         engineering solutions to my own problems using any exciting new or
                         old technology I can get my hands on and head wrapped around. Most
-                        Valuable Player for the Minimum Viable Product in My Personal Ventures.&nbsp;
-                        <a href={shakesArticleLink}>Former Pizza Maker Extraordinaire</a> at
-                        Shakespeare's Downtown. Also: church organist / pianist; music engraver;
-                        self-described efficiency fanatic; Joel Salatin wannabe; interviewer
-                        of awesome people; host of jams, salons, new music readings,&nbsp;
-                        <a href="http://josephweidinger.com/studioWoodshed">recording sessions</a>,
-                        and other events where I overwhelm people with homemade pizza, smoothies,
-                        soups, and sourdough bread; Gerry Fialka clone; wasted time but timed every
-                        second of it; music composer and songwriter wannabe; backyard chicken
-                        enthusiast; salutatorian; boring uncle; and class clown in the school
-                        of hard knocks.
+                        Valuable Player for the Minimum Viable Product in My Personal
+                        Ventures. <a href={shakes}>Former Pizza Maker Extraordinaire</a> at
+                        Shakespeare's Downtown. Also: <a href={organ}>church organist</a> / pianist; music engraver;
+                        self-described efficiency fanatic; Joel Salatin wannabe; <a href={interviews}>interviewer
+                        of awesome people;</a> host of jams, salons, new music
+                        readings, <a href={woodshed}>recording sessions,</a> and other events
+                        where I overwhelm people with homemade pizza, smoothies, soups, and
+                        sourdough bread; Gerry Fialka clone; <a href={instrumental}>music composer</a> and <a href={songs}>songwriter
+                        wannabe;</a> backyard chicken enthusiast; salutatorian; boring
+                        uncle; and class clown in the school of hard knocks.
                 </p>
             </div>
         )

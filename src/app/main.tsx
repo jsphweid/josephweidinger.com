@@ -55,8 +55,8 @@ export default class Main extends React.Component<MainProps, MainState> {
                 <Navbar className="jlw-colorProfile1" />
                 <Title className="jlw-colorProfile2" />
                 <Projects className="jlw-colorProfile3" handleProjectOpen={this.handleSetActiveProject} />
-                <Other className="jlw-colorProfile2" />
-                <About className="jlw-colorProfile3" />
+                {/* <Other className="jlw-colorProfile2" /> */}
+                <About className="jlw-colorProfile2" />
                 <Contact className="jlw-colorProfile1" />
             </div>
         )
