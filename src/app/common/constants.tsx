@@ -1,7 +1,8 @@
 import * as React from 'react'
 import { ProjectTempateType, ImageSizeType } from './types'
 
-export const scrollOptions: any = { duration: 200, smooth: true, offset: -168 }
+export const smoothScroll: any = { duration: 200, smooth: true, offset: -168 }
+export const instantScroll: any = { duration: 0, smooth: false }
 
 export const projectSmallPicSize: ImageSizeType = {
     width: 296,

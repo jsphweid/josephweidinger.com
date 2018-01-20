@@ -6,13 +6,16 @@ import Projects from './projects/projects'
 import Other from './other/other'
 import Title from './title/title'
 import Modal from './modal/modal'
+import { animateScroll } from 'react-scroll'
 
 import { SectionType, ProjectTempateType } from './common/types'
+import { instantScroll } from './common/constants'
 
 export interface MainProps {}
 
 export interface MainState {
     activeProject: ProjectTempateType
+    savedScrollOffset: number
 }
 
 export default class Main extends React.Component<MainProps, MainState> {
@@ -20,18 +23,22 @@ export default class Main extends React.Component<MainProps, MainState> {
     constructor(props: MainProps) {
         super(props)
         this.state = {
-            activeProject: null
+            activeProject: null,
+            savedScrollOffset: -1
         }
     }
 
-    maybeRenderModal = (): JSX.Element => {
-        return this.state.activeProject
-            ? (
-                <Modal
-                    project={this.state.activeProject}
-                    closeModal={() => this.setState({ activeProject: null })}
-                />
-            ) : null
+    handleSetActiveProject = (project: ProjectTempateType): void => {
+        const currentScrollPosition: number = document.documentElement.scrollTop || document.body.scrollTop
+        this.setState({ activeProject: project, savedScrollOffset: currentScrollPosition })
+    }
+
+    handleCloseActiveProject = (): void => {
+        const offset: number = this.state.savedScrollOffset
+        setTimeout(() => {
+            animateScroll.scrollTo(offset, instantScroll)
+        }, 100)
+        this.setState({ activeProject: null, savedScrollOffset: -1 })
     }
 
     render() {
@@ -40,7 +47,7 @@ export default class Main extends React.Component<MainProps, MainState> {
             <div className="jlw">
                 <Modal
                     project={this.state.activeProject}
-                    closeModal={() => this.setState({ activeProject: null })}
+                    closeModal={this.handleCloseActiveProject}
                 />
             </div>
         )
@@ -49,9 +56,7 @@ export default class Main extends React.Component<MainProps, MainState> {
             <div className="jlw jlw-headerOffset">
                 <Navbar className="jlw-colorProfile1" />
                 <Title className="jlw-colorProfile2" />
-                <Projects className="jlw-colorProfile3"
-                    handleProjectOpen={(project: ProjectTempateType) => this.setState({ activeProject: project })}
-                />
+                <Projects className="jlw-colorProfile3" handleProjectOpen={this.handleSetActiveProject} />
                 <Other className="jlw-colorProfile2" />
                 <About className="jlw-colorProfile3" />
                 <Contact className="jlw-colorProfile1" />

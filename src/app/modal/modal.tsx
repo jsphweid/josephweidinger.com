@@ -1,6 +1,8 @@
 import * as React from 'react'
 import { ProjectTempateType } from '../common/types'
 import { projectLargePicSize } from '../common/constants'
+import { animateScroll } from 'react-scroll'
+import { instantScroll } from './../common/constants'
 
 export interface ModalProps {
     className?: string
@@ -12,6 +14,22 @@ export default class Modal extends React.Component<ModalProps> {
 
     constructor(props: ModalProps) {
         super(props)
+        animateScroll.scrollToTop(instantScroll)
+    }
+
+    componentDidMount() {
+        document.addEventListener('keydown', this.handleEscapePushed)
+    }
+
+    componentWillUnmount() {
+        document.removeEventListener('keydown', this.handleEscapePushed)
+    }
+
+    handleEscapePushed = (keyEvent: KeyboardEvent): void => {
+        if (keyEvent.code === 'Escape') {
+            keyEvent.preventDefault()
+            this.props.closeModal()
+        }
     }
 
     renderCloseButton = (): JSX.Element => {
