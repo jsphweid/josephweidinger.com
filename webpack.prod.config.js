@@ -4,6 +4,9 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const plugins = [
+    new webpack.DefinePlugin({
+        'process.env.NODE_ENV': JSON.stringify('production')
+    }),
     new webpack.optimize.UglifyJsPlugin(),
     new HtmlWebpackPlugin({
         title: "Joseph Weidinger",
@@ -55,6 +58,14 @@ module.exports = {
             {
                 test: /\.(svg|png|jpg|gif)$/,
                 use: [{ loader: 'url-loader' }]
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                loader: "file-loader"
+            },
+            {
+                test: /\.ico$/,
+                loader: 'file-loader?name=[name].[ext]'
             }
         ]
     },

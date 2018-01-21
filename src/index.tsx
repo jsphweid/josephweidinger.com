@@ -3,6 +3,7 @@ import * as ReactDOM from 'react-dom'
 import Main from './app/main'
 
 import './styles.scss'
+require('./favicon.ico')
 
 ReactDOM.render(
     <Main />,

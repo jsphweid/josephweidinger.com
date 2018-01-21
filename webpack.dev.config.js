@@ -54,6 +54,10 @@ module.exports = {
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
                 loader: "file-loader"
+            },
+            {
+                test: /\.ico$/,
+                loader: 'file-loader?name=[name].[ext]'
             }
         ]
     },
