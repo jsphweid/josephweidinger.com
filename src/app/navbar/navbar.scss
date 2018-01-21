@@ -60,3 +60,15 @@
         padding: 0;
     }
 }
+
+@media screen and (max-width: 700px) {
+    .jlw-navbar {
+        height: 50px;
+    }
+    .jlw-navbar-content {
+        div:first-child {
+            margin-top: 0;
+            padding: 11px 12px;
+        }
+    }
+}
