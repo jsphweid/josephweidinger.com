@@ -1,24 +1,36 @@
 {
-    "compilerOptions": {
-        "sourceMap": true,
-        "noImplicitAny": true,
-        "module": "commonjs",
-        "target": "es5",
-        "declaration": true,
-        "outDir": "./dist/package",
-        "skipLibCheck": true,
-        "jsx": "react",
-        "lib": ["es2016", "dom"],
-        "typeRoots": [
-            "node_modules/@types",
-            "local-types"
-        ]
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "preserve",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@myPathAlias/*": [
+        "src/path-alias-example/*"
+      ]
     },
-    "exclude": [
-        "node_modules",
-        "./src/**/*.test.ts"
+    "typeRoots": [
+      "./node_modules/@types"
     ],
-    "include": [
-        "./src/**/*"
+    "lib": [
+      "dom",
+      "es2015",
+      "es2016"
     ]
+  },
+  "exclude": [
+    "dist/**/*",
+    "public/**/*"
+  ]
 }

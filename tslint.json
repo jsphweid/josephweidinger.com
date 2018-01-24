@@ -7,6 +7,7 @@
     "jsRules": {
     },
     "rules": {
+        "no-unused-variable": true,
         "semicolon": [true, "never"],
         "ter-indent": [true, 4, { "SwitchCase": 1 }],
         "trailing-comma": [true, { "multiline": "never", "singleline": "never" }],
