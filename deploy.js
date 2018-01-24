@@ -5,20 +5,12 @@ const bucketName = 'josephweidinger.com'
 
 function s3ClientCreator(accessKeyId, secretAccessKey, region) {
     const clientConfig = {
-        maxAsyncS3: 20,     // this is the default
-        s3RetryCount: 3,    // this is the default
-        s3RetryDelay: 1000, // this is the default
-        multipartUploadThreshold: 20971520, // this is the default (20 MB)
-        multipartUploadSize: 15728640, // this is the default (15 MB)
-        s3Options: {
-            accessKeyId,
-            secretAccessKey,
-            region
-            // endpoint: 's3.yourdomain.com',
-            // sslEnabled: false
-            // any other options are passed to new AWS.S3()
-            // See: http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Config.html#constructor-property
-        }
+        maxAsyncS3: 20,
+        s3RetryCount: 3,
+        s3RetryDelay: 1000,
+        multipartUploadThreshold: 20971520,
+        multipartUploadSize: 15728640,
+        s3Options: { accessKeyId, secretAccessKey, region }
     }
 
     return s3.createClient(clientConfig)
@@ -126,7 +118,7 @@ getAwsCreds()
 
     }).then(() => {
 
-        return uploadDir(s3Client, './dist/artifacts', '')
+        return uploadDir(s3Client, './dist', '')
 
     }).then(() => console.log('completed successfully')
     ).catch((error) => console.error('-error', error))

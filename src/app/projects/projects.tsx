@@ -1,7 +1,6 @@
 import * as React from 'react'
 import Section from '../common/section/section'
 import Project from './project/project'
-import Modal from '../modal/modal'
 import { projects } from '../common/constants'
 import { ProjectTempateType } from '../common/types'
 

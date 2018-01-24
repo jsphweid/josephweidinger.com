@@ -3,12 +3,11 @@ import Navbar from './navbar/navbar'
 import Contact from './contact/contact'
 import About from './about/about'
 import Projects from './projects/projects'
-import Other from './other/other'
 import Title from './title/title'
 import Modal from './modal/modal'
 import { animateScroll } from 'react-scroll'
 
-import { SectionType, ProjectTempateType } from './common/types'
+import { ProjectTempateType } from './common/types'
 import { instantScroll } from './common/constants'
 
 export interface MainProps {}

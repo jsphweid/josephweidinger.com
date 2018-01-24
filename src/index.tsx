@@ -1,13 +1,30 @@
-import * as React from 'react'
-import * as ReactDOM from 'react-dom'
-import Main from './app/main'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { AppContainer } from 'react-hot-loader'
 
-import './styles.scss'
-require('./favicon.ico')
+// Your top level component
+import App from './App'
 
-ReactDOM.render(
-    <Main />,
-    document.getElementById('app')
-)
+// Export your top level component (for static rendering)
+export default App
 
-if (module.hot) module.hot.accept()
+// Render your app
+if (typeof document !== 'undefined') {
+  	const renderMethod = module.hot ? ReactDOM.render : ReactDOM.hydrate
+  	const render = (Comp: React.ComponentType) => {
+      	renderMethod (
+			<AppContainer>
+				<Comp />
+			</AppContainer>,
+		document.getElementById('root')
+		)
+  	}
+
+  	render(App)
+
+    if (module.hot) {
+    	module.hot.accept('./App', () => {
+    	  	render(require('./App').default)
+    	})
+  	}
+}
