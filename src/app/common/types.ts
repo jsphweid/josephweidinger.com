@@ -5,7 +5,7 @@ export interface ProjectTempateType {
     expandedName: string
     liveLink: string
     imgUrl: string
-    modalContent: JSX.Element
+    getModalContent: () => JSX.Element
     date: string
 }
 
