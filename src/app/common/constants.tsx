@@ -231,7 +231,7 @@ export const projects: ProjectTempateType[] =  [
     {
         projectName: `scheduleMaker`,
         expandedName: `Schedule Maker`,
-        liveLink: `www.github.com/jsphweid/scheduleMakerSpring`,
+        liveLink: `https://www.github.com/jsphweid/scheduleMakerSpring`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1486747894/Screen_Shot_2017-02-10_at_11.30.21_AM_d8gyep.png`,
         date: `January-February 2017`,
         getModalContent: function () {
