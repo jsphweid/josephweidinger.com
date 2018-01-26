@@ -7,7 +7,7 @@
     "start": "react-static start",
     "build": "npm run clean && react-static build",
     "clean": "rm -rf dist/",
-    "deploy": "npm run build && node deploy.js",
+    "deploy": "npm run build && node --experimental-modules deploy.js",
     "lint": "tslint -p ./tsconfig.json",
     "serve": "serve dist -p 3000"
   },
@@ -34,6 +34,7 @@
     "node-sass": "^4.7.2",
     "react-scroll": "^1.7.6",
     "s3": "^4.4.0",
+    "s3-basic-helper": "^0.1.10",
     "sass-loader": "^6.0.6",
     "serve": "^6.4.1",
     "ts-loader": "^3.1.1",
