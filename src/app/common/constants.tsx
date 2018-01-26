@@ -37,7 +37,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `http://github.com/jsphweid/bookletMacro`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871103/bookletMacro_wjaqo2.jpg`,
         date: `October 2015`,
-        getModalContent: function() {
+        getModalContent: function () {
             return <div>
                 bookletMacro is a cross-platform wrapper that simplifies and automates
                 certain commands in Michael Schierl's jPDFTweak. The whole purpose is to
@@ -56,7 +56,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `http://github.com/jsphweid/Finale-Hotkey-Grid`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871107/finale-hotkey-grid_sznsni.png`,
         date: `December 2013 - April 2014`,
-        getModalContent: function() {
+        getModalContent: function () {
             return <div>
                 Finale Hotkey Grid was my first "grid" hotkey prototype. It's windows only and is
                 written completely in AutoHotkey. It only works in conjunction with the music notation
@@ -71,7 +71,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `http://github.com/jsphweid/hotkey-grid`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871108/hotkey-grid_eru7ne.png`,
         date: `June - August 2015`,
-        getModalContent: function() {
+        getModalContent: function () {
             return <div>
                 Hotkey Grid is an abstraction and cross-platform version of the Finale Hotkey Grid. The
                 idea behind this project is that instead of learning special hotkeys for every program,
@@ -90,7 +90,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `http://www.youtube.com/watch?v=f7jjcGldl_o`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871107/processing_bqeqo8.jpg`,
         date: `August - October 2015`,
-        getModalContent: function() {
+        getModalContent: function () {
             return <div>
                 Processing is built on top of Java. It uses PApplet and a few shortcuts to
                 easily draw things with code. Of course, things can quickly get complicated and
@@ -110,7 +110,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `https://www.josephweidinger.com/feedCalc/`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871105/feedCalc_effijp.png`,
         date: `October 2014`,
-        getModalContent: function() {
+        getModalContent: function () {
             return <div>
                 When I dreamed of being a farmer with a bunch of chickens... I began experimenting with
                 custom feed rations from the local mixer. Chickens have certain minimal protein and
@@ -129,7 +129,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `http://www.josephweidinger.com/justInTune`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871108/justIntonation_nlcdwk.png`,
         date: `Spring 2015, then Fall 2016`,
-        getModalContent: function() {
+        getModalContent: function () {
             return <div>
                 A web-app that takes inputed musical notes and algorithmically finds the
                 simplest ratio between the notes for an on-the-fly Just Intonation
@@ -145,7 +145,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `http://www.josephweidinger.com/playEquation`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485141822/Screen_Shot_2017-01-22_at_9.20.04_PM_uppjjg.png`,
         date: `Fall 2016`,
-        getModalContent: function() {
+        getModalContent: function () {
             return <div>
                 I was learning about audio synthesis and learned how all periodic sounds can
                 very accurately be described as some mathematical equation. I couldn't find a
@@ -164,7 +164,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `https://www.josephweidinger.com/VAIL`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485141863/Screen_Shot_2017-01-22_at_9.19.11_PM_zpaggn.png`,
         date: `November 2016`,
-        getModalContent: function() {
+        getModalContent: function () {
             return <div>
                 Visual And Intuitive Learning (VAIL) is a set of planned sketches that utilize the P5js
                 drawing library to provide an interactive series of slides on any topic, in an effort to
@@ -180,7 +180,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `https://www.josephweidinger.com/AintIFunny`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485187194/Screen_Shot_2017-01-23_at_9.59.07_AM_p2xz4r.png`,
         date: `January 2017`,
-        getModalContent: function() {
+        getModalContent: function () {
             return <div>
                 "Ain't I funny" is an ambitious app that seeks to generate jokes algorithmically and allow
                 people to vote on which ones are the best. Check it out <a href={this.liveLink}>HERE. </a>And
@@ -194,7 +194,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `http://www.josephweidinger.com/browserTranscribe`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871388/browserTranscribe_yrcler.png`,
         date: `December 2016`,
-        getModalContent: function() {
+        getModalContent: function () {
             return <div>
                 A web-app that allows you to easily manipulate a sound file for the purposes
                 of transcribing its contents: music, speech or otherwise. I wanted to build
@@ -214,7 +214,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `https://josephweidinger.com/aMuseMe`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484884631/Screen_Shot_2017-01-19_at_9.55.37_PM_y0szwe.png`,
         date: `January 2017`,
-        getModalContent: function() {
+        getModalContent: function () {
             return <div>
                 This web-app is built with TypeScript, Angular 2, and Firebase. It's aim is
                 to stimulate your creativity or help 'flesh out' an idea by asking you lots
@@ -234,7 +234,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `www.github.com/jsphweid/scheduleMakerSpring`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1486747894/Screen_Shot_2017-02-10_at_11.30.21_AM_d8gyep.png`,
         date: `January-February 2017`,
-        getModalContent: function() {
+        getModalContent: function () {
             return <div>
                 This web-app WAS built with Spring MVC, Spring Security, MySQL, React, and
                 served up by Tomcat on my personal server. The goal of this app was to prove I could

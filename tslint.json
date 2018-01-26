@@ -19,7 +19,8 @@
         "no-increment-decrement": false,
         "variable-name": [true, "allow-pascal-case", ""],
         "no-else-after-return": false,
-        "align": false
+        "align": false,
+        "object-literal-shorthand": false
     },
     "rulesDirectory": []
 }

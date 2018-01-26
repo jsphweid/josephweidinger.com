@@ -37,7 +37,7 @@ export default class Modal extends React.Component<ModalProps> {
     }
 
     render() {
-        const { expandedName, imgUrl, getModalContent, date } = this.props.project
+        const { expandedName, imgUrl, date } = this.props.project
         const { width, height } = projectLargePicSize
         const cloudinaryStylePortion: string = `c_fill,g_custom:face,h_${height},w_${width},y_0`
         const imgSrc: string = imgUrl.replace('---cloudinaryStyleString---', cloudinaryStylePortion)
