@@ -7,7 +7,7 @@
     "start": "react-static start",
     "build": "npm run clean && react-static build",
     "clean": "rm -rf dist/",
-    "deploy": "npm run build && node --experimental-modules deploy.js",
+    "deploy": "npm run build && ./deploy.sh",
     "lint": "tslint -p ./tsconfig.json",
     "serve": "serve dist -p 3000"
   },
