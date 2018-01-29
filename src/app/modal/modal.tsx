@@ -37,7 +37,7 @@ export default class Modal extends React.Component<ModalProps> {
     }
 
     render() {
-        const { expandedName, imgUrl, date } = this.props.project
+        const { expandedName, imgUrl, date, liveLink } = this.props.project
         const { width, height } = projectLargePicSize
         const cloudinaryStylePortion: string = `c_fill,g_custom:face,h_${height},w_${width},y_0`
         const imgSrc: string = imgUrl.replace('---cloudinaryStyleString---', cloudinaryStylePortion)
@@ -47,7 +47,7 @@ export default class Modal extends React.Component<ModalProps> {
                 {this.renderCloseButton()}
                 <h2>{expandedName}</h2>
                 <hr/>
-                <img src={imgSrc} alt={expandedName} />
+                <img src={imgSrc} onClick={() => window.location.href = liveLink} alt={expandedName} />
                 <div className="jlw-modal-content">{this.props.project.getModalContent()}</div>
                 <div className="jlw-modal-date">Date: <strong>{date}</strong></div>
                 <button className="jlw-modal-button" onClick={this.props.closeModal}>Close</button>
