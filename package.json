@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "react-static start",
-    "build": "npm run clean && react-static build",
+    "build": "npm run clean && react-static build && cp ./src/favicon.ico ./dist",
     "clean": "rm -rf dist/",
     "deploy": "npm run build && ./deploy.sh",
     "lint": "tslint -p ./tsconfig.json",
