@@ -41,22 +41,23 @@ export const projects: ProjectTempateType[] =  [
         projectName: `josephweidinger.com`,
         expandedName: `josephweidinger.com`,
         liveLink: `http://www.josephweidinger.com/`,
-        imgUrl: `need this`,
+        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517527503/Screen_Shot_2018-02-01_at_5.23.55_PM_tzcnqa.png`,
         date: `February 2016, January 2018`,
         getModalContent: function () {
             return <div>
                 Pardon the self-referential nature of this project, but I consider this site a
-                project in and of itself (CORRECT?). The original site was created a few years ago.
-                It was mostly copied from some Bootstrap template (LINK) and hosted on a Digital Ocean
-                box. I had almost (UNDERLINE) no idea what I was doing and my older brother Clay had to
-                help me with many things.<br/><br/>
+                project in and of itself. The original site was created a few years ago.
+                It was mostly copied from some <a href="https://blackrockdigital.github.io/startbootstrap-freelancer/">Bootstrap
+                template</a> and hosted on a Digital Ocean box. I had <u>almost</u> no idea what I
+                was doing and my older brother Clay had to help me with many things.<br/><br/>
                 In Jan. 2018, armed with much more knowledge about building frontend sites, I rebuilt the
                 entire thing from scratch with React. As this site is just static content, I used
                 React-Static to pre-render the html so that the site was more performant. Finally,
                 I migrated all of my site over to AWS. All of my projects use the aws-cli to dump
                 their artifacts into a bucket. Cloudfront uses this bucket to cache files around the
-                globe and serve them gzipped for incredibly fast delivery. INSERT LINK TO GOOGLE
-                PAGE SPEED
+                globe and serve them gzipped
+                for <a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fjosephweidinger.com&tab=mobile">incredibly
+                fast delivery.</a>
             </div>
         }
     },
@@ -64,8 +65,8 @@ export const projects: ProjectTempateType[] =  [
         projectName: `blindfoldChessTrainer`,
         expandedName: `Blindfold Chess Trainer`,
         liveLink: `http://www.josephweidinger.com/blindfoldChessTrainer`,
-        imgUrl: `need this`,
-        date: `January 2018`,
+        imgUrl: genericImage,
+        date: `January - Februrary 2018`,
         getModalContent: function () {
             return <div>
                 Over the years I've read stories from people I admire with exceptional visual / mental
@@ -74,15 +75,16 @@ export const projects: ProjectTempateType[] =  [
                 I hadn't had the same opportunity, I decided to make it for myself. I stiched
                 together a few libraries (chess.js, react-chessboard) and integrated it with my
                 own logic and the Web Speech API. It's completely client-side built with React / Typescript.
-                You can <a href={this.liveLink}>try it here!</a> The source code is located here. NEED LINK
+                You can <a href={this.liveLink}>try it here!</a> The source code is
+                located <a href="https://github.com/jsphweid/blindfold-chess-trainer">here.</a>
             </div>
         }
     },
     {
-        projectName: `pianoLearning`,
+        projectName: `pianoLearner`,
         expandedName: `Piano Learner`,
-        liveLink: `need this`,
-        imgUrl: `need this`,
+        liveLink: `https://github.com/jsphweid/piano-learning-stream`,
+        imgUrl: genericImage,
         date: `November - December 2017`,
         getModalContent: function () {
             return <div>
@@ -94,23 +96,28 @@ export const projects: ProjectTempateType[] =  [
                 module written in C / C++. This module uses specially prepared midi files to assemble raw audio
                 (with the help of a free piano sample library). This raw audio is transformed into inputs (FFT spectrum)
                 and labels (calculated amplitude scores) and fed into the neural network. All this work
-                is done on-the-fly and in-memory to prevent the need of constantly hitting the disk.
+                is done on-the-fly and in-memory to prevent the need of constantly hitting the disk. Source code
+                for this ongoing research is <a href={this.liveLink}>here.</a>
             </div>
         }
     },
     {
         projectName: `whichString`,
         expandedName: `Which String`,
-        liveLink: `http://www.josephweidinger.com/whichString`,
-        imgUrl: `need this`,
+        liveLink: `http://www.github.com/jsphweid/whichString`,
+        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517525918/Screen_Shot_2018-02-01_at_4.54.22_PM_nrxo2q.png`,
         date: `May 2017 - Dec 2017`,
         getModalContent: function () {
             return <div>
                 whichString is an app that uses a Neural Network to listen to a user playing a violin
                 in real-time and predict the exact spot on the neck being depressed. It uses a fairly
-                basic model built with Google's TensorFlow. This model is exported and used client-side
-                by deeplearnjs. GET LINKS FOR THOSE. The client code is written in React / Typescript.
-                <a href={this.liveLink}>Here</a> is the live link and HERE is the source code.
+                basic model built with <a href="https://www.tensorflow.org/">Google's TensorFlow.</a> This
+                model is exported and used client-side <a href="http://deeplearnjs.org/">by deeplearnjs.</a>
+                The client code is written in React / Typescript.
+                <a href={this.liveLink}>Here</a> is the source code. At this time, a live version does
+                not exist as I have not devised a way to upload the model efficiently (it's rather huge).
+                You can download the source code and build the model yourself fairly easily. More info
+                on that link.
             </div>
         }
     },
