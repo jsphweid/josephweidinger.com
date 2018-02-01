@@ -4,6 +4,8 @@ import { ProjectTempateType, ImageSizeType, IconObjType, IconType } from './type
 export const smoothScroll: any = { duration: 200, smooth: true, offset: -168 }
 export const instantScroll: any = { duration: 0, smooth: false }
 
+export const genericImage = `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517456998/generic-project_h2za5h.png`
+
 export const icons: IconObjType = {
     facebook: { class: 'facebook', unicode: '&#xf09a;' },
     github: { class: 'github-circled', unicode: '&#xf09b;' },
@@ -113,10 +115,10 @@ export const projects: ProjectTempateType[] =  [
         }
     },
     {
-        projectName: `fftFlipBook`,
-        expandedName: `FFT Flip Book`,
-        liveLink: `http://www.josephweidinger.com/fftFlipBook`,
-        imgUrl: `need this`,
+        projectName: `react-fft-flipbook`,
+        expandedName: `React FFT Flipbook`,
+        liveLink: `http://www.josephweidinger.com/react-fft-flipbook`,
+        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517457470/Screen_Shot_2018-01-31_at_9.56.43_PM_kst1d5.png`,
         date: `October, December 2017`,
         getModalContent: function () {
             return <div>
@@ -129,6 +131,10 @@ export const projects: ProjectTempateType[] =  [
                 without chopping / stitching the wavefrom repeatedly will require either clever techniques involving
                 neural networks or some sophisticated insight in Digital Signal Processing, but I believe it
                 can be done.
+
+                This project is a package <a href="https://www.npmjs.com/package/react-fft-flipbook"> in the </a>
+                npm registry. A live demo can be found <a href="https://josephweidinger.com/react-fft-flipbook/">here.</a> And
+                the source code is located <a href="https://github.com/jsphweid/react-fft-flipbook">here.</a>
             </div>
         }
     },
@@ -136,7 +142,7 @@ export const projects: ProjectTempateType[] =  [
         projectName: `fiberMap`,
         expandedName: `Fiber Map`,
         liveLink: ``,
-        imgUrl: `need this`,
+        imgUrl: genericImage,
         date: `July - August 2017`,
         getModalContent: function () {
             return <div>
