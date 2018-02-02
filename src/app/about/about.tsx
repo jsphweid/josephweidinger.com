@@ -23,7 +23,7 @@ export default class About extends React.Component<AboutProps> {
         return (
             <div className="jlw-bio">
                 <p>
-                    Coder monkey at Carfax and independent software developer creatively
+                    Coder monkey at Carfax and independent software developer
                     engineering solutions to my own problems using any exciting new or
                     old technology I can get my hands on and head wrapped around. Most
                     Valuable Player for the Minimum Viable Product in My Personal
