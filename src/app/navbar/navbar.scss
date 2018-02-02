@@ -6,6 +6,12 @@
     height: 80px;
     text-transform: uppercase;
     font-weight: 700;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .jlw-navbar-content {
