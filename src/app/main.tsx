@@ -27,6 +27,10 @@ export default class Main extends React.Component<MainProps, MainState> {
         }
     }
 
+    componentDidMount() {
+        document.title = 'Joseph Weidinger'
+    }
+
     handleSetActiveProject = (project: ProjectTempateType): void => {
         const currentScrollPosition: number = document.documentElement.scrollTop || document.body.scrollTop
         this.setState({ activeProject: project, savedScrollOffset: currentScrollPosition })
