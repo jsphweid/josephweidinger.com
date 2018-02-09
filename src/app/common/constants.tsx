@@ -176,8 +176,8 @@ export const projects: ProjectTempateType[] =  [
     {
         projectName: `fiberMap`,
         expandedName: `Fiber Map`,
-        liveLink: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1518184505/Screen_Shot_2018-02-09_at_7.54.19_AM_mwaiii.png`,
-        imgUrl: genericImage,
+        liveLink: ``,
+        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1518184505/Screen_Shot_2018-02-09_at_7.54.19_AM_mwaiii.png`,
         date: `July - August 2017`,
         tags: [],
         getModalContent: function () {
