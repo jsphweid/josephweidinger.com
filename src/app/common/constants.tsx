@@ -43,6 +43,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `http://www.josephweidinger.com/`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517527503/Screen_Shot_2018-02-01_at_5.23.55_PM_tzcnqa.png`,
         date: `February 2016, January 2018`,
+        tags: [],
         getModalContent: function () {
             return <div>
                 <p>
@@ -68,9 +69,10 @@ export const projects: ProjectTempateType[] =  [
     {
         projectName: `blindfoldChessTrainer`,
         expandedName: `Blindfold Chess Trainer`,
-        liveLink: `http://www.josephweidinger.com/blindfoldChessTrainer`,
-        imgUrl: genericImage,
+        liveLink: `https://www.josephweidinger.com/blindfoldChessTrainer`,
+        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1518147976/Screen_Shot_2018-02-08_at_7.58.35_PM_pyofsk.png`,
         date: `January - Februrary 2018`,
+        tags: [],
         getModalContent: function () {
             return <div>
                 <p>
@@ -90,11 +92,12 @@ export const projects: ProjectTempateType[] =  [
         }
     },
     {
-        projectName: `pianoLearner`,
-        expandedName: `Piano Learner`,
+        projectName: `pianoLearningStream`,
+        expandedName: `Piano Learning Stream`,
         liveLink: `https://github.com/jsphweid/piano-learning-stream`,
-        imgUrl: genericImage,
+        imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1518148183/Screen_Shot_2018-02-08_at_9.48.46_PM_gwxj1e.png`,
         date: `November - December 2017`,
+        tags: ['music'],
         getModalContent: function () {
             return <div>
                 <p>
@@ -123,6 +126,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `http://www.github.com/jsphweid/whichString`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517525918/Screen_Shot_2018-02-01_at_4.54.22_PM_nrxo2q.png`,
         date: `May 2017 - Dec 2017`,
+        tags: ['music'],
         getModalContent: function () {
             return <div>
                 <p>
@@ -147,6 +151,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `http://www.josephweidinger.com/react-fft-flipbook`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517457470/Screen_Shot_2018-01-31_at_9.56.43_PM_kst1d5.png`,
         date: `October, December 2017`,
+        tags: ['music'],
         getModalContent: function () {
             return <div>
                 <p>
@@ -174,6 +179,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: ``,
         imgUrl: genericImage,
         date: `July - August 2017`,
+        tags: [],
         getModalContent: function () {
             return <div>
                 <p>
@@ -188,7 +194,7 @@ export const projects: ProjectTempateType[] =  [
                     we wrote algorithms to process postal routes from Melissa Data into real addresses. We 
                     spun up headless clients to hit Google APIs to validate the addresses and extract lat/lng information.
                     For each of these addresses, we spun up more headless clients and extracted information from those ISPs.
-                    I set up an automated jobprocessing system in node with Kue LINK and ran it on a digital ocean ubuntu
+                    I set up an automated job processing system in node with Kue LINK and ran it on a digital ocean ubuntu
                     instance for weeks to gather all the data.
                 </p>
                 <p>
@@ -203,6 +209,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `https://www.github.com/jsphweid/scheduleMakerSpring`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1486747894/Screen_Shot_2017-02-10_at_11.30.21_AM_d8gyep.png`,
         date: `January-February 2017`,
+        tags: [],
         getModalContent: function () {
             return <div>
                 <p>
@@ -227,6 +234,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `https://www.josephweidinger.com/AintIFunny`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485187194/Screen_Shot_2017-01-23_at_9.59.07_AM_p2xz4r.png`,
         date: `January 2017`,
+        tags: [],
         getModalContent: function () {
             return <div>
                 <p>
@@ -247,6 +255,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `https://josephweidinger.com/aMuseMe`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484884631/Screen_Shot_2017-01-19_at_9.55.37_PM_y0szwe.png`,
         date: `January 2017`,
+        tags: [],
         getModalContent: function () {
             return <div>
                 <p>
@@ -272,6 +281,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `http://www.josephweidinger.com/browserTranscribe`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871388/browserTranscribe_yrcler.png`,
         date: `December 2016`,
+        tags: ['music'],
         getModalContent: function () {
             return <div>
                 <p>
@@ -297,6 +307,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `https://www.josephweidinger.com/compareInflections`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517455449/compareInflections_vbtmxo.png`,
         date: `October - November 2016`,
+        tags: ['audio'],
         getModalContent: function () {
             return <div>
                 <p>
@@ -320,6 +331,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `http://www.josephweidinger.com/playEquation`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485141822/Screen_Shot_2017-01-22_at_9.20.04_PM_uppjjg.png`,
         date: `Fall 2016`,
+        tags: ['music'],
         getModalContent: function () {
             return <div>
                 <p>
@@ -343,6 +355,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `https://www.josephweidinger.com/VAIL`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485141863/Screen_Shot_2017-01-22_at_9.19.11_PM_zpaggn.png`,
         date: `November 2016`,
+        tags: ['audio'],
         getModalContent: function () {
             return <div>
                 <p>
@@ -364,6 +377,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `http://www.josephweidinger.com/justInTune`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871108/justIntonation_nlcdwk.png`,
         date: `Spring 2015, then Fall 2016`,
+        tags: ['audio'],
         getModalContent: function () {
             return <div>
                 <p>
@@ -385,6 +399,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `http://github.com/jsphweid/bookletMacro`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871103/bookletMacro_wjaqo2.jpg`,
         date: `October 2015`,
+        tags: ['audio'],
         getModalContent: function () {
             return <div>
                 <p>
@@ -409,6 +424,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `http://www.youtube.com/watch?v=f7jjcGldl_o`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871107/processing_bqeqo8.jpg`,
         date: `August - October 2015`,
+        tags: ['audio'],
         getModalContent: function () {
             return <div>
                 <p>
@@ -435,6 +451,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `http://github.com/jsphweid/hotkey-grid`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871108/hotkey-grid_eru7ne.png`,
         date: `June - August 2015`,
+        tags: [],
         getModalContent: function () {
             return <div>
                 <p>
@@ -459,6 +476,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `http://github.com/jsphweid/Finale-Hotkey-Grid`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871107/finale-hotkey-grid_sznsni.png`,
         date: `December 2014 - April 2015`,
+        tags: ['music'],
         getModalContent: function () {
             return <div>
                 <p>
@@ -479,6 +497,7 @@ export const projects: ProjectTempateType[] =  [
         liveLink: `https://www.josephweidinger.com/feedCalc/`,
         imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871105/feedCalc_effijp.png`,
         date: `October 2014`,
+        tags: [],
         getModalContent: function () {
             return <div>
                 <p>
@@ -495,6 +514,6 @@ export const projects: ProjectTempateType[] =  [
                 </p>
             </div>
         }
-    },
+    }
 
 ]

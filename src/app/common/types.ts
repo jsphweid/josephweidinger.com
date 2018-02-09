@@ -6,6 +6,7 @@ export interface ProjectTempateType {
     liveLink: string
     imgUrl: string
     getModalContent: () => JSX.Element
+    tags: string[]
     date: string
 }
 
@@ -24,4 +25,9 @@ export interface IconObjType {
     github: IconType
     youtube: IconType
     soundcloud: IconType
+}
+
+export enum ProjectDisplayPriorities {
+    Music = 'Music / Audio',
+    Latest = 'Latest'
 }

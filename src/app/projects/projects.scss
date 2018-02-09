@@ -1,4 +1,33 @@
-.jlw-projects-content {
+.jlw-projects-content-priority {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    h2 {
+        padding: 8px 0;
+        max-width: 200px;
+    }
+    ul {
+        list-style: none;
+        li {
+            @extend .prevent-selection;
+            float: left;
+            padding: 20px 12px;
+        }
+        
+        li:hover {
+            @extend .jlw-colorProfile2;
+            cursor: pointer;
+        }
+
+        li:hover.jlw-projects-content-priority-item--active,
+        .jlw-projects-content-priority-item--active {
+            @extend .jlw-colorProfile1;
+        }
+    
+    }
+}
+
+.jlw-projects-content-projects {
     flex-wrap: wrap;
     display: inline-flex;
     justify-content: center;

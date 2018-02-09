@@ -28,3 +28,11 @@ hr {
     border-top: solid 5px;
     text-align: center;
 }
+
+.prevent-selection {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
