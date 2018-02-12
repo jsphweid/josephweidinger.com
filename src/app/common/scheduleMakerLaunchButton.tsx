@@ -43,7 +43,7 @@ export default class ScheduleMakerLaunchButton extends React.Component<any, Sche
                 switch (true) {
                     case liveUrl && liveUrl !== '':
                         const wait = attempts === 0 ? 0 : additionalWait
-                        return setTimeout(() => this.setState({ buttonState: Live, liveUrl: `//${liveUrl}:8080/scheduleMaker/`, attempts: 0 }), wait)
+                        return setTimeout(() => this.setState({ buttonState: Live, liveUrl: `http://${liveUrl}:8080/scheduleMaker/`, attempts: 0 }), wait)
                     case state === 'pending' && attempts >= maxAttempts:
                         return this.setState({ buttonState: Error })
                     default:
