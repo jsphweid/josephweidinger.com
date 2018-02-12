@@ -1,4 +1,5 @@
 $red: #FF3B3F;
+$pale-red: #ff9d9f;
 $grey: #A9A9A9;
 $off-white-dark: #CAEBF2;
 $off-white-light: #EFEFEF;
@@ -8,6 +9,11 @@ $black: #021a40;
     background-color: $red;
     color: $off-white-dark;
     a { color: $off-white-light }
+}
+
+.jlw-colorProfile1-pale {
+    background-color: $pale-red;
+    color: $off-white-light;
 }
 
 .jlw-colorProfile2 {

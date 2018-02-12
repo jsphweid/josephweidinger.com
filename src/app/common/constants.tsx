@@ -1,5 +1,6 @@
 import * as React from 'react'
-import { ProjectTempateType, ImageSizeType, IconObjType, IconType } from './types'
+import { ProjectTempateType, ImageSizeType, IconObjType } from './types'
+import ScheduleMakerLaunchButton from './scheduleMakerLaunchButton'
 
 export const smoothScroll: any = { duration: 200, smooth: true, offset: -168 }
 export const instantScroll: any = { duration: 0, smooth: false }
@@ -222,9 +223,9 @@ export const projects: ProjectTempateType[] =  [
                     scheduling decisions.
                 </p>
                 <p>
-                    The app is no longer hosted (because I don't want to maintain the
-                    necessary infrastructure) but the source code can be found here: <a href={this.liveLink}>on GitHub.</a>
+                    The source code can be found here: <a href={this.liveLink}>on GitHub.</a> I wrote an AWS Lambda to spin up an instance with Tomcat / Mysql. Be my guest... try it out!
                 </p>
+                <ScheduleMakerLaunchButton />
             </div>
         }
     },
