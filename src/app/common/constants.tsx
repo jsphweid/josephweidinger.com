@@ -214,7 +214,7 @@ export const projects: ProjectTempateType[] =  [
         getModalContent: function () {
             return <div>
                 <p>
-                    This webapp WAS built with Spring MVC, Spring Security, MySQL, React, and
+                    This webapp is built with Spring MVC, Spring Security, MySQL, React, and
                     served up by Tomcat on my personal server. The goal of this app was to prove I could
                     build an app in those technologies and get a job at Carfax (the goal was reached). Prior to
                     working at Carfax, I worked at several food joints over the years. Based on inefficiencies I saw,
