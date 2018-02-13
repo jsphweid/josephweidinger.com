@@ -2,7 +2,7 @@ import * as React from 'react'
 import { ProjectTempateType, ImageSizeType, IconObjType } from './types'
 import ScheduleMakerLaunchButton from './scheduleMakerLaunchButton'
 
-export const smoothScroll: any = { duration: 200, smooth: true, offset: -168 }
+export const smoothScroll: any = { duration: 200, smooth: true, offset: -122 }
 export const instantScroll: any = { duration: 0, smooth: false }
 
 export const genericImage = `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517456998/generic-project_h2za5h.png`

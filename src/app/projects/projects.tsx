@@ -68,7 +68,7 @@ export default class Projects extends React.Component<ProjectsProps, ProjectsSta
     render() {
         return (
             <Section className={`jlw-projects ${this.props.className || ''}`}
-                title={'Projects'}
+                title={'projects'}
             >
                 <div className="jlw-projects-content">
                     <div className="jlw-projects-content-priority">

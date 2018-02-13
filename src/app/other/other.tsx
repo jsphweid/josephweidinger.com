@@ -14,7 +14,7 @@ export default class Other extends React.Component<OtherProps> {
     render() {
         return (
             <Section className={`jlw-other ${this.props.className || ''}`}
-                title="Other"
+                title="other"
             >
             </Section>
         )
