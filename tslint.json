@@ -1,26 +1,23 @@
 {
-    "defaultSeverity": "error",
-    "extends": [
-        "tslint-eslint-rules",
-        "tslint-config-airbnb"
-    ],
-    "jsRules": {
-    },
-    "rules": {
-        "no-unused-variable": true,
-        "semicolon": [true, "never"],
-        "ter-indent": [true, 4, { "SwitchCase": 1 }],
-        "trailing-comma": [true, { "multiline": "never", "singleline": "never" }],
-        "strict-boolean-expressions": false,
-        "max-line-length": [false],
-        "ter-arrow-parens": [true, "always"],
-        "import-name": false,
-        "object-literal-key-quotes": false,
-        "no-increment-decrement": false,
-        "variable-name": [true, "allow-pascal-case", ""],
-        "no-else-after-return": false,
-        "align": false,
-        "object-literal-shorthand": false
-    },
-    "rulesDirectory": []
+  "defaultSeverity": "error",
+  "extends": ["tslint-eslint-rules", "tslint-config-airbnb"],
+  "jsRules": {},
+  "rules": {
+    "no-unused-variable": true,
+    "semicolon": [true, "never"],
+    "ter-indent": [true, 2, { "SwitchCase": 1 }],
+    "trailing-comma": false,
+    "strict-boolean-expressions": false,
+    "max-line-length": [false],
+    "ter-arrow-parens": [true, "always"],
+    "import-name": false,
+    "object-literal-key-quotes": false,
+    "no-increment-decrement": false,
+    "variable-name": [true, "allow-pascal-case", ""],
+    "no-else-after-return": false,
+    "align": false,
+    "object-literal-shorthand": false,
+    "space-before-function-paren": false
+  },
+  "rulesDirectory": []
 }
