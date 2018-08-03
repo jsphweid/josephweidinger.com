@@ -1,109 +1,111 @@
 .jlw-project {
-    border: 1px solid $black;
-    margin: 16px;
-    position: relative;
+  border: 1px solid $black;
+  margin: 16px;
+  position: relative;
 
-    img {
-        z-index: 0;
+  img {
+    z-index: 0;
+  }
+
+  .jlw-project-overlay {
+    position: absolute;
+    @extend .jlw-colorProfile3;
+    z-index: -1;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+
+    div:first-child {
+      margin: 36px 0 16px 0;
+      font-size: 30px;
+      text-align: center;
     }
 
-    .jlw-project-overlay {
-        position: absolute;
-        @extend .jlw-colorProfile3;
-        z-index: -1;
-        opacity: 0.8;
-        top: 0;
-        left: 0;
-
-        div:first-child {
-            margin: 36px 0 16px 0;
-            font-size: 30px;
-            text-align: center;
-        }
-
-        div:last-child {
-            width: 72px;
-            margin: 0 auto;
-            img {
-                height: 72px;
-                width: 72px;
-            }
-        }
+    div:last-child {
+      width: 72px;
+      margin: 0 auto;
+      img {
+        height: 72px;
+        width: 72px;
+      }
     }
+  }
 }
 
 .jlw-project:hover {
-    cursor: pointer;
+  cursor: pointer;
 
-    .jlw-project-overlay {
-        z-index: 1;
-    }
+  .jlw-project-overlay {
+    z-index: 1;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .jlw-project {
-        margin: 16px 0;
-    }
+  .jlw-project {
+    margin: 16px 0;
+  }
 }
 
 .jlw-modal .jlw-modal-content {
+  .jlw-project--scheduleMakerButton {
+    & > div {
+      font-size: 14px;
+      max-width: 250px;
+      margin-top: 16px;
+      text-align: center;
+    }
+    button {
+      position: relative;
+      text-align: center;
+      div:first-child {
+        max-width: 100%;
+        margin: 0 auto;
+        @extend .jlw-colorProfile1;
+        font-size: 24px;
+      }
+      @extend .jlw-colorProfile1;
+      cursor: pointer;
+      width: 200px;
+      height: 60px;
+      border-radius: 25px;
+    }
+  }
 
-    .jlw-project--scheduleMakerButton {
-        & > div {
-            font-size: 14px;
-            max-width: 250px;
-            margin-top: 16px;
-            text-align: center;
-        }
-        button {
-            position: relative;
-            text-align: center;
-            div:first-child {
-                max-width: 100%;
-                margin: 0 auto;
-                @extend .jlw-colorProfile1;
-                font-size: 24px;
-            }
-            @extend .jlw-colorProfile1;
-            cursor: pointer;
-            width: 200px;
-            height: 60px;
-            border-radius: 25px;
-        }
+  .jlw-project--scheduleMakerButtonSpinning {
+    button {
+      cursor: default;
+      position: relative;
+      text-align: left;
+      @extend .jlw-colorProfile1-pale;
+      div:first-child {
+        @extend .jlw-colorProfile1-pale;
+        position: absolute;
+        top: 14px;
+        left: 16px;
+      }
+      div:last-child {
+        position: absolute;
+        top: -23px;
+        left: 136px;
+      }
     }
-    
-    .jlw-project--scheduleMakerButtonSpinning {
-        button {
-            cursor: default;
-            position: relative;
-            text-align: left;
-            @extend .jlw-colorProfile1-pale;
-            div:first-child {
-                @extend .jlw-colorProfile1-pale;
-                position: absolute;
-                top: 14px;
-                left: 16px;
-            }
-            div:last-child {
-                position: absolute;
-                top: -23px;
-                left: 136px;
-            }
-        }
-    }
-    
+  }
 }
 
 .jlw-spinner {
-    border: 6px solid $off-white-light;
-    border-top: 6px solid $grey;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    animation: spin 2s linear infinite;
+  border: 6px solid $off-white-light;
+  border-top: 6px solid $grey;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

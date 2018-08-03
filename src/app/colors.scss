@@ -1,31 +1,37 @@
-$red: #FF3B3F;
+$red: #ff3b3f;
 $pale-red: #ff9d9f;
-$grey: #A9A9A9;
-$off-white-dark: #CAEBF2;
-$off-white-light: #EFEFEF;
+$grey: #a9a9a9;
+$off-white-dark: #caebf2;
+$off-white-light: #efefef;
 $black: #021a40;
 
 .jlw-colorProfile1 {
-    background-color: $red;
-    color: $off-white-dark;
-    a { color: $off-white-light }
+  background-color: $red;
+  color: $off-white-dark;
+  a {
+    color: $off-white-light;
+  }
 }
 
 .jlw-colorProfile1-pale {
-    background-color: $pale-red;
-    color: $off-white-light;
+  background-color: $pale-red;
+  color: $off-white-light;
 }
 
 .jlw-colorProfile2 {
-    background-color: $grey;
-    color: $off-white-dark;
-    a { color: $red }
+  background-color: $grey;
+  color: $off-white-dark;
+  a {
+    color: $red;
+  }
 }
 
 .jlw-colorProfile3 {
-    background-color: $off-white-light;
-    color: $red;
-    a { color: $grey }
+  background-color: $off-white-light;
+  color: $red;
+  a {
+    color: $grey;
+  }
 }
 
 $something: #229e85;

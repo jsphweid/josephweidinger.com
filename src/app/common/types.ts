@@ -1,33 +1,33 @@
 export type SectionType = 'about' | 'projects' | 'other' | 'contact'
 
 export interface ProjectTempateType {
-    projectName: string
-    expandedName: string
-    liveLink: string
-    imgUrl: string
-    getModalContent: () => JSX.Element
-    tags: string[]
-    date: string
+  projectName: string
+  expandedName: string
+  liveLink: string
+  imgUrl: string
+  getModalContent: () => JSX.Element
+  tags: string[]
+  date: string
 }
 
 export interface ImageSizeType {
-    width: number
-    height: number
+  width: number
+  height: number
 }
 
 export interface IconType {
-    class: string
-    unicode: any
+  class: string
+  unicode: any
 }
 
 export interface IconObjType {
-    facebook: IconType
-    github: IconType
-    youtube: IconType
-    soundcloud: IconType
+  facebook: IconType
+  github: IconType
+  youtube: IconType
+  soundcloud: IconType
 }
 
 export enum ProjectDisplayPriorities {
-    Music = 'Music / Audio',
-    Latest = 'Latest'
+  Music = 'Music / Audio',
+  Latest = 'Latest'
 }
