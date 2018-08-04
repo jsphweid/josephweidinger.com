@@ -23,7 +23,7 @@ export default class Navbar extends React.Component<NavbarProps> {
   }
 
   render() {
-    const sectionTitles: SectionType[] = ['projects', 'about', 'contact']
+    const sectionTitles: SectionType[] = ['dev projects', 'about', 'contact']
 
     const sections: JSX.Element[] = sectionTitles.map(
       (section: string, index: number) => {
@@ -32,7 +32,7 @@ export default class Navbar extends React.Component<NavbarProps> {
             {section}
           </li>
         )
-      }
+      },
     )
 
     return (
