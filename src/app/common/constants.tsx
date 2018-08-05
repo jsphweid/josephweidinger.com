@@ -64,6 +64,58 @@ export const skills: any = {
 
 export const projects: ProjectTempateType[] = [
   {
+    projectName: `reimagine`,
+    expandedName: `reimagine`,
+    liveLink: `http://www.josephweidinger.com/reimagine`,
+    imgUrl: `http://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1533437829/reimagine_aeolyh.png`,
+    date: `March 2018 - Present`,
+    tags: ['music'],
+    getModalContent: function() {
+      return (
+        <div>
+          <p>
+            This is somewhat of a grand ambitious project still in progress but
+            some of the foundations are there... The premise behind this is to
+            create an app automates the process of music performance and
+            composition.
+          </p>
+          <p>
+            The first stage of this idea is to create a system that breaks down
+            midi files into segments and stores them. The app randomly assigns a
+            visitor to the site a segment to perform into a microphone. If the
+            user does that and is happy with their performance, they can upload
+            it. When that recording of a segment is uploaded, it is stored and
+            cataloged until all the segments of the piece have been performed,
+            recorded, and uploaded. Then all of those wavs can be strategically
+            synthesized to form an interesting interpretation of the original
+            midi file.{' '}
+            <a href="https://soundcloud.com/joseph_weidinger/reimagine-hello-world-bach-invention-1-cover">
+              Here is the very first thing produced by this process.
+            </a>
+          </p>
+          <p>
+            Lots of technologies are used in this app. I developed several
+            libraries. One is a synthesizer written in golang and served up by
+            AWS Lambda. Two public libraries:{' '}
+            <a href="https://github.com/jsphweid/react-midi-visualizer">
+              React Midi Visualizer
+            </a>{' '}
+            and{' '}
+            <a href="https://github.com/jsphweid/react-conductor">
+              React Conductor
+            </a>
+            . These AWS services were used: DynamoDB, AppSync, RDS, S3, Lambda,
+            and Cognito.
+          </p>
+          <p>
+            It's still in development, but you can{' '}
+            <a href={this.liveLink}>try it here.</a>
+          </p>
+        </div>
+      )
+    },
+  },
+  {
     projectName: `josephweidinger.com`,
     expandedName: `josephweidinger.com`,
     liveLink: `http://www.josephweidinger.com/`,
