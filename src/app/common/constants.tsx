@@ -24,10 +24,6 @@ export const projectLargePicSize: ImageSizeType = {
   height: 650,
 }
 
-// TODO:
-// all the recent projects need pictures. Compare inflections and fiber map will need some
-// love too. Also compare inflections will need the site hosted...
-
 export const skills: any = {
   Languages: [
     'Javascript / ES6 / Typescript',
@@ -684,3 +680,19 @@ export const projects: ProjectTempateType[] = [
     },
   },
 ]
+
+// {
+//   projectName: `carfax`,
+//   expandedName: `carfax`,
+//   liveLink: ``,
+//   imgUrl: `http://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1533439146/carfax_vjcch2.png`,
+//   date: `March 2017 - Present`,
+//   tags: [],
+//   getModalContent: function() {
+//     return (
+//       <div>
+
+//       </div>
+//     )
+//   },
+// },
