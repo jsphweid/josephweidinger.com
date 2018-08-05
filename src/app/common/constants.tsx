@@ -26,26 +26,30 @@ export const projectLargePicSize: ImageSizeType = {
 
 export const skills: any = {
   Languages: [
-    'Javascript / ES6 / Typescript',
-    'C / C++ / Python',
-    'HTML / CSS',
+    'Vanilla Javascript / ES6 / Typescript',
+    'HTML / CSS / SCSS',
     'Java / Groovy',
-    'Lua / AutoHotkey',
+    'C / C++ / Python / Go',
+    'Bash / Lua / AutoHotkey',
   ],
   'Frameworks / Libraries': [
-    'libsndfile / boost',
-    'Spring MVC / Grails',
     'React / Redux / Angular 2',
     'jQuery / Bootstrap',
+    'Spring MVC / Grails',
+    'libsndfile / boost',
   ],
   Tools: [
     'Git',
-    'IntelliJ, CLion, VS Code',
-    'Webpack / Grunt / Yeoman',
-    'Terraform',
-    'Mac / Windows / Ubuntu',
+    'IntelliJ / CLion / VS Code',
+    'Webpack / Grunt',
+    'Terraform / Serverless',
+    'Mac / Windows / Linux',
   ],
-  Devops: ['AWS Route 53 / S3 / CloudFront', 'Nginx', 'Digital Ocean'],
+  Devops: [
+    'AWS: Route 53 / S3 / CloudFront / Cognito / AppSync / Lamdba / RDS / DynamoDB',
+    'Nginx',
+    'Digital Ocean',
+  ],
   Databases: ['Firebase', 'MySQL / Oracle', 'PostgreSQL'],
   'Audio/Visual Tools': [
     'Web Audio API',
