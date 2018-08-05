@@ -1,4 +1,9 @@
-export type SectionType = 'about' | 'dev projects' | 'other' | 'contact'
+export type SectionType =
+  | 'about'
+  | 'dev projects'
+  | 'other'
+  | 'contact'
+  | 'interviews'
 
 export interface ProjectTempateType {
   projectName: string
@@ -29,5 +34,5 @@ export interface IconObjType {
 
 export enum ProjectDisplayPriorities {
   Music = 'Music / Audio',
-  Latest = 'Latest',
+  Latest = 'Latest'
 }
