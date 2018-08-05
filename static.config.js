@@ -8,7 +8,7 @@ const typescriptWebpackPaths = require('./webpack.config.js')
 export default {
   entry: path.join(__dirname, 'src', 'index.tsx'),
   getSiteProps: () => ({
-    title: 'Joseph Weidinger',
+    title: 'Joseph Weidinger'
   }),
   webpack: (config, { defaultLoaders, stage }) => {
     // Add .ts and .tsx extension to resolver
@@ -28,15 +28,15 @@ export default {
             exclude: defaultLoaders.jsLoader.exclude, // as std jsLoader exclude
             use: [
               {
-                loader: 'babel-loader',
+                loader: 'babel-loader'
               },
               {
                 loader: require.resolve('ts-loader'),
                 options: {
-                  transpileOnly: true,
-                },
-              },
-            ],
+                  transpileOnly: true
+                }
+              }
+            ]
           },
           {
             test: /\.s(a|c)ss$/,
@@ -45,7 +45,7 @@ export default {
                 ? [
                     { loader: 'style-loader' },
                     { loader: 'css-loader' },
-                    { loader: 'sass-loader' },
+                    { loader: 'sass-loader' }
                   ]
                 : ExtractTextPlugin.extract({
                     use: [
@@ -54,21 +54,22 @@ export default {
                         options: {
                           importLoaders: 1,
                           minimize: true,
-                          sourceMap: false,
-                        },
+                          sourceMap: false
+                        }
                       },
                       {
                         loader: 'sass-loader',
-                        options: { includePaths: ['src/'] },
-                      },
-                    ],
-                  }),
+                        options: { includePaths: ['src/'] }
+                      }
+                    ]
+                  })
           },
           defaultLoaders.cssLoader,
-          defaultLoaders.fileLoader,
-        ],
-      },
+          defaultLoaders.fileLoader
+        ]
+      }
     ]
+    config.plugins.push(new ExtractTextPlugin('styles.css'))
     return config
-  },
+  }
 }
