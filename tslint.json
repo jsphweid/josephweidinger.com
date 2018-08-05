@@ -9,7 +9,7 @@
     "trailing-comma": false,
     "strict-boolean-expressions": false,
     "max-line-length": [false],
-    "ter-arrow-parens": [true, "always"],
+    "ter-arrow-parens": [false],
     "import-name": false,
     "object-literal-key-quotes": false,
     "no-increment-decrement": false,

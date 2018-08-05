@@ -1,0 +1,57 @@
+.jlw-interviews {
+  .jlw-interviews-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  .jlw-interviews-content {
+    margin: 48px 0;
+    text-align: center;
+    width: 100%;
+
+    & > div {
+      display: inline-flex;
+      margin: 0 auto;
+      max-width: 1320px;
+
+      iframe {
+        width: 680px;
+      }
+      & > div {
+        padding: 0 16px;
+        max-width: 680px;
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .jlw-interviews {
+    .jlw-interviews-content {
+      & > div {
+        iframe {
+          width: 480px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .jlw-interviews {
+    .jlw-interviews-content {
+      & > div {
+        iframe {
+          width: 300px;
+        }
+        & > div {
+          display: none;
+        }
+      }
+    }
+  }
+}

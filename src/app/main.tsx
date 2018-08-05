@@ -11,6 +11,7 @@ import * as queryString from 'query-string'
 import { ProjectTempateType } from './common/types'
 import { instantScroll, projects } from './common/constants'
 import { isEmptyObj } from './common/helpers'
+import Interviews from './interviews/interviews'
 
 export interface MainProps {}
 
@@ -94,8 +95,8 @@ export default class Main extends React.Component<MainProps, MainState> {
           className="jlw-colorProfile3"
           handleProjectOpen={this.handleSetActiveProject}
         />
-        {/* <Other className="jlw-colorProfile2" /> */}
-        <About className="jlw-colorProfile2" />
+        <Interviews className="jlw-colorProfile2" />
+        <About className="jlw-colorProfile3" />
         <Contact className="jlw-colorProfile1" />
       </div>
     )
