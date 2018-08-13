@@ -11,17 +11,17 @@ export const icons: IconObjType = {
   facebook: { class: 'facebook', unicode: '&#xf09a;' },
   github: { class: 'github-circled', unicode: '&#xf09b;' },
   youtube: { class: 'youtube', unicode: '&#xf167;' },
-  soundcloud: { class: 'soundcloud', unicode: '&#xf348;' },
+  soundcloud: { class: 'soundcloud', unicode: '&#xf348;' }
 }
 
 export const projectSmallPicSize: ImageSizeType = {
   width: 296,
-  height: 216,
+  height: 216
 }
 
 export const projectLargePicSize: ImageSizeType = {
   width: 900,
-  height: 650,
+  height: 650
 }
 
 export const skills: any = {
@@ -30,25 +30,25 @@ export const skills: any = {
     'HTML / CSS / SCSS',
     'Java / Groovy',
     'C / C++ / Python / Go',
-    'Bash / Lua / AutoHotkey',
+    'Bash / Lua / AutoHotkey'
   ],
   'Frameworks / Libraries': [
     'React / Redux / Angular 2',
     'jQuery / Bootstrap',
     'Spring MVC / Grails',
-    'libsndfile / boost',
+    'libsndfile / boost'
   ],
   Tools: [
     'Git',
     'IntelliJ / CLion / VS Code',
     'Webpack / Grunt',
     'Terraform / Serverless',
-    'Mac / Windows / Linux',
+    'Mac / Windows / Linux'
   ],
   Devops: [
     'AWS: Route 53 / S3 / CloudFront / Cognito / AppSync / Lamdba / RDS / DynamoDB',
     'Nginx',
-    'Digital Ocean',
+    'Digital Ocean'
   ],
   Databases: ['Firebase', 'MySQL / Oracle', 'PostgreSQL'],
   'Audio/Visual Tools': [
@@ -58,16 +58,16 @@ export const skills: any = {
     'SuperCollider',
     'Flockingjs',
     'WaveSurfer',
-    'Cubase Pro',
-  ],
+    'Cubase Pro'
+  ]
 }
 
 export const projects: ProjectTempateType[] = [
   {
     projectName: `reimagine`,
     expandedName: `reimagine`,
-    liveLink: `http://www.josephweidinger.com/reimagine`,
-    imgUrl: `http://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1533437829/reimagine_aeolyh.png`,
+    liveLink: `https://www.josephweidinger.com/reimagine`,
+    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1533437829/reimagine_aeolyh.png`,
     date: `March 2018 - Present`,
     tags: ['music'],
     getModalContent: function() {
@@ -113,12 +113,12 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       )
-    },
+    }
   },
   {
     projectName: `josephweidinger.com`,
     expandedName: `josephweidinger.com`,
-    liveLink: `http://www.josephweidinger.com/`,
+    liveLink: `https://www.josephweidinger.com/`,
     imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517527503/Screen_Shot_2018-02-01_at_5.23.55_PM_tzcnqa.png`,
     date: `February 2016, January 2018`,
     tags: [],
@@ -151,7 +151,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       )
-    },
+    }
   },
   {
     projectName: `blindfoldChessTrainer`,
@@ -181,7 +181,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       )
-    },
+    }
   },
   {
     projectName: `pianoLearningStream`,
@@ -216,12 +216,12 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       )
-    },
+    }
   },
   {
     projectName: `whichString`,
     expandedName: `Which String`,
-    liveLink: `http://www.github.com/jsphweid/whichString`,
+    liveLink: `https://www.github.com/jsphweid/whichString`,
     imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517525918/Screen_Shot_2018-02-01_at_4.54.22_PM_nrxo2q.png`,
     date: `May 2017 - Dec 2017`,
     tags: ['music'],
@@ -234,7 +234,7 @@ export const projects: ProjectTempateType[] = [
             being depressed. It uses a fairly basic model built with{' '}
             <a href="https://www.tensorflow.org/">Google's TensorFlow.</a> This
             model is exported and used client-side{' '}
-            <a href="http://deeplearnjs.org/">by deeplearnjs.</a>
+            <a href="https://js.tensorflow.org/">by deeplearnjs.</a>
             The client code is written in React / Typescript.
           </p>
           <p>
@@ -246,12 +246,12 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       )
-    },
+    }
   },
   {
     projectName: `react-fft-flipbook`,
     expandedName: `React FFT Flipbook`,
-    liveLink: `http://www.josephweidinger.com/react-fft-flipbook`,
+    liveLink: `https://www.josephweidinger.com/react-fft-flipbook`,
     imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517457470/Screen_Shot_2018-01-31_at_9.56.43_PM_kst1d5.png`,
     date: `October, December 2017`,
     tags: ['music'],
@@ -284,7 +284,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       )
-    },
+    }
   },
   {
     projectName: `fiberMap`,
@@ -321,7 +321,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       )
-    },
+    }
   },
   {
     projectName: `scheduleMaker`,
@@ -351,7 +351,7 @@ export const projects: ProjectTempateType[] = [
           <ScheduleMakerLaunchButton />
         </div>
       )
-    },
+    }
   },
   {
     projectName: `AintIFunny`,
@@ -375,7 +375,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       )
-    },
+    }
   },
   {
     projectName: `aMuseMe`,
@@ -402,7 +402,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       )
-    },
+    }
   },
   {
     projectName: `browserTranscribe`,
@@ -433,7 +433,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       )
-    },
+    }
   },
   {
     projectName: `compareInflections`,
@@ -460,12 +460,12 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       )
-    },
+    }
   },
   {
     projectName: `playEquation`,
     expandedName: `Play Equation`,
-    liveLink: `http://www.josephweidinger.com/playEquation`,
+    liveLink: `https://www.josephweidinger.com/playEquation`,
     imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485141822/Screen_Shot_2017-01-22_at_9.20.04_PM_uppjjg.png`,
     date: `Fall 2016`,
     tags: ['music'],
@@ -488,7 +488,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       )
-    },
+    }
   },
   {
     projectName: `VAIL`,
@@ -513,12 +513,12 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       )
-    },
+    }
   },
   {
     projectName: `justInTune`,
     expandedName: `Just In Tune`,
-    liveLink: `http://www.josephweidinger.com/justInTune`,
+    liveLink: `https://www.josephweidinger.com/justInTune`,
     imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871108/justIntonation_nlcdwk.png`,
     date: `Spring 2015, then Fall 2016`,
     tags: ['audio'],
@@ -538,12 +538,12 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       )
-    },
+    }
   },
   {
     projectName: `bookletMacro`,
     expandedName: `Booklet Macro`,
-    liveLink: `http://github.com/jsphweid/bookletMacro`,
+    liveLink: `https://github.com/jsphweid/bookletMacro`,
     imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871103/bookletMacro_wjaqo2.jpg`,
     date: `October 2015`,
     tags: ['audio'],
@@ -567,12 +567,12 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       )
-    },
+    }
   },
   {
     projectName: `processingSketches`,
     expandedName: `Processing Sketches`,
-    liveLink: `http://www.youtube.com/watch?v=f7jjcGldl_o`,
+    liveLink: `https://www.youtube.com/watch?v=f7jjcGldl_o`,
     imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871107/processing_bqeqo8.jpg`,
     date: `August - October 2015`,
     tags: ['audio'],
@@ -599,12 +599,12 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       )
-    },
+    }
   },
   {
     projectName: `hotkeyGrid`,
     expandedName: `Hotkey Grid`,
-    liveLink: `http://github.com/jsphweid/hotkey-grid`,
+    liveLink: `https://github.com/jsphweid/hotkey-grid`,
     imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871108/hotkey-grid_eru7ne.png`,
     date: `June - August 2015`,
     tags: [],
@@ -628,12 +628,12 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       )
-    },
+    }
   },
   {
     projectName: `finaleHotkeyGrid`,
     expandedName: `Finale Hotkey Grid`,
-    liveLink: `http://github.com/jsphweid/Finale-Hotkey-Grid`,
+    liveLink: `https://github.com/jsphweid/Finale-Hotkey-Grid`,
     imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871107/finale-hotkey-grid_sznsni.png`,
     date: `December 2014 - April 2015`,
     tags: ['music'],
@@ -652,7 +652,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       )
-    },
+    }
   },
   {
     projectName: `feedCalc`,
@@ -681,15 +681,15 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       )
-    },
-  },
+    }
+  }
 ]
 
 // {
 //   projectName: `carfax`,
 //   expandedName: `carfax`,
 //   liveLink: ``,
-//   imgUrl: `http://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1533439146/carfax_vjcch2.png`,
+//   imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1533439146/carfax_vjcch2.png`,
 //   date: `March 2017 - Present`,
 //   tags: [],
 //   getModalContent: function() {
