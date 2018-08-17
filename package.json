@@ -36,6 +36,7 @@
     "node-sass": "^4.9.2",
     "prettier": "^1.14.0",
     "query-string": "^5.1.0",
+    "react-ga": "^2.5.3",
     "react-scroll": "^1.7.6",
     "react-simple-soundcloud-widget": "0.0.4",
     "react-soundcloud": "^0.1.1",

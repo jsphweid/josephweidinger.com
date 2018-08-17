@@ -8,10 +8,11 @@ import Modal from './modal/modal'
 import { animateScroll } from 'react-scroll'
 import * as queryString from 'query-string'
 
-import { ProjectTempateType, SectionType } from './common/types'
+import { ProjectTempateType } from './common/types'
 import { instantScroll, projects } from './common/constants'
 import { isEmptyObj } from './common/helpers'
 import Interviews from './interviews/interviews'
+import ReactGA from 'react-ga'
 
 export interface MainProps {}
 
@@ -31,6 +32,9 @@ export default class Main extends React.Component<MainProps, MainState> {
 
   componentDidMount() {
     document.title = 'Joseph Weidinger'
+    ReactGA.initialize('UA-79560675-1')
+    ReactGA.pageview(window.location.pathname + window.location.search)
+
     this.parseInitialQueryString()
   }
 
