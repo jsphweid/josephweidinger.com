@@ -64,6 +64,54 @@ export const skills: any = {
 
 export const projects: ProjectTempateType[] = [
   {
+    projectName: `gosamosa`,
+    expandedName: `go:samosa`,
+    liveLink: `https://www.gosamosa.com`,
+    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1534472748/computers-small_iv4tyg.png`,
+    date: `August 2018`,
+    tags: [],
+    getModalContent: function() {
+      return (
+        <div>
+          <p>
+            go:samosa was an app that I was inspired to build when watching pro
+            Fortnite players stream scrim matches.
+          </p>
+          <p>
+            Lobbies in Fortnite are quite random and often a bunch of people try
+            to click "start" at the exact same moment to increase their odds of
+            getting in the same lobby. Usually this is done by one human
+            counting down to 0 on a discord channel but I figured I could
+            automate the process and deliver a greater degree of accuracy. It
+            also automates the process of informing everyone where each person
+            landed up.
+          </p>
+          <p>
+            I wanted to build this without servers so I used AWS AppSync to
+            transmit real time data to each connected client via subscriptions.
+            When a countdown is started, each person in the "lobby" receives the
+            time and synchronizes with a common clock to provide a very accurate
+            experience for everyone regardless of their device, latency, or
+            browser.
+          </p>
+          <p>
+            As far as the name is concerned, I was coming up with an acronym and
+            arrived on "SAMOSA" -- Simple Accurate MOment Synchronization App --
+            which is also the name of one of my favorite Indian foods. It's also
+            a food that one of my Indian friends (the same friend whose wedding
+            I attended in India just the year before) and I attempted to make a
+            few years ago (we were successful but it took 5 hours). I renamed it
+            "go:samosa" when I saw an opening for the domain gosamosa.com and
+            went ahead and based the visual look off the Indian flag.
+          </p>
+          <p>
+            You can use it <a href={this.liveLink}>here.</a>
+          </p>
+        </div>
+      )
+    }
+  },
+  {
     projectName: `reimagine`,
     expandedName: `reimagine`,
     liveLink: `https://www.josephweidinger.com/reimagine`,

@@ -73,7 +73,7 @@ export default class Interviews extends React.Component<
         <div className="jlw-interviews-content">
           <div>
             <SoundCloud
-              url={'https://soundcloud.com/joseph_weidinger/sets/interviews'}
+              url="https://soundcloud.com/joseph_weidinger/sets/interviews"
               config={{ visual: true, sharing: false }}
               onPlay={info => this.handlePlay(info.soundId)}
             />

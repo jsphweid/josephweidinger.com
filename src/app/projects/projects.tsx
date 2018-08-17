@@ -20,7 +20,7 @@ export default class Projects extends React.Component<
   constructor(props: ProjectsProps) {
     super(props)
     this.state = {
-      currentPriority: ProjectDisplayPriorities.Music,
+      currentPriority: ProjectDisplayPriorities.Latest
     }
   }
 
@@ -30,10 +30,10 @@ export default class Projects extends React.Component<
         const isMusicAudio = (tags: string[]) =>
           tags.includes('music') || tags.includes('audio')
         const relevant = projects.filter((project: ProjectTempateType) =>
-          isMusicAudio(project.tags),
+          isMusicAudio(project.tags)
         )
         const notRelevant = projects.filter(
-          (project: ProjectTempateType) => !isMusicAudio(project.tags),
+          (project: ProjectTempateType) => !isMusicAudio(project.tags)
         )
         return [...relevant, ...notRelevant]
       case 'Latest':
@@ -53,7 +53,7 @@ export default class Projects extends React.Component<
             handleProjectOpen={this.props.handleProjectOpen}
           />
         )
-      },
+      }
     )
   }
 

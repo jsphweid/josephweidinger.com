@@ -8,7 +8,7 @@ import Modal from './modal/modal'
 import { animateScroll } from 'react-scroll'
 import * as queryString from 'query-string'
 
-import { ProjectTempateType } from './common/types'
+import { ProjectTempateType, SectionType } from './common/types'
 import { instantScroll, projects } from './common/constants'
 import { isEmptyObj } from './common/helpers'
 import Interviews from './interviews/interviews'
@@ -71,7 +71,7 @@ export default class Main extends React.Component<MainProps, MainState> {
   }
 
   handleCloseActiveProject = (): void => {
-    Main.updateQueryString({ section: 'projects' })
+    Main.updateQueryString({ section: 'dev projects' })
     const offset: number = this.state.savedScrollOffset
     animateScroll.scrollTo(offset, instantScroll)
     this.setState({ activeProject: null, savedScrollOffset: -1 })
