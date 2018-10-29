@@ -64,6 +64,39 @@ export const skills: any = {
 
 export const projects: ProjectTempateType[] = [
   {
+    projectName: `infinite meme`,
+    expandedName: `The Infinite Meme`,
+    liveLink: `https://infinitememe.com`,
+    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1540857186/the-infinite-meme_oksvka.png`,
+    date: `October 2018`,
+    tags: [],
+    getModalContent: function() {
+      return (
+        <div>
+          <p>
+            In 2013, I spent a lot of time on the Venice Beach in LA. I remember
+            once watching a bird fly above my head and in the distance hearing a
+            plane. I liked the contradiction of hearing a plane and seeing the
+            bird. And thought it would make a good experimental film.
+          </p>
+          <p>But I'm not an experimental film maker, I'm a programmer.</p>
+          <p>
+            "The Infinite Meme" is a project that automates the process of
+            making derivative videos / memes: where the template is a video and
+            the audio is your own. You can save / upload your creations and
+            share them with others.
+          </p>
+          <p>
+            It uses GatsbyJS for static rendering, AppSync for the API, S3 for
+            audio storage, MobX for state management, and React for interactive
+            UI components. See it live in action{' '}
+            <a href={this.liveLink}>here!</a>
+          </p>
+        </div>
+      )
+    }
+  },
+  {
     projectName: `gosamosa`,
     expandedName: `go:samosa`,
     liveLink: `https://www.gosamosa.com`,
