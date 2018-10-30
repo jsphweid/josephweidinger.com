@@ -41,5 +41,42 @@
 .jlw-projects-content-projects {
   flex-wrap: wrap;
   display: inline-flex;
-  justify-content: center;
+  justify-content: start;
+}
+
+.jlw-projects-content {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 2028px) {
+  .jlw-projects-content {
+    max-width: 1980px;
+  }
+}
+
+@media screen and (min-width: 1698px) and (max-width: 2028px) {
+  .jlw-projects-content {
+    max-width: 1657px;
+  }
+}
+
+@media screen and (min-width: 1368px) and (max-width: 1698px) {
+  .jlw-projects-content {
+    max-width: 990px;
+  }
+}
+
+@media screen and (min-width: 708px) and (max-width: 1368px) {
+  .jlw-projects-content {
+    max-width: 660px;
+  }
+}
+
+@media screen and (max-width: 708px) {
+  .jlw-projects-content {
+    max-width: initial;
+  }
+  .jlw-projects-content-projects {
+    justify-content: center;
+  }
 }
