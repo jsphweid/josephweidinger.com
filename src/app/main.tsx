@@ -13,6 +13,7 @@ import { instantScroll, projects } from './common/constants'
 import { isEmptyObj } from './common/helpers'
 import Interviews from './interviews/interviews'
 import ReactGA from 'react-ga'
+import ChangeBlog from './change-blog/change-blog'
 
 export interface MainProps {}
 
@@ -97,6 +98,7 @@ export default class Main extends React.Component<MainProps, MainState> {
       <div className="jlw jlw-headerOffset">
         <Navbar className="jlw-colorProfile1" />
         <Title className="jlw-colorProfile2" />
+        <ChangeBlog className="jlw-colorProfile1" />
         <Projects
           className="jlw-colorProfile3"
           handleProjectOpen={this.handleSetActiveProject}

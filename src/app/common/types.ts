@@ -4,6 +4,7 @@ export type SectionType =
   | 'other'
   | 'contact'
   | 'interviews'
+  | 'change (b)log'
 
 export interface ProjectTempateType {
   projectName: string

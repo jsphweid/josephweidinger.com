@@ -24,6 +24,7 @@ export default class Navbar extends React.Component<NavbarProps> {
 
   render() {
     const sectionTitles: SectionType[] = [
+      'change (b)log',
       'dev projects',
       'interviews',
       'about',
