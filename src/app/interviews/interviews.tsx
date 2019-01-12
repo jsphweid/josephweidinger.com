@@ -69,7 +69,7 @@ export default class Interviews extends React.Component<
             branching out more.
           </p>
           <p>
-            I host my interviews on an app I made called
+            I host my interviews on an app I made called{' '}
             <a href="https://papio.io">"papio."</a> It brings together the audio
             recording of the interview with an automated transcript. It makes
             the interview much easier to navigate as you can click on any word
