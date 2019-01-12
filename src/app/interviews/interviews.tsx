@@ -63,12 +63,18 @@ export default class Interviews extends React.Component<
         title={'interviews'}
       >
         <div className="jlw-interviews-description">
-          I interview people that I'm interested in during my spare time.
-          Typically these people are local artists / business folks. But I'm
-          branching out more. I was inspired to do interviews after spending
-          time with my good friend and mentor Gerry Fialka. Many questions I use
-          are ones he has been accumulating his whole life but I write a lot of
-          my own specific questions as well.
+          <p>
+            I interview people that I'm interested in during my spare time.
+            Typically these people are local artists / business folks. But I'm
+            branching out more.
+          </p>
+          <p>
+            I host my interviews on an app I made called
+            <a href="https://papio.io">"papio."</a> It brings together the audio
+            recording of the interview with an automated transcript. It makes
+            the interview much easier to navigate as you can click on any word
+            on the transcript and the audio will readjust to play at that spot.
+          </p>
         </div>
         <div className="jlw-interviews-content">
           <div>
