@@ -5,7 +5,8 @@ import ScheduleMakerLaunchButton from './scheduleMakerLaunchButton'
 export const smoothScroll: any = { duration: 200, smooth: true, offset: -122 }
 export const instantScroll: any = { duration: 0, smooth: false }
 
-export const genericImage = `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517456998/generic-project_h2za5h.png`
+export const genericImage =
+  'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517456998/generic-project_h2za5h.png'
 
 export const icons: IconObjType = {
   facebook: { class: 'facebook', unicode: '&#xf09a;' },
@@ -33,24 +34,24 @@ export const skills: any = {
     'Bash / Lua / AutoHotkey'
   ],
   'Frameworks / Libraries': [
-    'React / Redux / Angular 2',
+    'React / Angular 2',
+    'Redux / MobX',
     'jQuery / Bootstrap',
-    'Spring MVC / Grails',
     'libsndfile / boost'
   ],
   Tools: [
     'Git',
-    'IntelliJ / CLion / VS Code',
-    'Webpack / Grunt',
+    'VS Code / IntelliJ / CLion',
     'Terraform / Serverless',
+    'Webpack / Grunt',
     'Mac / Windows / Linux'
   ],
   Devops: [
-    'AWS: Route 53 / S3 / CloudFront / Cognito / AppSync / Lamdba / RDS / DynamoDB',
+    'AWS: Route 53 / S3 / CloudFront / Cognito / AppSync / Lamdba',
     'Nginx',
     'Digital Ocean'
   ],
-  Databases: ['Firebase', 'MySQL / Oracle', 'PostgreSQL'],
+  Databases: ['DynamoDB', 'RDS', 'Firebase', 'MySQL / Oracle', 'PostgreSQL'],
   'Audio/Visual Tools': [
     'Web Audio API',
     'Web Speech API',
@@ -61,14 +62,86 @@ export const skills: any = {
     'Cubase Pro'
   ]
 }
+// https://res.cloudinary.com/dx6f6g5cv/image/upload/c_limit,h_650,q_58,w_900/v1555955576/Bildschirmfoto_2019-04-22_um_12.49.10_tkbgdc.png
 
 export const projects: ProjectTempateType[] = [
   {
-    projectName: `infinite meme`,
-    expandedName: `The Infinite Meme`,
-    liveLink: `https://infinitememe.com`,
-    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1540857186/the-infinite-meme_oksvka.png`,
-    date: `October 2018`,
+    projectName: 'best soundboard',
+    expandedName: 'Best Soundboard',
+    liveLink: 'https://bestsoundboard.com',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1555955576/Bildschirmfoto_2019-04-22_um_12.49.10_tkbgdc.png',
+    date: 'March 2019',
+    tags: [],
+    getModalContent: function() {
+      return (
+        <div>
+          <p>
+            I started an experimental podcast with a friend of mine and we
+            thought it would be interesting to incorporate canned sounds into
+            the mix in real time. I tried some other soundboard webapps but was
+            not satisfied with any of them so I decided to write my own.
+          </p>
+          <p>
+            The novelty of this app is the ability to easily create a board full
+            of sound buttons, move them around and execute them intuitively, and
+            share instantly. All in all, I'm happy with the way it turned out!
+          </p>
+          <p>
+            It's a pretty straight forward modern webapp created statically with
+            Gatsby. The sharing functionality was written with DynamoDB and API
+            Gateway via the Serverless framework. Try it out{' '}
+            <a href={this.liveLink}>here!</a>
+          </p>
+        </div>
+      )
+    }
+  },
+
+  {
+    projectName: 'papio',
+    expandedName: 'PAPIO',
+    liveLink: 'https://papio.io',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1555955576/Bildschirmfoto_2019-04-22_um_12.48.28_yvzeg2.png',
+    date: 'November 2018 - present',
+    tags: [],
+    getModalContent: function() {
+      return (
+        <div>
+          <p>
+            PAPIO is a site I envisioned and created as a means to share my
+            interviews. Early on I simply uploaded them to SoundCloud and called
+            it a day but I wanted a more immersive experience. In particular, I
+            wanted a way to search all of my interviews effortlessly and
+            quickly.
+          </p>
+          <p>
+            To conquer that feat, I built a cloud pipeline to prep and
+            transcribe raw audio files. These transcriptions are rendered
+            statically via the webapp. This makes it very easy for search
+            engines to make sense of what initially was only an audio
+            experience.
+          </p>
+          <p>
+            I also used Algolia Search to index all the content in those
+            interviews so that one could easily search for random words / topics
+            and jump right into a specific part of a relevant interview.
+          </p>
+          <p>
+            Check it out <a href={this.liveLink}>here!</a>
+          </p>
+        </div>
+      )
+    }
+  },
+  {
+    projectName: 'infinite meme',
+    expandedName: 'The Infinite Meme',
+    liveLink: 'https://infinitememe.com',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1540857186/the-infinite-meme_oksvka.png',
+    date: 'October 2018',
     tags: [],
     getModalContent: function() {
       return (
@@ -97,11 +170,12 @@ export const projects: ProjectTempateType[] = [
     }
   },
   {
-    projectName: `gosamosa`,
-    expandedName: `go:samosa`,
-    liveLink: `https://www.gosamosa.com`,
-    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1534472748/computers-small_iv4tyg.png`,
-    date: `August 2018`,
+    projectName: 'gosamosa',
+    expandedName: 'go:samosa',
+    liveLink: 'https://www.gosamosa.com',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1534472748/computers-small_iv4tyg.png',
+    date: 'August 2018',
     tags: [],
     getModalContent: function() {
       return (
@@ -145,11 +219,12 @@ export const projects: ProjectTempateType[] = [
     }
   },
   {
-    projectName: `reimagine`,
-    expandedName: `reimagine`,
-    liveLink: `https://www.josephweidinger.com/reimagine`,
-    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1533437829/reimagine_aeolyh.png`,
-    date: `March 2018 - Present`,
+    projectName: 'reimagine',
+    expandedName: 'reimagine',
+    liveLink: 'https://www.josephweidinger.com/reimagine',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1533437829/reimagine_aeolyh.png',
+    date: 'March 2018 - Present',
     tags: ['music'],
     getModalContent: function() {
       return (
@@ -197,11 +272,12 @@ export const projects: ProjectTempateType[] = [
     }
   },
   {
-    projectName: `josephweidinger.com`,
-    expandedName: `josephweidinger.com`,
-    liveLink: `https://www.josephweidinger.com/`,
-    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517527503/Screen_Shot_2018-02-01_at_5.23.55_PM_tzcnqa.png`,
-    date: `February 2016, January 2018`,
+    projectName: 'josephweidinger.com',
+    expandedName: 'josephweidinger.com',
+    liveLink: 'https://www.josephweidinger.com/',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517527503/Screen_Shot_2018-02-01_at_5.23.55_PM_tzcnqa.png',
+    date: 'February 2016, January 2018',
     tags: [],
     getModalContent: function() {
       return (
@@ -235,11 +311,12 @@ export const projects: ProjectTempateType[] = [
     }
   },
   {
-    projectName: `blindfoldChessTrainer`,
-    expandedName: `Blindfold Chess Trainer`,
-    liveLink: `https://www.josephweidinger.com/blindfoldChessTrainer`,
-    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1518147976/Screen_Shot_2018-02-08_at_7.58.35_PM_pyofsk.png`,
-    date: `January - Februrary 2018`,
+    projectName: 'blindfoldChessTrainer',
+    expandedName: 'Blindfold Chess Trainer',
+    liveLink: 'https://www.josephweidinger.com/blindfoldChessTrainer',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1518147976/Screen_Shot_2018-02-08_at_7.58.35_PM_pyofsk.png',
+    date: 'January - Februrary 2018',
     tags: [],
     getModalContent: function() {
       return (
@@ -265,11 +342,12 @@ export const projects: ProjectTempateType[] = [
     }
   },
   {
-    projectName: `pianoLearningStream`,
-    expandedName: `Piano Learning Stream`,
-    liveLink: `https://github.com/jsphweid/piano-learning-stream`,
-    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1518148183/Screen_Shot_2018-02-08_at_9.48.46_PM_gwxj1e.png`,
-    date: `November - December 2017`,
+    projectName: 'pianoLearningStream',
+    expandedName: 'Piano Learning Stream',
+    liveLink: 'https://github.com/jsphweid/piano-learning-stream',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1518148183/Screen_Shot_2018-02-08_at_9.48.46_PM_gwxj1e.png',
+    date: 'November - December 2017',
     tags: ['music'],
     getModalContent: function() {
       return (
@@ -300,11 +378,12 @@ export const projects: ProjectTempateType[] = [
     }
   },
   {
-    projectName: `whichString`,
-    expandedName: `Which String`,
-    liveLink: `https://www.github.com/jsphweid/whichString`,
-    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517525918/Screen_Shot_2018-02-01_at_4.54.22_PM_nrxo2q.png`,
-    date: `May 2017 - Dec 2017`,
+    projectName: 'whichString',
+    expandedName: 'Which String',
+    liveLink: 'https://www.github.com/jsphweid/whichString',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517525918/Screen_Shot_2018-02-01_at_4.54.22_PM_nrxo2q.png',
+    date: 'May 2017 - Dec 2017',
     tags: ['music'],
     getModalContent: function() {
       return (
@@ -330,11 +409,12 @@ export const projects: ProjectTempateType[] = [
     }
   },
   {
-    projectName: `react-fft-flipbook`,
-    expandedName: `React FFT Flipbook`,
-    liveLink: `https://www.josephweidinger.com/react-fft-flipbook`,
-    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517457470/Screen_Shot_2018-01-31_at_9.56.43_PM_kst1d5.png`,
-    date: `October, December 2017`,
+    projectName: 'react-fft-flipbook',
+    expandedName: 'React FFT Flipbook',
+    liveLink: 'https://www.josephweidinger.com/react-fft-flipbook',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517457470/Screen_Shot_2018-01-31_at_9.56.43_PM_kst1d5.png',
+    date: 'October, December 2017',
     tags: ['music'],
     getModalContent: function() {
       return (
@@ -368,11 +448,12 @@ export const projects: ProjectTempateType[] = [
     }
   },
   {
-    projectName: `fiberMap`,
-    expandedName: `Fiber Map`,
-    liveLink: ``,
-    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1518184505/Screen_Shot_2018-02-09_at_7.54.19_AM_mwaiii.png`,
-    date: `July - August 2017`,
+    projectName: 'fiberMap',
+    expandedName: 'Fiber Map',
+    liveLink: '',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1518184505/Screen_Shot_2018-02-09_at_7.54.19_AM_mwaiii.png',
+    date: 'July - August 2017',
     tags: [],
     getModalContent: function() {
       return (
@@ -405,11 +486,12 @@ export const projects: ProjectTempateType[] = [
     }
   },
   {
-    projectName: `scheduleMaker`,
-    expandedName: `Schedule Maker`,
-    liveLink: `https://www.github.com/jsphweid/scheduleMakerSpring`,
-    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1486747894/Screen_Shot_2017-02-10_at_11.30.21_AM_d8gyep.png`,
-    date: `January-February 2017`,
+    projectName: 'scheduleMaker',
+    expandedName: 'Schedule Maker',
+    liveLink: 'https://www.github.com/jsphweid/scheduleMakerSpring',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1486747894/Screen_Shot_2017-02-10_at_11.30.21_AM_d8gyep.png',
+    date: 'January-February 2017',
     tags: [],
     getModalContent: function() {
       return (
@@ -435,11 +517,12 @@ export const projects: ProjectTempateType[] = [
     }
   },
   {
-    projectName: `AintIFunny`,
-    expandedName: `Ain't I Funny`,
-    liveLink: `https://www.josephweidinger.com/AintIFunny`,
-    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485187194/Screen_Shot_2017-01-23_at_9.59.07_AM_p2xz4r.png`,
-    date: `January 2017`,
+    projectName: 'AintIFunny',
+    expandedName: "Ain't I Funny",
+    liveLink: 'https://www.josephweidinger.com/AintIFunny',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485187194/Screen_Shot_2017-01-23_at_9.59.07_AM_p2xz4r.png',
+    date: 'January 2017',
     tags: [],
     getModalContent: function() {
       return (
@@ -459,11 +542,12 @@ export const projects: ProjectTempateType[] = [
     }
   },
   {
-    projectName: `aMuseMe`,
-    expandedName: `A-'Muse' Me`,
-    liveLink: `https://josephweidinger.com/aMuseMe`,
-    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484884631/Screen_Shot_2017-01-19_at_9.55.37_PM_y0szwe.png`,
-    date: `January 2017`,
+    projectName: 'aMuseMe',
+    expandedName: "A-'Muse' Me",
+    liveLink: 'https://josephweidinger.com/aMuseMe',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484884631/Screen_Shot_2017-01-19_at_9.55.37_PM_y0szwe.png',
+    date: 'January 2017',
     tags: [],
     getModalContent: function() {
       return (
@@ -486,11 +570,12 @@ export const projects: ProjectTempateType[] = [
     }
   },
   {
-    projectName: `browserTranscribe`,
-    expandedName: `Browser Transcribe`,
-    liveLink: `http://www.browsertranscribe.com`,
-    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871388/browserTranscribe_yrcler.png`,
-    date: `December 2016`,
+    projectName: 'browserTranscribe',
+    expandedName: 'Browser Transcribe',
+    liveLink: 'http://www.browsertranscribe.com',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871388/browserTranscribe_yrcler.png',
+    date: 'December 2016',
     tags: ['music'],
     getModalContent: function() {
       return (
@@ -517,11 +602,12 @@ export const projects: ProjectTempateType[] = [
     }
   },
   {
-    projectName: `compareInflections`,
-    expandedName: `Compare Inflections`,
-    liveLink: `https://www.josephweidinger.com/compareInflections`,
-    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517455449/compareInflections_vbtmxo.png`,
-    date: `October - November 2016`,
+    projectName: 'compareInflections',
+    expandedName: 'Compare Inflections',
+    liveLink: 'https://www.josephweidinger.com/compareInflections',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517455449/compareInflections_vbtmxo.png',
+    date: 'October - November 2016',
     tags: ['audio'],
     getModalContent: function() {
       return (
@@ -544,11 +630,12 @@ export const projects: ProjectTempateType[] = [
     }
   },
   {
-    projectName: `playEquation`,
-    expandedName: `Play Equation`,
-    liveLink: `https://www.josephweidinger.com/playEquation`,
-    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485141822/Screen_Shot_2017-01-22_at_9.20.04_PM_uppjjg.png`,
-    date: `Fall 2016`,
+    projectName: 'playEquation',
+    expandedName: 'Play Equation',
+    liveLink: 'https://www.josephweidinger.com/playEquation',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485141822/Screen_Shot_2017-01-22_at_9.20.04_PM_uppjjg.png',
+    date: 'Fall 2016',
     tags: ['music'],
     getModalContent: function() {
       return (
@@ -572,11 +659,12 @@ export const projects: ProjectTempateType[] = [
     }
   },
   {
-    projectName: `VAIL`,
-    expandedName: `Visual and Intuitive Learning`,
-    liveLink: `https://www.josephweidinger.com/VAIL`,
-    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485141863/Screen_Shot_2017-01-22_at_9.19.11_PM_zpaggn.png`,
-    date: `November 2016`,
+    projectName: 'VAIL',
+    expandedName: 'Visual and Intuitive Learning',
+    liveLink: 'https://www.josephweidinger.com/VAIL',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485141863/Screen_Shot_2017-01-22_at_9.19.11_PM_zpaggn.png',
+    date: 'November 2016',
     tags: ['audio'],
     getModalContent: function() {
       return (
@@ -597,11 +685,12 @@ export const projects: ProjectTempateType[] = [
     }
   },
   {
-    projectName: `justInTune`,
-    expandedName: `Just In Tune`,
-    liveLink: `https://www.josephweidinger.com/justInTune`,
-    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871108/justIntonation_nlcdwk.png`,
-    date: `Spring 2015, then Fall 2016`,
+    projectName: 'justInTune',
+    expandedName: 'Just In Tune',
+    liveLink: 'https://www.josephweidinger.com/justInTune',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871108/justIntonation_nlcdwk.png',
+    date: 'Spring 2015, then Fall 2016',
     tags: ['audio'],
     getModalContent: function() {
       return (
@@ -622,11 +711,12 @@ export const projects: ProjectTempateType[] = [
     }
   },
   {
-    projectName: `bookletMacro`,
-    expandedName: `Booklet Macro`,
-    liveLink: `https://github.com/jsphweid/bookletMacro`,
-    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871103/bookletMacro_wjaqo2.jpg`,
-    date: `October 2015`,
+    projectName: 'bookletMacro',
+    expandedName: 'Booklet Macro',
+    liveLink: 'https://github.com/jsphweid/bookletMacro',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871103/bookletMacro_wjaqo2.jpg',
+    date: 'October 2015',
     tags: ['audio'],
     getModalContent: function() {
       return (
@@ -651,11 +741,12 @@ export const projects: ProjectTempateType[] = [
     }
   },
   {
-    projectName: `processingSketches`,
-    expandedName: `Processing Sketches`,
-    liveLink: `https://www.youtube.com/watch?v=f7jjcGldl_o`,
-    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871107/processing_bqeqo8.jpg`,
-    date: `August - October 2015`,
+    projectName: 'processingSketches',
+    expandedName: 'Processing Sketches',
+    liveLink: 'https://www.youtube.com/watch?v=f7jjcGldl_o',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871107/processing_bqeqo8.jpg',
+    date: 'August - October 2015',
     tags: ['audio'],
     getModalContent: function() {
       return (
@@ -683,11 +774,12 @@ export const projects: ProjectTempateType[] = [
     }
   },
   {
-    projectName: `hotkeyGrid`,
-    expandedName: `Hotkey Grid`,
-    liveLink: `https://github.com/jsphweid/hotkey-grid`,
-    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871108/hotkey-grid_eru7ne.png`,
-    date: `June - August 2015`,
+    projectName: 'hotkeyGrid',
+    expandedName: 'Hotkey Grid',
+    liveLink: 'https://github.com/jsphweid/hotkey-grid',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871108/hotkey-grid_eru7ne.png',
+    date: 'June - August 2015',
     tags: [],
     getModalContent: function() {
       return (
@@ -712,11 +804,12 @@ export const projects: ProjectTempateType[] = [
     }
   },
   {
-    projectName: `finaleHotkeyGrid`,
-    expandedName: `Finale Hotkey Grid`,
-    liveLink: `https://github.com/jsphweid/Finale-Hotkey-Grid`,
-    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871107/finale-hotkey-grid_sznsni.png`,
-    date: `December 2014 - April 2015`,
+    projectName: 'finaleHotkeyGrid',
+    expandedName: 'Finale Hotkey Grid',
+    liveLink: 'https://github.com/jsphweid/Finale-Hotkey-Grid',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871107/finale-hotkey-grid_sznsni.png',
+    date: 'December 2014 - April 2015',
     tags: ['music'],
     getModalContent: function() {
       return (
@@ -736,11 +829,12 @@ export const projects: ProjectTempateType[] = [
     }
   },
   {
-    projectName: `feedCalc`,
-    expandedName: `Feed Calculator`,
-    liveLink: `https://www.josephweidinger.com/feedCalc/`,
-    imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871105/feedCalc_effijp.png`,
-    date: `October 2014`,
+    projectName: 'feedCalc',
+    expandedName: 'Feed Calculator',
+    liveLink: 'https://www.josephweidinger.com/feedCalc/',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871105/feedCalc_effijp.png',
+    date: 'October 2014',
     tags: [],
     getModalContent: function() {
       return (
