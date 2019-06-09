@@ -6,8 +6,7 @@ const shakes: string =
   'http://www.columbiatribune.com/business/saturday_business/cheesy-memories-shakespeare-s-growth-from-a-small-operation-to/article_e1a3815e-e081-52f2-b03e-12575ebed8f1.html'
 const organ: string =
   'https://soundcloud.com/joseph_weidinger/sets/one-paged-preludes-and'
-const interviews: string =
-  'https://soundcloud.com/joseph_weidinger/sets/interviews'
+const interviews: string = 'https://papio.io'
 const songs: string = 'https://soundcloud.com/joseph_weidinger/sets/songs'
 const instrumental: string =
   'https://soundcloud.com/joseph_weidinger/sets/instrumental'

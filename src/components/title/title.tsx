@@ -25,12 +25,7 @@ export default class Title extends React.Component<TitleProps> {
             Full-Stack Developer / Engineer / Creator
           </a>
           <br />
-          <a
-            href="#"
-            onClick={() => Navbar.handleNavbarItemClick('interviews')}
-          >
-            Interviewer
-          </a>
+          <a href="https://papio.io">Interviewer</a>
           {' - '}
           <a href="https://open.spotify.com/artist/0GCM7laM4pfNd69XyswDqW">
             Composer / Musician

@@ -3,7 +3,6 @@ export type SectionType =
   | 'dev projects'
   | 'other'
   | 'contact'
-  | 'interviews'
   | 'change (b)log'
 
 export interface ProjectTempateType {
