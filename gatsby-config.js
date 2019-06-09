@@ -12,9 +12,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: 'UA-79560675-1',
-        respectDNT: true,
-        sampleRate: 5,
-        siteSpeedSampleRate: 10
+        head: true
       }
     }
   ]
