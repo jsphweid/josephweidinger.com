@@ -11,7 +11,6 @@ import * as queryString from 'query-string'
 import { ProjectTempateType } from './common/types'
 import { instantScroll, projects } from './common/constants'
 import { isEmptyObj } from './common/helpers'
-import ReactGA from 'react-ga'
 import ChangeBlog from './change-blog/change-blog'
 
 export interface MainProps {}
@@ -32,10 +31,6 @@ export default class Main extends React.Component<MainProps, MainState> {
 
   componentDidMount() {
     document.title = 'Joseph Weidinger'
-    if (process.env.REACT_STATIC_ENV !== 'development') {
-      ReactGA.initialize('UA-79560675-1')
-      ReactGA.pageview(window.location.pathname + window.location.search)
-    }
 
     this.parseInitialQueryString()
   }

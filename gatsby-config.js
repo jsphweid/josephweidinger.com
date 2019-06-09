@@ -7,6 +7,15 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-favicon`,
-    `gatsby-plugin-react-helmet`
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-79560675-1',
+        respectDNT: true,
+        sampleRate: 5,
+        siteSpeedSampleRate: 10
+      }
+    }
   ]
 }
