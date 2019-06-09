@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { Element } from 'react-scroll'
 import Section from '../common/section/section'
 
 export interface ChangeBlogProps {
@@ -19,15 +18,16 @@ export default class ChangeBlog extends React.Component<ChangeBlogProps> {
     )
     return (
       <Section
-        title={'change (b)log'}
+        title="change (b)log"
+        titleUrl="https://josephweidinger.com/changeBlog"
         className={`jlw-changeBlog ${this.props.className || ''}`}
       >
         <div className="jlw-changeBlog-content">
-          In Jan 2020 I turn 30. (It feels strange to even type that.) So in Jan
-          2019, with {linkTo52} week until then, I made a resolution to make
-          these final {linkTo52} special by working extra hard with goals on how
-          to spend my time. You can see my goals and updates regarding them on
-          my <a href="https://josephweidinger.com/changeBlog">blog.</a>
+          In Jan 2020 I turn 30. So in Jan 2019, with {linkTo52} weeks until
+          then, I made a resolution to make these final {linkTo52} special by
+          working extra hard on some challenging time and metric oriented goals.
+          You can see my those and updates regarding them on my{' '}
+          <a href="https://josephweidinger.com/changeBlog">blog.</a>
         </div>
       </Section>
     )

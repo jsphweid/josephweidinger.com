@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Section from '../common/section/section'
+import Navbar from '../navbar/navbar'
 
 export interface TitleProps {
   className?: string
@@ -17,9 +18,23 @@ export default class Title extends React.Component<TitleProps> {
         title={'joseph weidinger'}
       >
         <div className="jlw-title-labels">
-          Full-Stack Developer - Engineer/Creator
+          <a
+            href="#"
+            onClick={() => Navbar.handleNavbarItemClick('dev projects')}
+          >
+            Full-Stack Developer / Engineer / Creator
+          </a>
           <br />
-          Interviewer - Composer - Musician
+          <a
+            href="#"
+            onClick={() => Navbar.handleNavbarItemClick('interviews')}
+          >
+            Interviewer
+          </a>
+          {' - '}
+          <a href="https://open.spotify.com/artist/0GCM7laM4pfNd69XyswDqW">
+            Composer / Musician
+          </a>
         </div>
       </Section>
     )

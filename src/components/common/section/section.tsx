@@ -4,6 +4,7 @@ import { Element } from 'react-scroll'
 export interface SectionProps {
   className?: string
   title: string
+  titleUrl?: string
   children: any
 }
 
@@ -13,12 +14,20 @@ export default class Section extends React.Component<SectionProps> {
   }
 
   render() {
-    const { title, children } = this.props
+    const { title, children, titleUrl } = this.props
+    const titleText = title.toUpperCase()
+
     return (
       <div className={`jlw-section ${this.props.className || ''}`}>
         <Element name={title} />
-        <h1>{title.toUpperCase()}</h1>
-        <hr />
+        <h1>{titleUrl ? <a href={titleUrl}>{titleText}</a> : titleText}</h1>
+        {titleUrl ? (
+          <div>
+            <br /> <br />
+          </div>
+        ) : (
+          <hr />
+        )}
         {children}
       </div>
     )

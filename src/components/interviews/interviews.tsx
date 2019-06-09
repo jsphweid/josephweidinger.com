@@ -1,6 +1,7 @@
 import * as React from 'react'
 import SoundCloud from 'react-simple-soundcloud-widget'
 import Section from '../common/section/section'
+import { PAPIO_LINK } from '../common/constants'
 
 export interface InterviewsProps {
   className?: string
@@ -60,7 +61,8 @@ export default class Interviews extends React.Component<
     return (
       <Section
         className={`jlw-interviews ${this.props.className || ''}`}
-        title={'interviews'}
+        title="interviews"
+        titleUrl={PAPIO_LINK}
       >
         <div className="jlw-interviews-description">
           <p>
@@ -70,7 +72,7 @@ export default class Interviews extends React.Component<
           </p>
           <p>
             I host my interviews on an app I made called{' '}
-            <a href="https://papio.io">"papio."</a> It brings together the audio
+            <a href={PAPIO_LINK}>PAPIO.</a> It brings together the audio
             recording of the interview with an automated transcript. It makes
             the interview much easier to navigate as you can click on any word
             on the transcript and the audio will readjust to play at that spot.

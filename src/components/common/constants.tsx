@@ -5,6 +5,8 @@ import ScheduleMakerLaunchButton from './scheduleMakerLaunchButton'
 export const smoothScroll: any = { duration: 200, smooth: true, offset: -122 }
 export const instantScroll: any = { duration: 0, smooth: false }
 
+export const PAPIO_LINK = 'https://papio.io'
+
 export const genericImage =
   'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517456998/generic-project_h2za5h.png'
 
@@ -27,7 +29,7 @@ export const projectLargePicSize: ImageSizeType = {
 
 export const skills: any = {
   Languages: [
-    'Vanilla Javascript / ES6 / Typescript',
+    'Typescript / Javascript',
     'HTML / CSS / SCSS',
     'Java / Groovy',
     'C / C++ / Python / Go',
@@ -36,12 +38,12 @@ export const skills: any = {
   'Frameworks / Libraries': [
     'React / Angular 2',
     'Redux / MobX',
-    'jQuery / Bootstrap',
+    'Gatsby / React-Static',
     'libsndfile / boost'
   ],
   Tools: [
     'Git',
-    'VS Code / IntelliJ / CLion',
+    'VSCode / IntelliJ',
     'Terraform / Serverless',
     'Webpack / Grunt',
     'Mac / Windows / Linux'
@@ -49,9 +51,17 @@ export const skills: any = {
   Devops: [
     'AWS: Route 53 / S3 / CloudFront / Cognito / AppSync / Lamdba',
     'Nginx',
+    'Jenkins',
     'Digital Ocean'
   ],
-  Databases: ['DynamoDB', 'RDS', 'Firebase', 'MySQL / Oracle', 'PostgreSQL'],
+  Databases: [
+    'DynamoDB',
+    'Redis',
+    'MySQL / Oracle',
+    'RDS',
+    'PostgreSQL',
+    'Firebase'
+  ],
   'Audio/Visual Tools': [
     'Web Audio API',
     'Web Speech API',
@@ -62,7 +72,6 @@ export const skills: any = {
     'Cubase Pro'
   ]
 }
-// https://res.cloudinary.com/dx6f6g5cv/image/upload/c_limit,h_650,q_58,w_900/v1555955576/Bildschirmfoto_2019-04-22_um_12.49.10_tkbgdc.png
 
 export const projects: ProjectTempateType[] = [
   {
@@ -97,13 +106,12 @@ export const projects: ProjectTempateType[] = [
       )
     }
   },
-
   {
     projectName: 'papio',
     expandedName: 'PAPIO',
-    liveLink: 'https://papio.io',
+    liveLink: PAPIO_LINK,
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1555955576/Bildschirmfoto_2019-04-22_um_12.48.28_yvzeg2.png',
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1555984757/Bildschirmfoto_2019-04-22_um_20.58.36_inwrrw.png',
     date: 'November 2018 - present',
     tags: [],
     getModalContent: function() {
