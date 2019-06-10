@@ -91,13 +91,13 @@ export default class Main extends React.Component<MainProps, MainState> {
     const normalSite: JSX.Element = (
       <div className="jlw jlw-headerOffset">
         <Navbar className="jlw-colorProfile1" />
-        <Title className="jlw-colorProfile2" />
+        <Title className="jlw-colorProfile3" />
         <ChangeBlog className="jlw-colorProfile1" />
         <Projects
           className="jlw-colorProfile3"
           handleProjectOpen={this.handleSetActiveProject}
         />
-        <About className="jlw-colorProfile2" />
+        <About className="jlw-colorProfile1" />
         <Contact className="jlw-colorProfile3" />
       </div>
     )
