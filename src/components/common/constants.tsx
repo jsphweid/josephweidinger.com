@@ -75,6 +75,26 @@ export const skills: any = {
 
 export const projects: ProjectTempateType[] = [
   {
+    projectName: 'units',
+    expandedName: '"Units" Library for GraphQL',
+    liveLink:
+      'https://medium.com/@jsphweid/introducing-unit-types-in-graphql-344974213e6',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1583079729/Screen_Shot_2020-03-01_at_10.22.03_AM_sjhlem.png',
+    date: 'May 2019 - October 2019',
+    tags: [],
+    getModalContent: function() {
+      return (
+        <div>
+          <p>
+            For this one, I'd just read the{' '}
+            <a href={this.liveLink}>Medium article.</a>
+          </p>
+        </div>
+      )
+    }
+  },
+  {
     projectName: 'best soundboard',
     expandedName: 'Best Soundboard',
     liveLink: 'https://bestsoundboard.com',
@@ -112,7 +132,7 @@ export const projects: ProjectTempateType[] = [
     liveLink: PAPIO_LINK,
     imgUrl:
       'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1555984757/Bildschirmfoto_2019-04-22_um_20.58.36_inwrrw.png',
-    date: 'November 2018 - present',
+    date: 'November 2018 - March 2019',
     tags: [],
     getModalContent: function() {
       return (
@@ -232,7 +252,7 @@ export const projects: ProjectTempateType[] = [
     liveLink: 'https://www.josephweidinger.com/reimagine',
     imgUrl:
       'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1533437829/reimagine_aeolyh.png',
-    date: 'March 2018 - Present',
+    date: 'March 2018 - May 2018',
     tags: ['music'],
     getModalContent: function() {
       return (
@@ -270,10 +290,6 @@ export const projects: ProjectTempateType[] = [
             </a>
             . These AWS services were used: DynamoDB, AppSync, RDS, S3, Lambda,
             and Cognito.
-          </p>
-          <p>
-            It's still in development, but you can{' '}
-            <a href={this.liveLink}>try it here.</a>
           </p>
         </div>
       )
@@ -867,19 +883,3 @@ export const projects: ProjectTempateType[] = [
     }
   }
 ]
-
-// {
-//   projectName: `carfax`,
-//   expandedName: `carfax`,
-//   liveLink: ``,
-//   imgUrl: `https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1533439146/carfax_vjcch2.png`,
-//   date: `March 2017 - Present`,
-//   tags: [],
-//   getModalContent: function() {
-//     return (
-//       <div>
-
-//       </div>
-//     )
-//   },
-// },
