@@ -1,7 +1,7 @@
 #!/bin/bash
 
-bucket_name=$(<~/.aws/main_bucket_name)
-cloudfront_id=$(<~/.aws/main_cloudfront_id)
+bucket_name=josephweidinger.com
+cloudfront_id=E3BSDY5RDVXFAR
 
 npm run build
 
