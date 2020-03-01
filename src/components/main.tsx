@@ -1,7 +1,6 @@
 import * as React from 'react'
 import Navbar from './navbar/navbar'
 import Contact from './contact/contact'
-import About from './about/about'
 import Projects from './projects/projects'
 import Title from './title/title'
 import Modal from './modal/modal'
@@ -97,8 +96,7 @@ export default class Main extends React.Component<MainProps, MainState> {
           className="jlw-colorProfile3"
           handleProjectOpen={this.handleSetActiveProject}
         />
-        <About className="jlw-colorProfile1" />
-        <Contact className="jlw-colorProfile3" />
+        <Contact className="jlw-colorProfile1" />
       </div>
     )
 

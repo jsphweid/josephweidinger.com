@@ -1,9 +1,4 @@
-export type SectionType =
-  | 'about'
-  | 'dev projects'
-  | 'other'
-  | 'contact'
-  | 'change (b)log'
+export type SectionType = 'dev projects' | 'other' | 'contact' | 'change (b)log'
 
 export interface ProjectTempateType {
   projectName: string
