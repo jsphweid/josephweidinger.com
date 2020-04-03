@@ -18,11 +18,15 @@ export default class Title extends React.Component<TitleProps> {
         title={'joseph weidinger'}
       >
         <div className="jlw-title-labels">
+          <a href="https://josephweidinger.com/changeBlog/44-week-44-update/">
+            Software Engineer at EquipmentShare
+          </a>
+          {' / '}
           <a
             href="#"
             onClick={() => Navbar.handleNavbarItemClick('dev projects')}
           >
-            Full-Stack Developer / Engineer / Creator
+            Creator
           </a>
           <br />
           <a href="https://papio.io">Interviewer</a>

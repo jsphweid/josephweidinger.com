@@ -11,11 +11,6 @@ export default class ChangeBlog extends React.Component<ChangeBlogProps> {
   }
 
   render() {
-    const linkTo52 = (
-      <a href="https://josephweidinger.com/changeBlog/52-weeks-until-2020/">
-        52
-      </a>
-    )
     return (
       <Section
         title="change (b)log"
@@ -23,11 +18,10 @@ export default class ChangeBlog extends React.Component<ChangeBlogProps> {
         className={`jlw-changeBlog ${this.props.className || ''}`}
       >
         <div className="jlw-changeBlog-content">
-          In Jan 2020 I turn 30. So in Jan 2019, with {linkTo52} weeks until
-          then, I made a resolution to make these final {linkTo52} special by
-          working extra hard on some challenging time and metric oriented goals.
-          You can see my those and updates regarding them on my{' '}
-          <a href="https://josephweidinger.com/changeBlog">blog.</a>
+          When I turned 29 in 2019, I made a bunch of year-long goals and{' '}
+          <a href="https://josephweidinger.com/changeBlog">blogged about</a> it
+          along the way. Even though that year is over, I plan on posting more
+          stuff there sporadically.
         </div>
       </Section>
     )

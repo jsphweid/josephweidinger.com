@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     name: 'Joseph Weidinger',
-    tagline: 'Joseph Weidinger - developer, creator'
+    tagline: 'Joseph Weidinger - engineer - composer'
   },
   plugins: [
     `gatsby-plugin-sass`,
