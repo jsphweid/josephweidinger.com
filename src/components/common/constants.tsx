@@ -1,84 +1,84 @@
-import * as React from 'react'
-import { ProjectTempateType, ImageSizeType, IconObjType } from './types'
-import ScheduleMakerLaunchButton from './scheduleMakerLaunchButton'
+import * as React from "react";
+import { ProjectTempateType, ImageSizeType, IconObjType } from "./types";
+import ScheduleMakerLaunchButton from "./scheduleMakerLaunchButton";
 
-export const smoothScroll: any = { duration: 200, smooth: true, offset: -122 }
-export const instantScroll: any = { duration: 0, smooth: false }
+export const smoothScroll: any = { duration: 200, smooth: true, offset: -122 };
+export const instantScroll: any = { duration: 0, smooth: false };
 
-export const PAPIO_LINK = 'https://papio.io'
+export const PAPIO_LINK = "https://papio.io";
 
 export const genericImage =
-  'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517456998/generic-project_h2za5h.png'
+  "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517456998/generic-project_h2za5h.png";
 
 export const icons: IconObjType = {
-  facebook: { class: 'facebook', unicode: '&#xf09a;' },
-  github: { class: 'github-circled', unicode: '&#xf09b;' },
-  youtube: { class: 'youtube', unicode: '&#xf167;' },
-  soundcloud: { class: 'soundcloud', unicode: '&#xf348;' }
-}
+  facebook: { class: "facebook", unicode: "&#xf09a;" },
+  github: { class: "github-circled", unicode: "&#xf09b;" },
+  youtube: { class: "youtube", unicode: "&#xf167;" },
+  soundcloud: { class: "soundcloud", unicode: "&#xf348;" }
+};
 
 export const projectSmallPicSize: ImageSizeType = {
   width: 296,
   height: 216
-}
+};
 
 export const projectLargePicSize: ImageSizeType = {
   width: 900,
   height: 650
-}
+};
 
 export const skills: any = {
   Languages: [
-    'Typescript / Javascript',
-    'Python',
-    'HTML / CSS / SCSS',
-    'Java / Groovy',
-    'C / C++ / Go',
-    'Bash / Lua / AutoHotkey'
+    "Typescript / Javascript",
+    "Python",
+    "HTML / CSS / SCSS",
+    "Java / Groovy",
+    "C / C++ / Go",
+    "Bash / Lua / AutoHotkey"
   ],
-  'Frameworks / Libraries': [
-    'React / Angular 2',
-    'Redux / MobX',
-    'Gatsby / React-Static',
-    'libsndfile / boost'
+  "Frameworks / Libraries": [
+    "React / Angular 2",
+    "Redux / MobX",
+    "Gatsby / React-Static",
+    "libsndfile / boost"
   ],
   Tools: [
-    'Git',
-    'VSCode / IntelliJ',
-    'Terraform / Serverless',
-    'Webpack / Grunt',
-    'Mac / Windows / Linux'
+    "Git",
+    "VSCode / IntelliJ",
+    "Terraform / Serverless",
+    "Webpack / Grunt",
+    "Mac / Windows / Linux"
   ],
-  Devops: ['AWS w/ CDK / Terraform', 'Nginx', 'Jenkins', 'Digital Ocean'],
-  Databases: ['DynamoDB', 'Redis', 'MySQL / Oracle', 'PostgresSQL', 'Firebase'],
-  'Audio/Visual Tools': [
-    'Web Audio API',
-    'Web Speech API',
-    'Processing / P5js',
-    'SuperCollider',
-    'Flockingjs',
-    'WaveSurfer',
-    'Cubase Pro'
+  Devops: ["AWS w/ CDK / Terraform", "Nginx", "Jenkins", "Digital Ocean"],
+  Databases: ["DynamoDB", "Redis", "MySQL / Oracle", "PostgresSQL", "Firebase"],
+  "Audio/Visual Tools": [
+    "Web Audio API",
+    "Web Speech API",
+    "Processing / P5js",
+    "SuperCollider",
+    "Flockingjs",
+    "WaveSurfer",
+    "Cubase Pro"
   ]
-}
+};
 
 export const projects: ProjectTempateType[] = [
   {
-    projectName: 'NotRSS',
-    expandedName: 'NotRSS',
-    liveLink: 'https://github.com/jsphweid/notrss',
+    projectName: "NotRSS",
+    expandedName: "NotRSS",
+    liveLink: "https://github.com/jsphweid/notrss",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1616975208/notrss_i0stbq.jpg',
-    date: 'March 2021',
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1616975208/notrss_i0stbq.jpg",
+    date: "March 2021",
     tags: [],
     getModalContent: function() {
       return (
         <div>
           <p>
-            I'm interested in the progression of the{' '}
+            I'm interested in the progression of the{" "}
             <a href="https://en.wikipedia.org/wiki/Music_information_retrieval">
               Music Information Retrieval
-            </a>{' '}
+            </a>{" "}
             field. Following the field involves keeping tabs on a number of
             websites that only occasionally post new information. The problem is
             that it's tedious to check these websites manually to see if
@@ -105,36 +105,36 @@ export const projects: ProjectTempateType[] = [
             out <a href={this.liveLink}>here!</a>
           </p>
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'units',
+    projectName: "units",
     expandedName: '"Units" Library for GraphQL',
     liveLink:
-      'https://medium.com/@jsphweid/introducing-unit-types-in-graphql-344974213e6',
+      "https://medium.com/@jsphweid/introducing-unit-types-in-graphql-344974213e6",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1583079729/Screen_Shot_2020-03-01_at_10.22.03_AM_sjhlem.png',
-    date: 'May 2019 - October 2019',
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1583079729/Screen_Shot_2020-03-01_at_10.22.03_AM_sjhlem.png",
+    date: "May 2019 - October 2019",
     tags: [],
     getModalContent: function() {
       return (
         <div>
           <p>
-            For this one, I'd just read the{' '}
+            For this one, I'd just read the{" "}
             <a href={this.liveLink}>Medium article.</a>
           </p>
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'best soundboard',
-    expandedName: 'Best Soundboard',
-    liveLink: 'https://bestsoundboard.com',
+    projectName: "best soundboard",
+    expandedName: "Best Soundboard",
+    liveLink: "https://bestsoundboard.com",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1555955576/Bildschirmfoto_2019-04-22_um_12.49.10_tkbgdc.png',
-    date: 'March 2019',
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1555955576/Bildschirmfoto_2019-04-22_um_12.49.10_tkbgdc.png",
+    date: "March 2019",
     tags: [],
     getModalContent: function() {
       return (
@@ -153,20 +153,20 @@ export const projects: ProjectTempateType[] = [
           <p>
             It's a pretty straight forward modern webapp created statically with
             Gatsby. The sharing functionality was written with DynamoDB and API
-            Gateway via the Serverless framework. Try it out{' '}
+            Gateway via the Serverless framework. Try it out{" "}
             <a href={this.liveLink}>here!</a>
           </p>
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'papio',
-    expandedName: 'PAPIO',
+    projectName: "papio",
+    expandedName: "PAPIO",
     liveLink: PAPIO_LINK,
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1555984757/Bildschirmfoto_2019-04-22_um_20.58.36_inwrrw.png',
-    date: 'November 2018 - March 2019',
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1555984757/Bildschirmfoto_2019-04-22_um_20.58.36_inwrrw.png",
+    date: "November 2018 - March 2019",
     tags: [],
     getModalContent: function() {
       return (
@@ -194,16 +194,16 @@ export const projects: ProjectTempateType[] = [
             Check it out <a href={this.liveLink}>here!</a>
           </p>
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'infinite meme',
-    expandedName: 'The Infinite Meme',
-    liveLink: 'https://infinitememe.com',
+    projectName: "infinite meme",
+    expandedName: "The Infinite Meme",
+    liveLink: "https://infinitememe.com",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1540857186/the-infinite-meme_oksvka.png',
-    date: 'October 2018',
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1540857186/the-infinite-meme_oksvka.png",
+    date: "October 2018",
     tags: [],
     getModalContent: function() {
       return (
@@ -224,20 +224,20 @@ export const projects: ProjectTempateType[] = [
           <p>
             It uses GatsbyJS for static rendering, AppSync for the API, S3 for
             audio storage, MobX for state management, and React for interactive
-            UI components. See it live in action{' '}
+            UI components. See it live in action{" "}
             <a href={this.liveLink}>here!</a>
           </p>
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'gosamosa',
-    expandedName: 'go:samosa',
-    liveLink: 'https://www.gosamosa.com',
+    projectName: "gosamosa",
+    expandedName: "go:samosa",
+    liveLink: "https://www.gosamosa.com",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1534472748/computers-small_iv4tyg.png',
-    date: 'August 2018',
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1534472748/computers-small_iv4tyg.png",
+    date: "August 2018",
     tags: [],
     getModalContent: function() {
       return (
@@ -277,17 +277,17 @@ export const projects: ProjectTempateType[] = [
             You can use it <a href={this.liveLink}>here.</a>
           </p>
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'reimagine',
-    expandedName: 'reimagine',
-    liveLink: 'https://www.josephweidinger.com/reimagine',
+    projectName: "reimagine",
+    expandedName: "reimagine",
+    liveLink: "https://www.josephweidinger.com/reimagine",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1533437829/reimagine_aeolyh.png',
-    date: 'March 2018 - May 2018',
-    tags: ['music'],
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1533437829/reimagine_aeolyh.png",
+    date: "March 2018 - May 2018",
+    tags: ["music"],
     getModalContent: function() {
       return (
         <div>
@@ -306,7 +306,7 @@ export const projects: ProjectTempateType[] = [
             cataloged until all the segments of the piece have been performed,
             recorded, and uploaded. Then all of those wavs can be strategically
             synthesized to form an interesting interpretation of the original
-            midi file.{' '}
+            midi file.{" "}
             <a href="https://soundcloud.com/joseph_weidinger/reimagine-hello-world-bach-invention-1-cover">
               Here is the very first thing produced by this process.
             </a>
@@ -314,11 +314,11 @@ export const projects: ProjectTempateType[] = [
           <p>
             Lots of technologies are used in this app. I developed several
             libraries. One is a synthesizer written in golang and served up by
-            AWS Lambda. Two public libraries:{' '}
+            AWS Lambda. Two public libraries:{" "}
             <a href="https://github.com/jsphweid/react-midi-visualizer">
               React Midi Visualizer
-            </a>{' '}
-            and{' '}
+            </a>{" "}
+            and{" "}
             <a href="https://github.com/jsphweid/react-conductor">
               React Conductor
             </a>
@@ -326,16 +326,16 @@ export const projects: ProjectTempateType[] = [
             and Cognito.
           </p>
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'josephweidinger.com',
-    expandedName: 'josephweidinger.com',
-    liveLink: 'https://www.josephweidinger.com/',
+    projectName: "josephweidinger.com",
+    expandedName: "josephweidinger.com",
+    liveLink: "https://www.josephweidinger.com/",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517527503/Screen_Shot_2018-02-01_at_5.23.55_PM_tzcnqa.png',
-    date: 'February 2016, January 2018',
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517527503/Screen_Shot_2018-02-01_at_5.23.55_PM_tzcnqa.png",
+    date: "February 2016, January 2018",
     tags: [],
     getModalContent: function() {
       return (
@@ -343,10 +343,10 @@ export const projects: ProjectTempateType[] = [
           <p>
             Pardon the self-referential nature of this project, but I consider
             this site a project in and of itself. The original site was created
-            a few years ago. It was mostly copied from some{' '}
+            a few years ago. It was mostly copied from some{" "}
             <a href="https://blackrockdigital.github.io/startbootstrap-freelancer/">
               Bootstrap template
-            </a>{' '}
+            </a>{" "}
             and hosted on a Digital Ocean box. I had <u>almost</u> no idea what
             I was doing and my older brother Clay had to help me with many
             things.
@@ -359,22 +359,22 @@ export const projects: ProjectTempateType[] = [
             performant. Finally, I migrated all of my site over to AWS. All of
             my projects use the aws-cli to dump their artifacts into a bucket.
             Cloudfront uses this bucket to cache files around the globe and
-            serve them gzipped for{' '}
+            serve them gzipped for{" "}
             <a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fjosephweidinger.com&tab=mobile">
               incredibly fast delivery.
             </a>
           </p>
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'blindfoldChessTrainer',
-    expandedName: 'Blindfold Chess Trainer',
-    liveLink: 'https://www.josephweidinger.com/blindfoldChessTrainer',
+    projectName: "blindfoldChessTrainer",
+    expandedName: "Blindfold Chess Trainer",
+    liveLink: "https://www.josephweidinger.com/blindfoldChessTrainer",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1518147976/Screen_Shot_2018-02-08_at_7.58.35_PM_pyofsk.png',
-    date: 'January - Februrary 2018',
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1518147976/Screen_Shot_2018-02-08_at_7.58.35_PM_pyofsk.png",
+    date: "January - Februrary 2018",
     tags: [],
     getModalContent: function() {
       return (
@@ -389,24 +389,24 @@ export const projects: ProjectTempateType[] = [
             it with my own logic and the Web Speech API.
           </p>
           <p>
-            It's completely client-side built with React / Typescript. You can{' '}
-            <a href={this.liveLink}>try it here!</a> The source code is located{' '}
+            It's completely client-side built with React / Typescript. You can{" "}
+            <a href={this.liveLink}>try it here!</a> The source code is located{" "}
             <a href="https://github.com/jsphweid/blindfold-chess-trainer">
               here.
             </a>
           </p>
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'pianoLearningStream',
-    expandedName: 'Piano Learning Stream',
-    liveLink: 'https://github.com/jsphweid/piano-learning-stream',
+    projectName: "pianoLearningStream",
+    expandedName: "Piano Learning Stream",
+    liveLink: "https://github.com/jsphweid/piano-learning-stream",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1518148183/Screen_Shot_2018-02-08_at_9.48.46_PM_gwxj1e.png',
-    date: 'November - December 2017',
-    tags: ['music'],
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1518148183/Screen_Shot_2018-02-08_at_9.48.46_PM_gwxj1e.png",
+    date: "November - December 2017",
+    tags: ["music"],
     getModalContent: function() {
       return (
         <div>
@@ -428,30 +428,30 @@ export const projects: ProjectTempateType[] = [
             hitting the disk.
           </p>
           <p>
-            Source code for this ongoing research is{' '}
+            Source code for this ongoing research is{" "}
             <a href={this.liveLink}>here.</a>
           </p>
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'whichString',
-    expandedName: 'Which String',
-    liveLink: 'https://www.github.com/jsphweid/whichString',
+    projectName: "whichString",
+    expandedName: "Which String",
+    liveLink: "https://www.github.com/jsphweid/whichString",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517525918/Screen_Shot_2018-02-01_at_4.54.22_PM_nrxo2q.png',
-    date: 'May 2017 - Dec 2017',
-    tags: ['music'],
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517525918/Screen_Shot_2018-02-01_at_4.54.22_PM_nrxo2q.png",
+    date: "May 2017 - Dec 2017",
+    tags: ["music"],
     getModalContent: function() {
       return (
         <div>
           <p>
             whichString is an app that uses a Neural Network to listen to a user
             playing a violin in real-time and predict the exact spot on the neck
-            being depressed. It uses a fairly basic model built with{' '}
+            being depressed. It uses a fairly basic model built with{" "}
             <a href="https://www.tensorflow.org/">Google's TensorFlow.</a> This
-            model is exported and used client-side{' '}
+            model is exported and used client-side{" "}
             <a href="https://js.tensorflow.org/">by deeplearnjs.</a>
             The client code is written in React / Typescript.
           </p>
@@ -463,17 +463,17 @@ export const projects: ProjectTempateType[] = [
             that link.
           </p>
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'react-fft-flipbook',
-    expandedName: 'React FFT Flipbook',
-    liveLink: 'https://www.josephweidinger.com/react-fft-flipbook',
+    projectName: "react-fft-flipbook",
+    expandedName: "React FFT Flipbook",
+    liveLink: "https://www.josephweidinger.com/react-fft-flipbook",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517457470/Screen_Shot_2018-01-31_at_9.56.43_PM_kst1d5.png',
-    date: 'October, December 2017',
-    tags: ['music'],
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517457470/Screen_Shot_2018-01-31_at_9.56.43_PM_kst1d5.png",
+    date: "October, December 2017",
+    tags: ["music"],
     getModalContent: function() {
       return (
         <div>
@@ -492,26 +492,26 @@ export const projects: ProjectTempateType[] = [
             can be done.
           </p>
           <p>
-            This project is a package{' '}
+            This project is a package{" "}
             <a href="https://www.npmjs.com/package/react-fft-flipbook">
               in the
-            </a>{' '}
-            npm registry. A live demo can be found{' '}
-            <a href="https://josephweidinger.com/react-fft-flipbook/">here.</a>{' '}
-            And the source code is located{' '}
+            </a>{" "}
+            npm registry. A live demo can be found{" "}
+            <a href="https://josephweidinger.com/react-fft-flipbook/">here.</a>{" "}
+            And the source code is located{" "}
             <a href="https://github.com/jsphweid/react-fft-flipbook">here.</a>
           </p>
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'fiberMap',
-    expandedName: 'Fiber Map',
-    liveLink: '',
+    projectName: "fiberMap",
+    expandedName: "Fiber Map",
+    liveLink: "",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1518184505/Screen_Shot_2018-02-09_at_7.54.19_AM_mwaiii.png',
-    date: 'July - August 2017',
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1518184505/Screen_Shot_2018-02-09_at_7.54.19_AM_mwaiii.png",
+    date: "July - August 2017",
     tags: [],
     getModalContent: function() {
       return (
@@ -540,16 +540,16 @@ export const projects: ProjectTempateType[] = [
             source code is not open.
           </p>
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'scheduleMaker',
-    expandedName: 'Schedule Maker',
-    liveLink: 'https://www.github.com/jsphweid/scheduleMakerSpring',
+    projectName: "scheduleMaker",
+    expandedName: "Schedule Maker",
+    liveLink: "https://www.github.com/jsphweid/scheduleMakerSpring",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1486747894/Screen_Shot_2017-02-10_at_11.30.21_AM_d8gyep.png',
-    date: 'January-February 2017',
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1486747894/Screen_Shot_2017-02-10_at_11.30.21_AM_d8gyep.png",
+    date: "January-February 2017",
     tags: [],
     getModalContent: function() {
       return (
@@ -565,22 +565,22 @@ export const projects: ProjectTempateType[] = [
             data-oriented feedback with regards to their scheduling decisions.
           </p>
           <p>
-            The source code can be found here:{' '}
+            The source code can be found here:{" "}
             <a href={this.liveLink}>on GitHub.</a> I wrote an AWS Lambda to spin
             up an instance with Tomcat / Mysql. Be my guest... try it out!
           </p>
           <ScheduleMakerLaunchButton />
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'AintIFunny',
+    projectName: "AintIFunny",
     expandedName: "Ain't I Funny",
-    liveLink: 'https://www.josephweidinger.com/AintIFunny',
+    liveLink: "https://www.josephweidinger.com/AintIFunny",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485187194/Screen_Shot_2017-01-23_at_9.59.07_AM_p2xz4r.png',
-    date: 'January 2017',
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485187194/Screen_Shot_2017-01-23_at_9.59.07_AM_p2xz4r.png",
+    date: "January 2017",
     tags: [],
     getModalContent: function() {
       return (
@@ -596,16 +596,16 @@ export const projects: ProjectTempateType[] = [
             on <a href="//github.com/jsphweid/AintIFunny">GitHub</a>
           </p>
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'aMuseMe',
+    projectName: "aMuseMe",
     expandedName: "A-'Muse' Me",
-    liveLink: 'https://josephweidinger.com/aMuseMe',
+    liveLink: "https://josephweidinger.com/aMuseMe",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484884631/Screen_Shot_2017-01-19_at_9.55.37_PM_y0szwe.png',
-    date: 'January 2017',
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484884631/Screen_Shot_2017-01-19_at_9.55.37_PM_y0szwe.png",
+    date: "January 2017",
     tags: [],
     getModalContent: function() {
       return (
@@ -620,21 +620,21 @@ export const projects: ProjectTempateType[] = [
           </p>
           <p>
             The live site <a href={this.liveLink}>is hosted here</a> and the
-            source can be{' '}
+            source can be{" "}
             <a href="//github.com/jsphweid/aMuseMe">found on GitHub.</a>
           </p>
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'browserTranscribe',
-    expandedName: 'Browser Transcribe',
-    liveLink: 'http://www.browsertranscribe.com',
+    projectName: "browserTranscribe",
+    expandedName: "Browser Transcribe",
+    liveLink: "http://www.browsertranscribe.com",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871388/browserTranscribe_yrcler.png',
-    date: 'December 2016',
-    tags: ['music'],
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871388/browserTranscribe_yrcler.png",
+    date: "December 2016",
+    tags: ["music"],
     getModalContent: function() {
       return (
         <div>
@@ -642,31 +642,31 @@ export const projects: ProjectTempateType[] = [
             browserTranscribe is a webapp that allows you to easily manipulate a
             sound file for the purposes of transcribing its contents: music,
             speech or otherwise. I wanted to build something like the very
-            professional{' '}
+            professional{" "}
             <a href="https://www.seventhstring.com/xscribe/overview.html">
               'Transcribe!'
-            </a>{' '}
+            </a>{" "}
             except with just the basic functionality for the web browser. You
             can slow it down while preserving the pitch, start and stop on a
             dime, loop, and more.
           </p>
           <p>
             <a href={this.liveLink}>Here is a link</a> to the live website. The
-            project is hosted{' '}
+            project is hosted{" "}
             <a href="//github.com/jsphweid/browserTranscribe">on GitHub.</a>
           </p>
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'compareInflections',
-    expandedName: 'Compare Inflections',
-    liveLink: 'https://www.josephweidinger.com/compareInflections',
+    projectName: "compareInflections",
+    expandedName: "Compare Inflections",
+    liveLink: "https://www.josephweidinger.com/compareInflections",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517455449/compareInflections_vbtmxo.png',
-    date: 'October - November 2016',
-    tags: ['audio'],
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517455449/compareInflections_vbtmxo.png",
+    date: "October - November 2016",
+    tags: ["audio"],
     getModalContent: function() {
       return (
         <div>
@@ -680,21 +680,21 @@ export const projects: ProjectTempateType[] = [
             I made an MVP and it is <a href={this.liveLink}>here</a> but my
             understanding of pitch detection was primitive when I wrote this and
             hence it isn't too effective (unless your voice sounds like a sine
-            wave...). Source Code is available{' '}
+            wave...). Source Code is available{" "}
             <a href="https://github.com/jsphweid/compareInflections">here.</a>
           </p>
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'playEquation',
-    expandedName: 'Play Equation',
-    liveLink: 'https://www.josephweidinger.com/playEquation',
+    projectName: "playEquation",
+    expandedName: "Play Equation",
+    liveLink: "https://www.josephweidinger.com/playEquation",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485141822/Screen_Shot_2017-01-22_at_9.20.04_PM_uppjjg.png',
-    date: 'Fall 2016',
-    tags: ['music'],
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485141822/Screen_Shot_2017-01-22_at_9.20.04_PM_uppjjg.png",
+    date: "Fall 2016",
+    tags: ["music"],
     getModalContent: function() {
       return (
         <div>
@@ -708,22 +708,22 @@ export const projects: ProjectTempateType[] = [
             equation elegantly and accurately display the graph.
           </p>
           <p>
-            The link to the live website is <a href={this.liveLink}>HERE.</a>{' '}
-            And the source code:{' '}
+            The link to the live website is <a href={this.liveLink}>HERE.</a>{" "}
+            And the source code:{" "}
             <a href="//github.com/jsphweid/playEquation">GitHub.</a>
           </p>
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'VAIL',
-    expandedName: 'Visual and Intuitive Learning',
-    liveLink: 'https://www.josephweidinger.com/VAIL',
+    projectName: "VAIL",
+    expandedName: "Visual and Intuitive Learning",
+    liveLink: "https://www.josephweidinger.com/VAIL",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485141863/Screen_Shot_2017-01-22_at_9.19.11_PM_zpaggn.png',
-    date: 'November 2016',
-    tags: ['audio'],
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485141863/Screen_Shot_2017-01-22_at_9.19.11_PM_zpaggn.png",
+    date: "November 2016",
+    tags: ["audio"],
     getModalContent: function() {
       return (
         <div>
@@ -735,21 +735,21 @@ export const projects: ProjectTempateType[] = [
             YouTube video is the style I aim for.
           </p>
           <p>
-            The site <a href={this.liveLink}>is here</a> and it is hosted{' '}
+            The site <a href={this.liveLink}>is here</a> and it is hosted{" "}
             <a href="//github.com/jsphweid/VAIL">on Github Here.</a>
           </p>
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'justInTune',
-    expandedName: 'Just In Tune',
-    liveLink: 'https://www.josephweidinger.com/justInTune',
+    projectName: "justInTune",
+    expandedName: "Just In Tune",
+    liveLink: "https://www.josephweidinger.com/justInTune",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871108/justIntonation_nlcdwk.png',
-    date: 'Spring 2015, then Fall 2016',
-    tags: ['audio'],
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871108/justIntonation_nlcdwk.png",
+    date: "Spring 2015, then Fall 2016",
+    tags: ["audio"],
     getModalContent: function() {
       return (
         <div>
@@ -761,21 +761,21 @@ export const projects: ProjectTempateType[] = [
             midi libraries.
           </p>
           <p>
-            The project is located <a href={this.liveLink}>HERE</a> and{' '}
+            The project is located <a href={this.liveLink}>HERE</a> and{" "}
             <a href="https://github.com/jsphweid/justInTune">on Github.</a>
           </p>
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'bookletMacro',
-    expandedName: 'Booklet Macro',
-    liveLink: 'https://github.com/jsphweid/bookletMacro',
+    projectName: "bookletMacro",
+    expandedName: "Booklet Macro",
+    liveLink: "https://github.com/jsphweid/bookletMacro",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871103/bookletMacro_wjaqo2.jpg',
-    date: 'October 2015',
-    tags: ['audio'],
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871103/bookletMacro_wjaqo2.jpg",
+    date: "October 2015",
+    tags: ["audio"],
     getModalContent: function() {
       return (
         <div>
@@ -788,24 +788,24 @@ export const projects: ProjectTempateType[] = [
             extremely easy and quick.
           </p>
           <p>
-            Here is a{' '}
+            Here is a{" "}
             <a href="//youtube.com/watch?v=Jiq5TR0RN-A">
               youtube demonstration.
-            </a>{' '}
+            </a>{" "}
             And the project is hosted on <a href={this.liveLink}>Github.</a>
           </p>
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'processingSketches',
-    expandedName: 'Processing Sketches',
-    liveLink: 'https://www.youtube.com/watch?v=f7jjcGldl_o',
+    projectName: "processingSketches",
+    expandedName: "Processing Sketches",
+    liveLink: "https://www.youtube.com/watch?v=f7jjcGldl_o",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871107/processing_bqeqo8.jpg',
-    date: 'August - October 2015',
-    tags: ['audio'],
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871107/processing_bqeqo8.jpg",
+    date: "August - October 2015",
+    tags: ["audio"],
     getModalContent: function() {
       return (
         <div>
@@ -824,20 +824,20 @@ export const projects: ProjectTempateType[] = [
             data.
           </p>
           <p>
-            A video of the performance can be found on{' '}
+            A video of the performance can be found on{" "}
             <a href={this.liveLink}>Youtube.</a>
           </p>
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'hotkeyGrid',
-    expandedName: 'Hotkey Grid',
-    liveLink: 'https://github.com/jsphweid/hotkey-grid',
+    projectName: "hotkeyGrid",
+    expandedName: "Hotkey Grid",
+    liveLink: "https://github.com/jsphweid/hotkey-grid",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871108/hotkey-grid_eru7ne.png',
-    date: 'June - August 2015',
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871108/hotkey-grid_eru7ne.png",
+    date: "June - August 2015",
     tags: [],
     getModalContent: function() {
       return (
@@ -858,17 +858,17 @@ export const projects: ProjectTempateType[] = [
             project is hosted on <a href={this.liveLink}>Github.</a>
           </p>
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'finaleHotkeyGrid',
-    expandedName: 'Finale Hotkey Grid',
-    liveLink: 'https://github.com/jsphweid/Finale-Hotkey-Grid',
+    projectName: "finaleHotkeyGrid",
+    expandedName: "Finale Hotkey Grid",
+    liveLink: "https://github.com/jsphweid/Finale-Hotkey-Grid",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871107/finale-hotkey-grid_sznsni.png',
-    date: 'December 2014 - April 2015',
-    tags: ['music'],
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871107/finale-hotkey-grid_sznsni.png",
+    date: "December 2014 - April 2015",
+    tags: ["music"],
     getModalContent: function() {
       return (
         <div>
@@ -883,16 +883,16 @@ export const projects: ProjectTempateType[] = [
             found on <a href={this.liveLink}>Github.</a>
           </p>
         </div>
-      )
+      );
     }
   },
   {
-    projectName: 'feedCalc',
-    expandedName: 'Feed Calculator',
-    liveLink: 'https://www.josephweidinger.com/feedCalc/',
+    projectName: "feedCalc",
+    expandedName: "Feed Calculator",
+    liveLink: "https://www.josephweidinger.com/feedCalc/",
     imgUrl:
-      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871105/feedCalc_effijp.png',
-    date: 'October 2014',
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871105/feedCalc_effijp.png",
+    date: "October 2014",
     tags: [],
     getModalContent: function() {
       return (
@@ -913,7 +913,7 @@ export const projects: ProjectTempateType[] = [
             The webapp can be found <a href={this.liveLink}>HERE.</a>
           </p>
         </div>
-      )
+      );
     }
   }
-]
+];

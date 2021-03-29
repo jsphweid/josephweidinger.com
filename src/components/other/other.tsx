@@ -1,21 +1,21 @@
-import * as React from 'react'
-import Section from '../common/section/section'
+import * as React from "react";
+import Section from "../common/section/section";
 
 export interface OtherProps {
-  className?: string
+  className?: string;
 }
 
 export default class Other extends React.Component<OtherProps> {
   constructor(props: OtherProps) {
-    super(props)
+    super(props);
   }
 
   render() {
     return (
       <Section
-        className={`jlw-other ${this.props.className || ''}`}
+        className={`jlw-other ${this.props.className || ""}`}
         title="other"
       />
-    )
+    );
   }
 }

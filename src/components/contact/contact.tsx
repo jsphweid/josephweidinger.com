@@ -1,15 +1,15 @@
-import * as React from 'react'
-import { Element } from 'react-scroll'
-import { icons } from '../common/constants'
-import { IconType } from '../common/types'
+import * as React from "react";
+import { Element } from "react-scroll";
+import { icons } from "../common/constants";
+import { IconType } from "../common/types";
 
 export interface ContactProps {
-  className?: string
+  className?: string;
 }
 
 export default class Contact extends React.Component<ContactProps> {
   constructor(props: ContactProps) {
-    super(props)
+    super(props);
   }
 
   renderIcon = (icon: IconType, url: string): JSX.Element => {
@@ -22,13 +22,13 @@ export default class Contact extends React.Component<ContactProps> {
           />
         </div>
       </a>
-    )
-  }
+    );
+  };
 
   render() {
     return (
-      <div className={`jlw-contact ${this.props.className || ''}`}>
-        <Element name={'contact'} />
+      <div className={`jlw-contact ${this.props.className || ""}`}>
+        <Element name={"contact"} />
         <div className="jlw-contact-content">
           <div>
             <h3>Contact</h3>
@@ -43,25 +43,25 @@ export default class Contact extends React.Component<ContactProps> {
               <li>
                 {this.renderIcon(
                   icons.github,
-                  'https://www.github.com/jsphweid'
+                  "https://www.github.com/jsphweid"
                 )}
               </li>
               <li>
                 {this.renderIcon(
                   icons.soundcloud,
-                  'https://www.soundcloud.com/joseph_weidinger'
+                  "https://www.soundcloud.com/joseph_weidinger"
                 )}
               </li>
               <li>
                 {this.renderIcon(
                   icons.facebook,
-                  'https://www.facebook.com/jsphweid'
+                  "https://www.facebook.com/jsphweid"
                 )}
               </li>
               <li>
                 {this.renderIcon(
                   icons.youtube,
-                  'https://www.youtube.com/user/JojoeMusic'
+                  "https://www.youtube.com/user/JojoeMusic"
                 )}
               </li>
             </ul>
@@ -79,6 +79,6 @@ export default class Contact extends React.Component<ContactProps> {
           <div>Copyright © 2020</div>
         </div>
       </div>
-    )
+    );
   }
 }
