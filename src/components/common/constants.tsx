@@ -30,9 +30,10 @@ export const projectLargePicSize: ImageSizeType = {
 export const skills: any = {
   Languages: [
     'Typescript / Javascript',
+    'Python',
     'HTML / CSS / SCSS',
     'Java / Groovy',
-    'C / C++ / Python / Go',
+    'C / C++ / Go',
     'Bash / Lua / AutoHotkey'
   ],
   'Frameworks / Libraries': [
@@ -48,20 +49,8 @@ export const skills: any = {
     'Webpack / Grunt',
     'Mac / Windows / Linux'
   ],
-  Devops: [
-    'AWS: Route 53 / S3 / CloudFront / Cognito / AppSync / Lamdba',
-    'Nginx',
-    'Jenkins',
-    'Digital Ocean'
-  ],
-  Databases: [
-    'DynamoDB',
-    'Redis',
-    'MySQL / Oracle',
-    'RDS',
-    'PostgreSQL',
-    'Firebase'
-  ],
+  Devops: ['AWS w/ CDK / Terraform', 'Nginx', 'Jenkins', 'Digital Ocean'],
+  Databases: ['DynamoDB', 'Redis', 'MySQL / Oracle', 'PostgresSQL', 'Firebase'],
   'Audio/Visual Tools': [
     'Web Audio API',
     'Web Speech API',
@@ -74,6 +63,51 @@ export const skills: any = {
 }
 
 export const projects: ProjectTempateType[] = [
+  {
+    projectName: 'NotRSS',
+    expandedName: 'NotRSS',
+    liveLink: 'https://github.com/jsphweid/notrss',
+    imgUrl:
+      'https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1616975208/notrss_i0stbq.jpg',
+    date: 'March 2021',
+    tags: [],
+    getModalContent: function() {
+      return (
+        <div>
+          <p>
+            I'm interested in the progression of the{' '}
+            <a href="https://en.wikipedia.org/wiki/Music_information_retrieval">
+              Music Information Retrieval
+            </a>{' '}
+            field. Following the field involves keeping tabs on a number of
+            websites that only occasionally post new information. The problem is
+            that it's tedious to check these websites manually to see if
+            anything new exists for a number of reasons. I figured it'd be much
+            better to have the process automated such that I could simply get an
+            email of the diff soon after the site was updated somehow.
+          </p>
+          <p>
+            I found a nice paid service that allows you to do just that, but the
+            price was too much for what is a simple problem. So I architected my
+            own serverless solution that runs for pennies in AWS.
+          </p>
+          <p>
+            It works by running a lambda regularly that scans a sparse dynamodb
+            index for a list of sites to compare against previous versions.
+            Using a queue and another lambda, a headless browser navigates to
+            the site and takes a snapshot of the site. If there is a difference
+            detected, it records the new snapshot and sends you (and anyone else
+            who is subscribed) an email with a picture of the diff. A simple
+            GraphQL API is also provided to help manage the database.
+          </p>
+          <p>
+            The stack was written in CDK for Typescript and you can check it all
+            out <a href={this.liveLink}>here!</a>
+          </p>
+        </div>
+      )
+    }
+  },
   {
     projectName: 'units',
     expandedName: '"Units" Library for GraphQL',
