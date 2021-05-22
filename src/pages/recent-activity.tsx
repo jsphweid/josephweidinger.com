@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { useInfiniteQuery } from "react-query";
 
-// import "./index.scss";
+// I don't think I should have to put this here, but the way I've misused gatsby project
+// layout probably necessitates this for now
+import "./index.scss";
 
 import RootLayout from "../layouts/root";
 import ActivityLog from "../components/activity-log/activity-log";
