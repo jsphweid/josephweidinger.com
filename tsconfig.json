@@ -14,6 +14,7 @@
     "preserveConstEnums": true,
     "sourceMap": true,
     "skipLibCheck": true,
+    "strict": true,
     "baseUrl": ".",
     "paths": {
       "@myPathAlias/*": ["src/path-alias-example/*"]

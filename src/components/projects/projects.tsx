@@ -1,4 +1,5 @@
-import * as React from "react";
+import React from "react";
+
 import Section from "../common/section/section";
 import Project from "./project/project";
 import { projects } from "../common/constants";
@@ -61,7 +62,7 @@ export default class Projects extends React.Component<
     const priorities = Object.keys(ProjectDisplayPriorities);
     return priorities.map((priority: any, index: number) => {
       const priorityText = ProjectDisplayPriorities[
-        priority
+        priority as keyof typeof ProjectDisplayPriorities
       ] as ProjectDisplayPriorities;
       const isSelected: boolean = priorityText === this.state.currentPriority;
       return (

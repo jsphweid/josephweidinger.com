@@ -1,5 +1,6 @@
-import * as React from "react";
+import React from "react";
 import { Element } from "react-scroll";
+
 import { icons } from "../common/constants";
 import { IconType } from "../common/types";
 

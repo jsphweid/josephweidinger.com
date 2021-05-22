@@ -1,13 +1,13 @@
-import * as React from "react";
+import React from "react";
+import * as queryString from "query-string";
+import { animateScroll } from "react-scroll";
+
 import Navbar from "./navbar/navbar";
 import Contact from "./contact/contact";
 import Projects from "./projects/projects";
 import Title from "./title/title";
 import Modal from "./modal/modal";
 import RecentActivity from "./recent-activity/recent-activity";
-import { animateScroll } from "react-scroll";
-import * as queryString from "query-string";
-
 import { ProjectTempateType } from "./common/types";
 import { instantScroll, projects } from "./common/constants";
 import { isEmptyObj } from "./common/helpers";
@@ -15,7 +15,7 @@ import { isEmptyObj } from "./common/helpers";
 export interface MainProps {}
 
 export interface MainState {
-  activeProject: ProjectTempateType;
+  activeProject: ProjectTempateType | null;
   savedScrollOffset: number;
 }
 
@@ -57,7 +57,7 @@ export default class Main extends React.Component<MainProps, MainState> {
     const queryParams: string = paramsToAppend
       ? `?${queryString.stringify(paramsToAppend)}`
       : "/";
-    history.pushState({}, null, queryParams);
+    history.pushState({}, "", queryParams);
   };
 
   handleSetActiveProject = (project: ProjectTempateType): void => {
@@ -78,12 +78,9 @@ export default class Main extends React.Component<MainProps, MainState> {
   };
 
   render() {
-    const modal: JSX.Element = (
+    const renderModal = (project: ProjectTempateType): JSX.Element => (
       <div className="jlw">
-        <Modal
-          project={this.state.activeProject}
-          closeModal={this.handleCloseActiveProject}
-        />
+        <Modal project={project} closeModal={this.handleCloseActiveProject} />
       </div>
     );
 
@@ -100,6 +97,8 @@ export default class Main extends React.Component<MainProps, MainState> {
       </div>
     );
 
-    return this.state.activeProject ? modal : normalSite;
+    return this.state.activeProject
+      ? renderModal(this.state.activeProject)
+      : normalSite;
   }
 }

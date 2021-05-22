@@ -16,7 +16,7 @@ const LOG_START_DATE = new Date("2021-01-01");
 const Component = () => {
   const [startDate, setStartDate] = useState(Utils.getRecentStartDate());
   const [endDate, setEndDate] = useState(new Date());
-  const [logs, setLogs] = useState([]);
+  const [logs, setLogs] = useState<RemoteData.ActivityLog[]>([]);
 
   // NOTE: as this evolved (or devolved...), I found myself using react-query as it's
   // supposed to be used less and less
@@ -75,7 +75,7 @@ const Component = () => {
       return (
         <button
           className="jlw-rap-loadMoreButton"
-          ref={loadMoreButtonRef}
+          ref={loadMoreButtonRef as any}
           onClick={() => fetchNextPage()}
           disabled={!hasNextPage || isFetchingNextPage}
         >

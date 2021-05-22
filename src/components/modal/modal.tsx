@@ -1,6 +1,7 @@
-import * as React from "react";
-import { ProjectTempateType } from "../common/types";
+import React from "react";
 import { animateScroll } from "react-scroll";
+
+import { ProjectTempateType } from "../common/types";
 import {
   instantScroll,
   genericImage,
