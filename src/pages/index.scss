@@ -4,10 +4,15 @@
 /* common */
 @import "../components/common/section/section.scss";
 
+/* pages */
+@import "../pages/recent-activity.scss";
+
 /* components */
 @import "../components/navbar/navbar.scss";
+@import "../components/activity-log/activity-log.scss";
 
 @import "../components/change-blog/change-blog.scss";
+@import "../components/recent-activity/recent-activity.scss";
 @import "../components/projects/projects.scss";
 @import "../components/projects/project/project.scss";
 @import "../components/modal/modal.scss";

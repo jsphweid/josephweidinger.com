@@ -12,18 +12,24 @@ export default class Contact extends React.Component<ContactProps> {
     super(props);
   }
 
-  renderIcon = (icon: IconType, url: string): JSX.Element => {
-    return (
-      <a href={url}>
-        <div className="jlw-contact-icon">
-          <i
-            className={`jlw-icons icon-${icon.class}`}
-            dangerouslySetInnerHTML={{ __html: icon.unicode }}
-          />
-        </div>
-      </a>
-    );
-  };
+  renderIcon = (icon: IconType, url: string): JSX.Element => (
+    <a href={url}>
+      <div className="jlw-contact-icon">
+        <i
+          className={`jlw-icons icon-${icon.class}`}
+          dangerouslySetInnerHTML={{ __html: icon.unicode }}
+        />
+      </div>
+    </a>
+  );
+
+  renderPictureIcon = (staticUrlAddress: string, url: string): JSX.Element => (
+    <a href={url}>
+      <div className="jlw-contact-icon">
+        <img src={staticUrlAddress} alt="Change(B)log" />
+      </div>
+    </a>
+  );
 
   render() {
     return (
@@ -61,8 +67,11 @@ export default class Contact extends React.Component<ContactProps> {
               <li>
                 {this.renderIcon(
                   icons.youtube,
-                  "https://www.youtube.com/user/JojoeMusic"
+                  "https://www.youtube.com/c/JosephWeidinger"
                 )}
+              </li>
+              <li>
+                {this.renderPictureIcon("/profile-pic.jpeg", "/changeBlog")}
               </li>
             </ul>
           </div>
@@ -76,7 +85,7 @@ export default class Contact extends React.Component<ContactProps> {
           </div>
         </div>
         <div className="jlw-contact-copyright">
-          <div>Copyright © 2020</div>
+          <div>Copyright © 2021</div>
         </div>
       </div>
     );

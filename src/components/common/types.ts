@@ -2,7 +2,7 @@ export type SectionType =
   | "dev projects"
   | "other"
   | "contact"
-  | "change (b)log";
+  | "recent activity";
 
 export interface ProjectTempateType {
   projectName: string;
