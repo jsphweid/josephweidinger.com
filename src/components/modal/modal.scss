@@ -1,0 +1,122 @@
+.jlw-modal {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  z-index: 20;
+  padding-bottom: 64px;
+
+  h2 {
+    color: $red;
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  hr {
+    color: $red;
+  }
+
+  img {
+    border: 1px solid $black;
+    display: block;
+    margin: 0 auto;
+    max-width: 85%;
+  }
+
+  img:hover {
+    cursor: pointer;
+  }
+
+  .jlw-modal-content {
+    div {
+      font-size: 20px;
+      color: $red;
+      a {
+        color: $grey;
+      }
+      max-width: 75%;
+      margin: 32px auto;
+      text-align: center;
+    }
+  }
+
+  .jlw-modal-date {
+    width: 50%;
+    text-align: center;
+    margin: 36px auto;
+    display: block;
+    color: $red;
+  }
+
+  .jlw-modal-button {
+    margin: 0 auto;
+    display: block;
+    background-color: $off-white-light;
+    color: $red;
+    border-radius: 25px;
+    font-size: 24px;
+    width: 128px;
+    height: 64px;
+  }
+
+  .jlw-modal-button:hover {
+    cursor: pointer;
+    color: $grey;
+  }
+}
+
+.jlw-modal-closeButton {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+
+  cursor: pointer;
+  &:hover {
+    opacity: 0.3;
+  }
+
+  & > div {
+    height: 75px;
+    width: 1px;
+    margin-left: 35px;
+    background-color: $black;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); /* IE 9 */
+    z-index: 1051; /* Safari and Chrome */
+
+    & > div {
+      height: 75px;
+      width: 1px;
+      background-color: red;
+      transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg); /* IE 9 */
+      z-index: 1052; /* Safari and Chrome */
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .jlw-modal {
+    padding-bottom: 40px;
+    h2 {
+      font-size: 2em;
+    }
+
+    .jlw-modal-button {
+      font-size: 20px;
+      width: 96px;
+      height: 48px;
+    }
+  }
+
+  .jlw-modal-closeButton {
+    display: none;
+  }
+}

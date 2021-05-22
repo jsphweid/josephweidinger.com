@@ -1,0 +1,22 @@
+.jlw-rap {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 40px;
+
+  h1 {
+    text-align: center;
+    font-size: 70px;
+    font-weight: 900;
+    margin: 40px 0 0 0;
+  }
+}
+
+.jlw-rap > div {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 490px;
+  padding: 2.625rem 1.3125rem;
+}
+
+.jlw-rap-loadMoreButton {
+  margin-top: 16px;
+}

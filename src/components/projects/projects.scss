@@ -1,0 +1,82 @@
+.jlw-projects hr {
+  margin: 40px auto 14px auto;
+}
+
+.jlw-projects-content-priority {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  h2 {
+    padding: 8px 0;
+    max-width: 200px;
+  }
+  ul {
+    list-style: none;
+    li {
+      @extend .prevent-selection;
+      float: left;
+      padding: 20px 12px;
+    }
+
+    li:hover {
+      @extend .jlw-colorProfile3;
+      cursor: pointer;
+    }
+
+    li:hover.jlw-projects-content-priority-item--active,
+    .jlw-projects-content-priority-item--active {
+      @extend .jlw-colorProfile1;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .jlw-projects-content-priority {
+    ul {
+      padding-left: 20px;
+    }
+  }
+}
+
+.jlw-projects-content-projects {
+  flex-wrap: wrap;
+  display: inline-flex;
+  // justify-content: start; // has mixed support in different browsers but doesn't even seem to be necessary atm
+}
+
+.jlw-projects-content {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 2028px) {
+  .jlw-projects-content {
+    max-width: 1980px;
+  }
+}
+
+@media screen and (min-width: 1698px) and (max-width: 2028px) {
+  .jlw-projects-content {
+    max-width: 1657px;
+  }
+}
+
+@media screen and (min-width: 1036px) and (max-width: 1698px) {
+  .jlw-projects-content {
+    max-width: 990px;
+  }
+}
+
+@media screen and (min-width: 708px) and (max-width: 1036px) {
+  .jlw-projects-content {
+    max-width: 660px;
+  }
+}
+
+@media screen and (max-width: 708px) {
+  .jlw-projects-content {
+    max-width: initial;
+  }
+  .jlw-projects-content-projects {
+    justify-content: center;
+  }
+}
