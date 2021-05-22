@@ -1,4 +1,5 @@
-import * as React from "react";
+import React from "react";
+
 import { SectionType } from "../common/types";
 import { scroller, animateScroll } from "react-scroll";
 import { smoothScroll } from "../common/constants";

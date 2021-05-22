@@ -1,4 +1,5 @@
-import * as React from "react";
+import React from "react";
+
 import Section from "../common/section/section";
 
 export interface OtherProps {

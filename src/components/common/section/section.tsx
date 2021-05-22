@@ -1,11 +1,11 @@
-import * as React from "react";
+import React from "react";
 import { Element } from "react-scroll";
 
 export interface SectionProps {
   className?: string;
   title: string;
   titleUrl?: string;
-  children: any;
+  children?: any;
 }
 
 export default class Section extends React.Component<SectionProps> {

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { useQuery } from "react-query";
 
 import Section from "../common/section/section";
@@ -10,7 +10,7 @@ export interface RecentActivityProps {
 }
 
 const RecentActivity: React.SFC<RecentActivityProps> = props => {
-  const { isLoading, error, data } = useQuery<RemoteData.ActivityLog[]>(
+  const { isLoading, error, data } = useQuery<RemoteData.ActivityLog[], any>(
     "activityLogData",
     () => RemoteData.getActivityLogs({ first: 5 })
   );
@@ -20,7 +20,7 @@ const RecentActivity: React.SFC<RecentActivityProps> = props => {
       return <div>Loading recent activity...</div>;
     } else if (error) {
       return <div>{"An error has occurred: " + error.message}</div>;
-    } else {
+    } else if (data) {
       return (
         <div>
           {data.map((log, i) => (

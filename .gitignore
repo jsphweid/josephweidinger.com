@@ -24,3 +24,4 @@ tmp/
 .cache
 public
 deploy.sh
+build
