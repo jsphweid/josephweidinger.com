@@ -1,0 +1,30 @@
+.jlw-activityLog {
+  display: flex;
+}
+
+.jlw-activityLog > div {
+  margin: 8px;
+}
+
+.jlw-activityLog-icon {
+  padding-top: 14px;
+}
+
+.jlw-activityLog-content-date {
+  font-size: 12px;
+}
+
+// this is ridiculous but this will control the innerHTML... :(
+.jlw-activityLog-content {
+  ul {
+    margin: 12px 0;
+    padding-left: 8px;
+
+    list-style: none;
+    li:before {
+      content: "•";
+      padding-right: 8px;
+      font-size: 14pt;
+    }
+  }
+}

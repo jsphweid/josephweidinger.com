@@ -4,13 +4,13 @@ import Contact from "./contact/contact";
 import Projects from "./projects/projects";
 import Title from "./title/title";
 import Modal from "./modal/modal";
+import RecentActivity from "./recent-activity/recent-activity";
 import { animateScroll } from "react-scroll";
 import * as queryString from "query-string";
 
 import { ProjectTempateType } from "./common/types";
 import { instantScroll, projects } from "./common/constants";
 import { isEmptyObj } from "./common/helpers";
-import ChangeBlog from "./change-blog/change-blog";
 
 export interface MainProps {}
 
@@ -91,7 +91,7 @@ export default class Main extends React.Component<MainProps, MainState> {
       <div className="jlw jlw-headerOffset">
         <Navbar className="jlw-colorProfile1" />
         <Title className="jlw-colorProfile3" />
-        <ChangeBlog className="jlw-colorProfile1" />
+        <RecentActivity className="jlw-colorProfile1" />
         <Projects
           className="jlw-colorProfile3"
           handleProjectOpen={this.handleSetActiveProject}
