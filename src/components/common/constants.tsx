@@ -907,11 +907,18 @@ export const projects: ProjectTempateType[] = [
             content of these seeds, I created a tool that generates new
             combinations of feed that satisfy the minimal requirements for the
             chickens and satisfies a price point also. This was one of my very
-            first creations with code and I think my brother for helping me a
-            lot on this.
+            first creations with code and I thank{" "}
+            <a href="http://clayweidinger.com">my brother Clay</a> for helping
+            me a lot on this.
           </p>
           <p>
             The webapp can be found <a href={this.liveLink}>HERE.</a>
+          </p>
+          <p>
+            May 2021 Update: I talked to some people who live around where I
+            used to live all those years ago and they mentioned they had still
+            been using the custom ration I created with this app... and the
+            chickens love it!
           </p>
         </div>
       );
