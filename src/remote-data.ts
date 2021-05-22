@@ -14,7 +14,7 @@ interface ActivityLogsRequest {
 }
 
 export const getActivityLogs = (
-  req: ActivityLogsRequest
+  req: ActivityLogsRequest = {}
 ): Promise<ActivityLog[]> => {
   // TODO: clean all this bullshit up (use lib?)
   const startDateString = `?start=${(

@@ -11,9 +11,7 @@ export default function RootLayout({ children }: { children: any }) {
       {/* <Helmet /> */}
       {/* <ThemeProvider theme={theme}> */}
       {/* <CssBaseline /> */}
-      <QueryClientProvider client={queryClient}>
-        >{children}
-      </QueryClientProvider>
+      <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
       {/* </ThemeProvider> */}
     </>
   );

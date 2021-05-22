@@ -34,7 +34,7 @@ const RecentActivity: React.SFC<RecentActivityProps> = props => {
   return (
     <Section
       title="recent activity"
-      // titleUrl="https://josephweidinger.com/recent-activity"
+      titleUrl="/recent-activity"
       className={`jlw-recentActivity ${props.className || ""}`}
     >
       <div className="jlw-recentActivity-content">{renderData()}</div>
