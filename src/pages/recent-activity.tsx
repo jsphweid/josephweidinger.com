@@ -93,7 +93,9 @@ const Component = () => {
 
   return (
     <div className="jlw-rap">
-      <h1>Joseph's Activity Log</h1>
+      <h1>
+        <a href="/">Joseph</a>'s Activity Log
+      </h1>
       <div>
         <>
           {logs.map((log, i) => (
