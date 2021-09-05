@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    name: 'Joseph Weidinger',
-    tagline: 'Joseph Weidinger - engineer - composer'
+    name: "Joseph Weidinger",
+    tagline: "Joseph Weidinger - Software Engineer"
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -11,9 +11,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-79560675-1',
+        trackingId: "UA-79560675-1",
         head: true
       }
     }
   ]
-}
+};
