@@ -22,18 +22,14 @@ export default class Title extends React.Component<TitleProps> {
           <a href="https://josephweidinger.com/changeBlog/44-week-44-update/">
             Software Engineer at EquipmentShare
           </a>
-          {" / "}
-          <a
-            href="#"
-            onClick={() => Navbar.handleNavbarItemClick("dev projects")}
-          >
-            Creator
-          </a>
           <br />
           <a href="https://papio.io">Interviewer</a>
           {" - "}
           <a href="https://open.spotify.com/artist/0GCM7laM4pfNd69XyswDqW">
-            Composer / Musician
+            Occasional
+          </a>{" "}
+          <a href="https://open.spotify.com/artist/44tvpuPI0WVzJIpy4J1rRv">
+            Music Maker
           </a>
         </div>
       </Section>
