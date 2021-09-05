@@ -23,13 +23,13 @@ export default class Title extends React.Component<TitleProps> {
             Software Engineer at EquipmentShare
           </a>
           <br />
-          <a href="https://papio.io">Interviewer</a>
-          {" - "}
-          <a href="https://open.spotify.com/artist/0GCM7laM4pfNd69XyswDqW">
-            Occasional
-          </a>{" "}
+          Occasional <a href="https://papio.io">Interviewer</a>
+          {" / "}
           <a href="https://open.spotify.com/artist/44tvpuPI0WVzJIpy4J1rRv">
-            Music Maker
+            Music
+          </a>{" "}
+          <a href="https://open.spotify.com/artist/0GCM7laM4pfNd69XyswDqW">
+            Maker
           </a>
         </div>
       </Section>
