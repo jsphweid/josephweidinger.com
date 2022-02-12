@@ -78,7 +78,7 @@ export const getActivityLogs = async (
 
   const result = await axios
     .get<RawActivityLog[]>(
-      `https://rd2o5zpumc.execute-api.us-west-2.amazonaws.com/prod/logs${startDateString}${endDateString}${firstString}`
+      `https://c5bt94k8q2.execute-api.us-west-2.amazonaws.com/prod/logs${startDateString}${endDateString}${firstString}`
     )
     .then(r => r.data.map(mapRawActivityLog));
 
