@@ -37,9 +37,10 @@ export default class ScheduleMakerLaunchButton extends React.Component<
   makeBootRequest = () => {
     const { attempts, buttonState } = this.state;
     if (buttonState === Error || buttonState === Live) return;
-
     return axios
-      .get(process.env.GATSBY_AWS_TOMCAT_START_LAMBDA_URL as string)
+      .get(
+        "https://2911tgpt68.execute-api.us-east-1.amazonaws.com/prod/boot-tomcat-apps"
+      )
       .then(response => {
         const { liveUrl, state } = response.data.body;
         switch (true) {
