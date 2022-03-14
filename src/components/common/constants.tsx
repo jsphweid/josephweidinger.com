@@ -15,17 +15,17 @@ export const icons: IconObjType = {
   facebook: { class: "facebook", unicode: "&#xf09a;" },
   github: { class: "github-circled", unicode: "&#xf09b;" },
   youtube: { class: "youtube", unicode: "&#xf167;" },
-  soundcloud: { class: "soundcloud", unicode: "&#xf348;" }
+  soundcloud: { class: "soundcloud", unicode: "&#xf348;" },
 };
 
 export const projectSmallPicSize: ImageSizeType = {
   width: 296,
-  height: 216
+  height: 216,
 };
 
 export const projectLargePicSize: ImageSizeType = {
   width: 900,
-  height: 650
+  height: 650,
 };
 
 export const skills: any = {
@@ -35,20 +35,20 @@ export const skills: any = {
     "HTML / CSS / SCSS",
     "Java / Groovy",
     "C / C++ / Go",
-    "Bash / Lua / AutoHotkey"
+    "Bash / Lua / AutoHotkey",
   ],
   "Frameworks / Libraries": [
     "React / Angular 2",
     "Redux / MobX",
     "Gatsby / React-Static",
-    "libsndfile / boost"
+    "libsndfile / boost",
   ],
   Tools: [
     "Git",
     "VSCode / IntelliJ",
     "Terraform / Serverless",
     "Webpack / Grunt",
-    "Mac / Windows / Linux"
+    "Mac / Windows / Linux",
   ],
   Devops: ["AWS w/ CDK / Terraform", "Nginx", "Jenkins", "Digital Ocean"],
   Databases: ["DynamoDB", "Redis", "MySQL / Oracle", "PostgresSQL", "Firebase"],
@@ -59,11 +59,59 @@ export const skills: any = {
     "SuperCollider",
     "Flockingjs",
     "WaveSurfer",
-    "Cubase Pro"
-  ]
+    "Cubase Pro",
+  ],
 };
 
 export const projects: ProjectTempateType[] = [
+  {
+    projectName: "carryoaky",
+    expandedName: "carryoaky",
+    liveLink: "https://carryoaky.com",
+    imgUrl:
+      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1647222301/fullsize_dj7m0l.png",
+    date: "March-May 2018, Feb-Mar 2022",
+    tags: ["music"],
+    getModalContent: function () {
+      return (
+        <div>
+          <p>
+            Music is the organization of sound.{" "}
+            <a href="https://carryoaky.com">https://carryoaky.com</a> is an app
+            that explores a new way to organize sound.
+          </p>
+          <p>
+            The basic rundown is that there is a collections of musical pieces
+            represented as MIDI. This MIDI gets segmented into small chunks. You
+            can listen to these segments in the app and perform them like your
+            singing/playing karaoke. After uploading the audio, these recordings
+            can be stiched together to make a unique collage of musical
+            fragments that represent sounds like the piece.
+          </p>
+          <p>
+            I wrote a basic version of this app years ago and decommissioned it
+            because I didn't want to pay $15/month for an AWS RDS DB. But I
+            always kept this app in the back of my mind as it's intriguing to me
+            not only from as a fun app idea, but as a music composition tool.
+            Yes, it can be used just to solicit strict performances of symbolic
+            representations of music, but I figure you can add significant
+            "interpretation" to the performances such that the collage just
+            sounds like an original piece after a while.
+          </p>
+          <p>
+            So recently (Feb/Mar 2022), I decided to spin it back up and using
+            DynamoDB so it's free to host. Although I initially just wanted to
+            change the data layer, I ended up rewriting the whole app over a few
+            weekends.
+          </p>
+          <p>
+            Enough talk though, you can find the site here:{" "}
+            <a href="https://carryoaky.com">https://carryoaky.com</a>
+          </p>
+        </div>
+      );
+    },
+  },
   {
     projectName: "NotRSS",
     expandedName: "NotRSS",
@@ -72,7 +120,7 @@ export const projects: ProjectTempateType[] = [
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1616975208/notrss_i0stbq.jpg",
     date: "March 2021",
     tags: [],
-    getModalContent: function() {
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -107,7 +155,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       );
-    }
+    },
   },
   {
     projectName: "units",
@@ -118,7 +166,7 @@ export const projects: ProjectTempateType[] = [
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1583079729/Screen_Shot_2020-03-01_at_10.22.03_AM_sjhlem.png",
     date: "May 2019 - October 2019",
     tags: [],
-    getModalContent: function() {
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -127,7 +175,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       );
-    }
+    },
   },
   {
     projectName: "best soundboard",
@@ -136,8 +184,8 @@ export const projects: ProjectTempateType[] = [
     imgUrl:
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1555955576/Bildschirmfoto_2019-04-22_um_12.49.10_tkbgdc.png",
     date: "March 2019",
-    tags: [],
-    getModalContent: function() {
+    tags: ["music"],
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -159,7 +207,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       );
-    }
+    },
   },
   {
     projectName: "papio",
@@ -169,7 +217,7 @@ export const projects: ProjectTempateType[] = [
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1555984757/Bildschirmfoto_2019-04-22_um_20.58.36_inwrrw.png",
     date: "November 2018 - March 2019",
     tags: [],
-    getModalContent: function() {
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -196,7 +244,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       );
-    }
+    },
   },
   {
     projectName: "infinite meme",
@@ -206,7 +254,7 @@ export const projects: ProjectTempateType[] = [
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1540857186/the-infinite-meme_oksvka.png",
     date: "October 2018",
     tags: [],
-    getModalContent: function() {
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -225,12 +273,12 @@ export const projects: ProjectTempateType[] = [
           <p>
             It uses GatsbyJS for static rendering, AppSync for the API, S3 for
             audio storage, MobX for state management, and React for interactive
-            UI components. See it live in action{" "}
-            <a href={this.liveLink}>here!</a>
+            UI components.
           </p>
+          <p>2022 Update: This project has been decomissioned.</p>
         </div>
       );
-    }
+    },
   },
   {
     projectName: "gosamosa",
@@ -240,7 +288,7 @@ export const projects: ProjectTempateType[] = [
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1534472748/computers-small_iv4tyg.png",
     date: "August 2018",
     tags: [],
-    getModalContent: function() {
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -274,61 +322,10 @@ export const projects: ProjectTempateType[] = [
             "go:samosa" when I saw an opening for the domain gosamosa.com and
             went ahead and based the visual look off the Indian flag.
           </p>
-          <p>
-            You can use it <a href={this.liveLink}>here.</a>
-          </p>
+          <p>2022 Update: This project has been decomissioned.</p>
         </div>
       );
-    }
-  },
-  {
-    projectName: "reimagine",
-    expandedName: "reimagine",
-    liveLink: "https://www.josephweidinger.com/reimagine",
-    imgUrl:
-      "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1533437829/reimagine_aeolyh.png",
-    date: "March 2018 - May 2018",
-    tags: ["music"],
-    getModalContent: function() {
-      return (
-        <div>
-          <p>
-            This is somewhat of a grand ambitious project still in progress but
-            some of the foundations are there... The premise behind this is to
-            create an app automates the process of music performance and
-            composition.
-          </p>
-          <p>
-            The first stage of this idea is to create a system that breaks down
-            midi files into segments and stores them. The app randomly assigns a
-            visitor to the site a segment to perform into a microphone. If the
-            user does that and is happy with their performance, they can upload
-            it. When that recording of a segment is uploaded, it is stored and
-            cataloged until all the segments of the piece have been performed,
-            recorded, and uploaded. Then all of those wavs can be strategically
-            synthesized to form an interesting interpretation of the original
-            midi file.{" "}
-            <a href="https://soundcloud.com/joseph_weidinger/reimagine-hello-world-bach-invention-1-cover">
-              Here is the very first thing produced by this process.
-            </a>
-          </p>
-          <p>
-            Lots of technologies are used in this app. I developed several
-            libraries. One is a synthesizer written in golang and served up by
-            AWS Lambda. Two public libraries:{" "}
-            <a href="https://github.com/jsphweid/react-midi-visualizer">
-              React Midi Visualizer
-            </a>{" "}
-            and{" "}
-            <a href="https://github.com/jsphweid/react-conductor">
-              React Conductor
-            </a>
-            . These AWS services were used: DynamoDB, AppSync, RDS, S3, Lambda,
-            and Cognito.
-          </p>
-        </div>
-      );
-    }
+    },
   },
   {
     projectName: "josephweidinger.com",
@@ -338,7 +335,7 @@ export const projects: ProjectTempateType[] = [
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517527503/Screen_Shot_2018-02-01_at_5.23.55_PM_tzcnqa.png",
     date: "February 2016, January 2018",
     tags: [],
-    getModalContent: function() {
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -367,7 +364,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       );
-    }
+    },
   },
   {
     projectName: "blindfoldChessTrainer",
@@ -377,7 +374,7 @@ export const projects: ProjectTempateType[] = [
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1518147976/Screen_Shot_2018-02-08_at_7.58.35_PM_pyofsk.png",
     date: "January - Februrary 2018",
     tags: [],
-    getModalContent: function() {
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -398,7 +395,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       );
-    }
+    },
   },
   {
     projectName: "pianoLearningStream",
@@ -408,7 +405,7 @@ export const projects: ProjectTempateType[] = [
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1518148183/Screen_Shot_2018-02-08_at_9.48.46_PM_gwxj1e.png",
     date: "November - December 2017",
     tags: ["music"],
-    getModalContent: function() {
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -434,7 +431,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       );
-    }
+    },
   },
   {
     projectName: "whichString",
@@ -444,7 +441,7 @@ export const projects: ProjectTempateType[] = [
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517525918/Screen_Shot_2018-02-01_at_4.54.22_PM_nrxo2q.png",
     date: "May 2017 - Dec 2017",
     tags: ["music"],
-    getModalContent: function() {
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -465,7 +462,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       );
-    }
+    },
   },
   {
     projectName: "react-fft-flipbook",
@@ -475,7 +472,7 @@ export const projects: ProjectTempateType[] = [
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517457470/Screen_Shot_2018-01-31_at_9.56.43_PM_kst1d5.png",
     date: "October, December 2017",
     tags: ["music"],
-    getModalContent: function() {
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -504,7 +501,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       );
-    }
+    },
   },
   {
     projectName: "fiberMap",
@@ -514,7 +511,7 @@ export const projects: ProjectTempateType[] = [
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1518184505/Screen_Shot_2018-02-09_at_7.54.19_AM_mwaiii.png",
     date: "July - August 2017",
     tags: [],
-    getModalContent: function() {
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -542,7 +539,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       );
-    }
+    },
   },
   {
     projectName: "scheduleMaker",
@@ -552,7 +549,7 @@ export const projects: ProjectTempateType[] = [
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1486747894/Screen_Shot_2017-02-10_at_11.30.21_AM_d8gyep.png",
     date: "January-February 2017",
     tags: [],
-    getModalContent: function() {
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -573,7 +570,7 @@ export const projects: ProjectTempateType[] = [
           <ScheduleMakerLaunchButton />
         </div>
       );
-    }
+    },
   },
   {
     projectName: "AintIFunny",
@@ -583,7 +580,7 @@ export const projects: ProjectTempateType[] = [
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485187194/Screen_Shot_2017-01-23_at_9.59.07_AM_p2xz4r.png",
     date: "January 2017",
     tags: [],
-    getModalContent: function() {
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -598,7 +595,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       );
-    }
+    },
   },
   {
     projectName: "aMuseMe",
@@ -608,7 +605,7 @@ export const projects: ProjectTempateType[] = [
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484884631/Screen_Shot_2017-01-19_at_9.55.37_PM_y0szwe.png",
     date: "January 2017",
     tags: [],
-    getModalContent: function() {
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -626,7 +623,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       );
-    }
+    },
   },
   {
     projectName: "browserTranscribe",
@@ -636,7 +633,7 @@ export const projects: ProjectTempateType[] = [
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871388/browserTranscribe_yrcler.png",
     date: "December 2016",
     tags: ["music"],
-    getModalContent: function() {
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -658,7 +655,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       );
-    }
+    },
   },
   {
     projectName: "compareInflections",
@@ -668,7 +665,7 @@ export const projects: ProjectTempateType[] = [
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1517455449/compareInflections_vbtmxo.png",
     date: "October - November 2016",
     tags: ["audio"],
-    getModalContent: function() {
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -686,7 +683,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       );
-    }
+    },
   },
   {
     projectName: "playEquation",
@@ -696,7 +693,7 @@ export const projects: ProjectTempateType[] = [
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485141822/Screen_Shot_2017-01-22_at_9.20.04_PM_uppjjg.png",
     date: "Fall 2016",
     tags: ["music"],
-    getModalContent: function() {
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -715,7 +712,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       );
-    }
+    },
   },
   {
     projectName: "VAIL",
@@ -725,7 +722,7 @@ export const projects: ProjectTempateType[] = [
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1485141863/Screen_Shot_2017-01-22_at_9.19.11_PM_zpaggn.png",
     date: "November 2016",
     tags: ["audio"],
-    getModalContent: function() {
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -741,7 +738,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       );
-    }
+    },
   },
   {
     projectName: "justInTune",
@@ -751,7 +748,7 @@ export const projects: ProjectTempateType[] = [
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871108/justIntonation_nlcdwk.png",
     date: "Spring 2015, then Fall 2016",
     tags: ["audio"],
-    getModalContent: function() {
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -767,7 +764,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       );
-    }
+    },
   },
   {
     projectName: "bookletMacro",
@@ -777,7 +774,7 @@ export const projects: ProjectTempateType[] = [
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871103/bookletMacro_wjaqo2.jpg",
     date: "October 2015",
     tags: ["audio"],
-    getModalContent: function() {
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -797,7 +794,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       );
-    }
+    },
   },
   {
     projectName: "processingSketches",
@@ -807,7 +804,7 @@ export const projects: ProjectTempateType[] = [
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871107/processing_bqeqo8.jpg",
     date: "August - October 2015",
     tags: ["audio"],
-    getModalContent: function() {
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -830,7 +827,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       );
-    }
+    },
   },
   {
     projectName: "hotkeyGrid",
@@ -840,7 +837,7 @@ export const projects: ProjectTempateType[] = [
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871108/hotkey-grid_eru7ne.png",
     date: "June - August 2015",
     tags: [],
-    getModalContent: function() {
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -860,7 +857,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       );
-    }
+    },
   },
   {
     projectName: "finaleHotkeyGrid",
@@ -870,7 +867,7 @@ export const projects: ProjectTempateType[] = [
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871107/finale-hotkey-grid_sznsni.png",
     date: "December 2014 - April 2015",
     tags: ["music"],
-    getModalContent: function() {
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -885,7 +882,7 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       );
-    }
+    },
   },
   {
     projectName: "feedCalc",
@@ -895,7 +892,7 @@ export const projects: ProjectTempateType[] = [
       "https://res.cloudinary.com/dx6f6g5cv/image/upload/---cloudinaryStyleString---/v1484871105/feedCalc_effijp.png",
     date: "October 2014",
     tags: [],
-    getModalContent: function() {
+    getModalContent: function () {
       return (
         <div>
           <p>
@@ -922,6 +919,6 @@ export const projects: ProjectTempateType[] = [
           </p>
         </div>
       );
-    }
-  }
+    },
+  },
 ];

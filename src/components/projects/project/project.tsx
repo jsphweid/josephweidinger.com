@@ -3,8 +3,6 @@ import React from "react";
 import { ProjectTempateType } from "../../common/types";
 import { projectSmallPicSize } from "../../common/constants";
 
-const zoomIn = require("./zoom-in.svg");
-
 export interface ProjectProps {
   className?: string;
   template: ProjectTempateType;
@@ -37,12 +35,6 @@ export default class Project extends React.Component<ProjectProps> {
         onClick={this.handleProjectOpen}
       >
         <img src={imgSrc} alt={template.projectName} />
-        <div className="jlw-project-overlay" style={heightWidthStyle}>
-          <div>{template.projectName}</div>
-          <div>
-            <img src={zoomIn} alt="Zoom In" />
-          </div>
-        </div>
       </div>
     );
   }
