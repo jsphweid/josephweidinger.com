@@ -83,7 +83,7 @@ export const projects: ProjectTempateType[] = [
           <p>
             The basic rundown is that there is a collections of musical pieces
             represented as MIDI. This MIDI gets segmented into small chunks. You
-            can listen to these segments in the app and perform them like your
+            can listen to these segments in the app and perform them like you're
             singing/playing karaoke. After uploading the audio, these recordings
             can be stiched together to make a unique collage of musical
             fragments that represent sounds like the piece.
