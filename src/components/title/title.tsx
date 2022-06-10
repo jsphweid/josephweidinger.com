@@ -19,7 +19,7 @@ export default class Title extends React.Component<TitleProps> {
         title={"joseph weidinger"}
       >
         <div className="jlw-title-labels">
-          <a href="https://josephweidinger.com/changeBlog/44-week-44-update/">
+          <a href="https://josephweidinger.com/change-blog/44-week-44-update/">
             Software Engineer at EquipmentShare
           </a>
           <br />

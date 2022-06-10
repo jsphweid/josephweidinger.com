@@ -72,7 +72,7 @@ export default class Contact extends React.Component<ContactProps> {
                 )}
               </li>
               <li>
-                {this.renderPictureIcon("/profile-pic.jpeg", "/changeBlog")}
+                {this.renderPictureIcon("/profile-pic.jpeg", "/change-blog")}
               </li>
             </ul>
           </div>
