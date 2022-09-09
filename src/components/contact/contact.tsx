@@ -77,9 +77,9 @@ export default class Contact extends React.Component<ContactProps> {
             </ul>
           </div>
           <div>
-            <h3>Home Base</h3>
+            <h3>Current City</h3>
             <p>
-              Columbia, MO
+              Mountain View, CA
               <br />
               United States
             </p>
