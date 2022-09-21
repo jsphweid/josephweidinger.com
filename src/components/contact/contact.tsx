@@ -86,7 +86,7 @@ export default class Contact extends React.Component<ContactProps> {
           </div>
         </div>
         <div className="jlw-contact-copyright">
-          <div>Copyright © 2021</div>
+          <div>Copyright © 2022</div>
         </div>
       </div>
     );
